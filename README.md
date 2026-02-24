@@ -111,3 +111,6 @@ Want to extend this? Consider adding:
 - Performance optimizations for larger sites
 
 ---
+
+## Development
+Initial dev setup
