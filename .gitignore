@@ -39,3 +39,15 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Docs / guides (do not track)
+VIDEO_BACKGROUND_GUIDE.md
+VIDEO_TROUBLESHOOTING.md
+WAVE_EFFECT_EXPLANATION.md
+
+# Local scripts
+analyze_videos.py
+
+# Reference HTML files
+tableworks_source.html
+stableworks_source_v2.html
