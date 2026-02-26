@@ -1,116 +1,78 @@
-# Raha Partners - Hero Section
+# Raha Partners - Official Website
 
-Hero section and navigation menu built with Next.js, TypeScript, Tailwind CSS, and modern animation libraries.
+A premium, highly animated Next.js website for **Raha Partners**, an agency specializing in **Marketing, Ecommerce, and Distribution** for B2C and consumer brands. 
+
+The site is designed to reflect Raha's core mission: helping brands **Achieve Business Objectives** through:
+- Lead Generation
+- Increased Revenue
+- Enhanced Brand Visibility
 
 ## 🚀 Technologies Used
 
-- **Next.js 16** - React framework with App Router
-- **TypeScript** - Type-safe development
-- **Tailwind CSS v4** - Utility-first CSS framework
-- **Framer Motion** - React animation library for smooth transitions
-- **GSAP** - Professional-grade animation for text reveals
-- **Lenis** - Smooth scroll library for buttery-smooth scrolling
+- **Next.js 16 (App Router)** - Fast, modern React framework
+- **TypeScript** - Type-safe, scalable development
+- **Tailwind CSS v4** - Utility-first CSS for rapid UI styling
+- **Framer Motion** - Sophisticated, spring-based React animations
+- **GSAP & ScrollTrigger** - Professional-grade text reveals and scroll effects
+- **Lenis** - Buttery-smooth scroll experience
 
-## 🎨 Features Implemented
+## 🎨 Core Offerings
 
-### Navigation
-- Fixed header with "Raha Partners" logo
-- Animated hamburger menu icon (transforms into X on click)
-- Full-screen overlay menu with smooth transitions
-- Orange accent color (#FF5722) matching the original
+**1. Marketing (Digital & Offline)**
+- Search engine & Gen AI search optimization
+- Digital presence & Online reputation management
+- Influencer, KOL, and affiliate marketing
+- Retail analytics, in-store promoters, popups, and activations
 
-### Hero Section
-- **Large animated headline** with GSAP text reveals
-- **Particle background effect** with:
-  - Animated particles floating across the screen
-  - Connecting lines between nearby particles
-  - Orange glow effects on particles
-  - Smooth performance using Canvas API
-- **CTA section** with orange button and descriptive text
-- **Statistics section** showing "40% Lower Cost" and "+300% Faster"
-- **Responsive layout** that works on all screen sizes
+**2. Ecommerce (D2C & Platforms)**
+- Shopify build, speed, and UX optimization
+- Marketplace operations (Amazon, Noon, Trendyol)
+- Google Shopping Ads & Performance Marketing (Google, Meta, TikTok)
+- Listing/A+ creation, SEO, and OMS/WMS/3PL integrations
+- Reviews, referrals, and loyalty programs
 
-### Animations
-- **Smooth scroll** using Lenis for enhanced user experience
-- **Text animations** with GSAP for professional reveals
-- **Hover effects** on interactive elements
-- **Menu transitions** using Framer Motion
-- **Scroll-based opacity** fade on hero section
+**3. Distribution (GCC, India, SEA)**
+- Channel strategy and offline partnerships
+- Retailer onboarding and end-to-end operations
+- Import and customs management
+- Localized market expansion and new brand entry
+- Media and PR
 
-## 🎯 Color Palette
+## ✨ Key Site Features
 
-- **Primary Background**: `#000000` (Black)
-- **Accent Color**: `#FF5722` (Vibrant Orange)
-- **Text Color**: `#FFFFFF` (White)
-- **Gray Text**: `#999999`
+### Immersive Hero Section
+- **Dynamic GSAP Typography**: Staggered text reveals of the core brand promise.
+- **Particle Background**: Custom HTML5 Canvas particle system with connecting lines and glowing nodes representing digital connections and growth.
+- **Animated Statistics**: Animated counting numbers highlighting core growth metrics for consumer brands.
 
-## 🏃‍♂️ Running the Project
+### Premium UI Components
+- **Bento Grid Layouts**: Used in the "Our Work" section to highlight case studies involving Direct-to-Consumer Growth, Omnichannel experiences, Audience Analytics, and Global fulfillment.
+- **Interactive Service Accordions**: A fluid, flex-based accordion system using Framer Motion to explore the core pillars of Marketing, Ecommerce, and Distribution.
+- **Smooth Navigation**: A full-screen overlay menu with staggered entry animations and an animated hamburger-to-X toggle.
+- **Video Backgrounds**: High-quality structural video integration for a cinematic scroll experience.
+- **Layered Footer**: A unique rolling scroll reveal for the footer layout, displaying contact capabilities and final CTA.
 
-The development server is already running! 
+## 🏃‍♂️ Running the Project Locally
 
 ```bash
-# If you need to restart:
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev
+
+# Build for production
+npm run build
 ```
 
 Then open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## 📁 Project Structure
+## � Design Language
 
-```
-raha/
-├── app/
-│   ├── globals.css          # Global styles and Tailwind config
-│   ├── layout.tsx           # Root layout
-│   └── page.tsx             # Main page with all components
-├── components/
-│   ├── Navigation.tsx       # Header with hamburger menu
-│   ├── Hero.tsx             # Hero section with text and stats
-│   ├── ParticleBackground.tsx  # Animated particle canvas
-│   └── SmoothScroll.tsx     # Lenis smooth scroll provider
-└── package.json
-```
-
-## ✨ Key Implementation Details
-
-### Particle Background
-- Canvas-based animation with requestAnimationFrame
-- Particles move with velocity and bounce off edges
-- Connections drawn between nearby particles using distance calculation
-- Orange radial gradients for glow effects
-
-### Text Animation
-- GSAP timeline for sequential text reveals
-- Staggered animations for each line
-- Smooth easing functions for professional feel
-
-### Smooth Scrolling
-- Lenis library integrated at app level
-- Custom easing function for natural scroll behavior
-- Optimized performance with proper cleanup
-
-### Menu Animation
-- Framer Motion for smooth open/close transitions
-- Hamburger transforms into X with rotation animations
-- Full-screen overlay with staggered link reveals
-
-## 🎭 Design Philosophy
-
-- Dark, premium aesthetic
-- Bold orange accents for energy and innovation
-- Generous whitespace
-- Smooth, professional animations
-- Modern, clean typography
-
-## 🔄 Next Steps
-
-Want to extend this? Consider adding:
-- Additional sections (Work, Services, Process, Team)
-- More complex scroll animations
-- Mobile menu enhancements
-- Performance optimizations for larger sites
+- **Primary Background**: `#000000` & `#161719` (Deep, premium blacks/grays)
+- **Signature Accent**: `#FF5722` (High-energy dynamic orange)
+- **Typography**: Crisp, clean sans-serif layouts with extreme tracking for a modern digital aesthetic.
+- **Animations**: Spring-based transitions, continuous micro-animations, and parallax elements to create an interface that feels alive.
 
 ---
-
-## Development
-Initial dev setup
+© 2026 Raha Partners. Built for scale.

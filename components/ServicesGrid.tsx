@@ -56,33 +56,25 @@ const GrowIcon = () => (
 const services = [
     {
         id: '01',
-        title: 'Consumer Strategy',
-        shortTitle: 'Strategy',
-        description: 'We analyze market trends and consumer behavior to design high-impact digital experiences that build brand loyalty and drive high-volume growth.',
+        title: 'Marketing',
+        shortTitle: 'Digital & Offline',
+        description: 'End-to-end marketing including SEO, Gen AI search optimization, influencer & affiliate campaigns, retail analytics, and in-store activations to boost brand visibility.',
         icon: <WavesIcon />,
         arrow: <ArrowUpRight />
     },
     {
         id: '02',
-        title: 'Experience Design',
-        shortTitle: 'Design',
-        description: 'From customer journeys to mobile-first platforms, we build B2C solutions that resonate with users and integrate perfectly with your brand identity.',
+        title: 'Ecommerce',
+        shortTitle: 'D2C & Platforms',
+        description: 'Comprehensive Shopify builds, marketplace operations (Amazon, Noon, Trendyol), performance marketing, and seamless OMS/WMS/3PL integrations to maximize revenue.',
         icon: <BuildIcon />,
         arrow: <ArrowUpRight />
     },
     {
         id: '03',
-        title: 'Operations & Support',
-        shortTitle: 'Support',
-        description: 'Dedicated management, performance tracking, and customer-centric optimization ensure your digital presence is always delivering excellence.',
-        icon: <FingerprintIcon />,
-        arrow: <ArrowDown />
-    },
-    {
-        id: '04',
-        title: 'Global Growth',
-        shortTitle: 'Growth',
-        description: 'We help scale your consumer brand across borders and markets, leveraging data to expand your community and maximize lifetime value.',
+        title: 'Distribution',
+        shortTitle: 'GCC, India, SEA',
+        description: 'Strategic market expansion with offline partnerships, retailer onboarding, customs management, and localized media PR to establish your presence in new regions.',
         icon: <GrowIcon />,
         arrow: <ArrowDown />
     }
@@ -367,15 +359,15 @@ export default function ServicesGrid() {
                 <div> {/* Wrapper for top content to separate from Footer and Grid */}
                     <div className="flex justify-between items-center text-white/40 text-sm tracking-wide border-b border-white/10 pb-6 mb-4 xl:mb-8">
                         <span>Core Services</span>
-                        <span>4/4</span>
+                        <span>3/3</span>
                     </div>
 
                     <div className="space-y-4 xl:space-y-6 mb-8">
                         <h2 className="text-3xl md:text-[48px] font-medium text-[#c0c0c0] leading-[1.1] tracking-[-0.05em] text-balance">
-                            Modular, flexible solutions for modern consumer brands
+                            Built to achieve your business objectives
                         </h2>
                         <p className="text-[#888891] text-md leading-relaxed max-w-md">
-                            We create future-proof digital experiences that scale seamlessly and adapt to your customers needs.
+                            We drive lead generation, increase revenue, and boost brand visibility across digital, ecommerce, and distribution channels.
                         </p>
                     </div>
                 </div>
@@ -389,7 +381,7 @@ export default function ServicesGrid() {
                             <div key={i} className={`w-1 h-1 ${i % 2 === 0 ? 'bg-[#FF5722]' : 'bg-white/20'}`} />
                         ))}
                     </div>
-                    <span className="text-sm font-medium tracking-wide">Design, optimize, scale, and secure.</span>
+                    <span className="text-sm font-medium tracking-wide">Marketing, Ecommerce, and Distribution at scale.</span>
                 </div>
             </motion.div>
 
