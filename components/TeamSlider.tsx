@@ -26,8 +26,8 @@ const teamMembers: TeamMember[] = [
         title: 'Founder & CEO',
         bio: 'As the CEO, I drive our mission of building disruptive B2C brands. I\'m dedicated to turning market insights into exceptional consumer experiences with scalable platforms that revolutionize how people shop and interact. As a founder I remain deeply involved in both the vision and hands-on execution at every stage of our growth, ensuring we deliver market-leading results.',
         photo: '/images/t-1.avif',
-        linkedin: '#',
-        whatsapp: '#',
+        linkedin: 'https://www.linkedin.com/company/raha-partners',
+        whatsapp: "https://wa.me/971585799283?text=Hi%20Raha%20Partners,%20I'm%20interested%20in%20learning%20more%20about%20your%20services.",
     },
     {
         id: 2,
@@ -35,8 +35,8 @@ const teamMembers: TeamMember[] = [
         title: 'Solutions Specialist',
         bio: 'As a Solutions Specialist, I partner with brands to identify where digital transformation can drive the most impact. I guide teams through market discovery, help scope initiatives that align with consumer acquisition goals, and ensure smooth handoffs from brand strategy to digital implementation. My focus is on making market expansion clear, practical, and achievable.',
         photo: '/images/t-2.avif',
-        linkedin: '#',
-        whatsapp: '#',
+        linkedin: 'https://www.linkedin.com/company/raha-partners',
+        whatsapp: "https://wa.me/971585799283?text=Hi%20Raha%20Partners,%20I'm%20interested%20in%20learning%20more%20about%20your%20services.",
     },
     {
         id: 3,
@@ -44,8 +44,8 @@ const teamMembers: TeamMember[] = [
         title: 'Lead Engineer',
         bio: 'As Lead Engineer, I architect the high-scale commerce foundations of every solution we build. I believe great engineering is invisible — platforms that handle millions of transactions, scale reliably during peaks, and surprise no one. I care deeply about system performance, user flow, and shipping experiences that customers love.',
         photo: '/images/t-3.avif',
-        linkedin: '#',
-        whatsapp: '#',
+        linkedin: 'https://www.linkedin.com/company/raha-partners',
+        whatsapp: "https://wa.me/971585799283?text=Hi%20Raha%20Partners,%20I'm%20interested%20in%20learning%20more%20about%20your%20services.",
     },
     {
         id: 4,
@@ -53,8 +53,8 @@ const teamMembers: TeamMember[] = [
         title: 'Product Designer',
         bio: 'I shape the consumer experience layer — from first clicks to final conversion. Design at Raha is about understanding consumer psychology and behavior. I work closely with strategy to translate brand values into interfaces that feel effortless, intuitive, and desirable for the modern customer.',
         photo: '/images/t-4.avif',
-        linkedin: '#',
-        whatsapp: '#',
+        linkedin: 'https://www.linkedin.com/company/raha-partners',
+        whatsapp: "https://wa.me/971585799283?text=Hi%20Raha%20Partners,%20I'm%20interested%20in%20learning%20more%20about%20your%20services.",
     },
     {
         id: 5,
@@ -62,8 +62,8 @@ const teamMembers: TeamMember[] = [
         title: 'Growth & Data Lead',
         bio: 'I design the growth engines at the core of our brand platforms. From consumer segmentation to multi-channel data pipelines, I ensure our solutions are not only data-driven but focused on retention and lifetime value. I bridge the gap between analytics and real-world results, making sure every brand we build performs at its peak.',
         photo: '/images/t-5.avif',
-        linkedin: '#',
-        whatsapp: '#',
+        linkedin: 'https://www.linkedin.com/company/raha-partners',
+        whatsapp: "https://wa.me/971585799283?text=Hi%20Raha%20Partners,%20I'm%20interested%20in%20learning%20more%20about%20your%20services.",
     },
 ];
 

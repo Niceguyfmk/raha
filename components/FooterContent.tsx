@@ -145,10 +145,10 @@ export default function FooterContent() {
                     </div>
 
                     <div className="flex gap-6 items-center">
-                        <a href="#" className="w-10 h-10 rounded-full bg-[#2c2c2f] flex items-center justify-center text-[#dfd9d7] hover:text-[#FA6F45] transition-all hover:scale-110">
+                        <a href="https://www.linkedin.com/company/raha-partners" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-[#2c2c2f] flex items-center justify-center text-[#dfd9d7] hover:text-[#FA6F45] transition-all hover:scale-110">
                             <FaLinkedinIn size={18} />
                         </a>
-                        <a href="#" className="w-10 h-10 rounded-full bg-[#2c2c2f] flex items-center justify-center text-[#dfd9d7] hover:text-[#FA6F45] transition-all hover:scale-110">
+                        <a href="https://wa.me/971585799283?text=Hi%20Raha%20Partners,%20I'm%20interested%20in%20learning%20more%20about%20your%20services." target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-[#2c2c2f] flex items-center justify-center text-[#dfd9d7] hover:text-[#FA6F45] transition-all hover:scale-110">
                             <FaWhatsapp size={18} />
                         </a>
                         <button

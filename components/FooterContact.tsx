@@ -77,10 +77,10 @@ export default function FooterContact() {
                             Follow us
                         </motion.h5>
                         <motion.div className="flex gap-10" variants={fadeInUp}>
-                            <a href="#" className="text-[#dfd9d7] hover:text-[#FA6F45]">
+                            <a href="https://www.linkedin.com/company/raha-partners" target="_blank" rel="noopener noreferrer" className="text-[#dfd9d7] hover:text-[#FA6F45]">
                                 <FaLinkedinIn size={22} />
                             </a>
-                            <a href="#" className="text-[#dfd9d7] hover:text-[#FA6F45]">
+                            <a href="https://wa.me/971585799283?text=Hi%20Raha%20Partners,%20I'm%20interested%20in%20learning%20more%20about%20your%20services." target="_blank" rel="noopener noreferrer" className="text-[#dfd9d7] hover:text-[#FA6F45]">
                                 <FaWhatsapp size={22} />
                             </a>
                         </motion.div>
