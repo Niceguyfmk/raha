@@ -52,6 +52,8 @@ The site is designed to reflect Raha's core mission: helping brands **Achieve Bu
 - **Video Backgrounds**: High-quality structural video integration for a cinematic scroll experience.
 - **Layered Footer**: A unique rolling scroll reveal for the footer layout, displaying contact capabilities and final CTA.
 
+Vercel -> Deployment sync test
+
 ## 🏃‍♂️ Running the Project Locally
 
 ```bash
