@@ -78,7 +78,7 @@ export default function Hero() {
     return (
         <div ref={containerRef} className="relative">
             {/* Part 1: Landing */}
-            <section className="relative min-h-screen flex items-center justify-center px-6 py-24 overflow-hidden">
+            <section id="home" className="relative min-h-screen flex items-center justify-center px-6 py-24 overflow-hidden">
                 <div className="max-w-[1400px] mx-auto w-full z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
                         {/* Left Side - Subtitle */}
@@ -131,7 +131,7 @@ export default function Hero() {
 
                                         {/* Button */}
                                         <motion.a
-                                            href="#"
+                                            href="#contact"
                                             whileHover={{ scale: 1.02 }}
                                             whileTap={{ scale: 0.98 }}
                                             className="inline-flex items-center gap-3

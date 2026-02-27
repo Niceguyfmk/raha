@@ -58,7 +58,7 @@ const Card = ({ title, subtitle, videoSrc, className, children }: { title: strin
 
 export default function OurWork() {
     return (
-        <section className="relative bg-[#161719] py-48 px-6 overflow-hidden border-t border-white/5">
+        <section id="our-work" className="relative bg-[#161719] py-48 px-6 overflow-hidden border-t border-white/5">
             <div className="max-w-[1400px] mx-auto">
                 <SectionHeader
                     number="001"

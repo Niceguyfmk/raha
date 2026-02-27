@@ -52,7 +52,7 @@ export default function FooterContact() {
     }
 
     return (
-        <section className="relative w-full bg-[#161719] pb-12 px-3 overflow-hidden">
+        <section id="contact" className="relative w-full bg-[#161719] pb-12 px-3 overflow-hidden">
             <motion.h2
                 className="max-w-[1400px] mx-auto mb-6 text-[72px] md:text-[96px] xl:text-[120px]
                font-semibold tracking-[-0.04em] text-[#FA6F45]"
