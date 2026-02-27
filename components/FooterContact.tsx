@@ -74,7 +74,7 @@ export default function FooterContact() {
                             className="text-[28px] font-medium tracking-[-0.04em] text-[#c0c0c0]"
                             variants={fadeInUp}
                         >
-                            Follow us
+                            Contact Us
                         </motion.h5>
                         <motion.div className="flex gap-10" variants={fadeInUp}>
                             <a href="https://www.linkedin.com/company/raha-partners" target="_blank" rel="noopener noreferrer" className="text-[#dfd9d7] hover:text-[#FA6F45]">
