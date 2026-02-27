@@ -1,3 +1,5 @@
+'use client';
+
 import Navigation from '@/components/Navigation';
 import Hero from '@/components/Hero';
 import SmoothScroll from '@/components/SmoothScroll';
@@ -8,6 +10,20 @@ import Process from '@/components/Process';
 import Team from '@/components/Team';
 import FooterContact from '@/components/FooterContact';
 import FooterContent from '@/components/FooterContent';
+import { motion, AnimatePresence, Variants } from 'framer-motion'
+
+const fadeInUp: Variants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: (i = 1) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: i * 0.15,
+      ease: 'easeOut',
+      duration: 0.5,
+    },
+  }),
+}
 
 export default function Home() {
   return (
@@ -21,15 +37,25 @@ export default function Home() {
           <OurServices />
           <Process />
           <Team />
-          {/* Footer Experience: Roll over animation */}
-          <section className="relative">
-            {/* Section 1: Contact (Stays pinned) */}
-            <div className="sticky top-0 h-screen">
+          {/* Footer Experience: A professional slide-over reveal */}
+          <section className="relative bg-[#161719]">
+            {/* Section 1: Contact (Natural scroll) */}
+            <motion.h2
+              className="max-w-[1400px] mx-auto mb-4 text-[60px] md:text-[80px] xl:text-[100px]
+               font-semibold tracking-[-0.04em] text-[#FA6F45]"
+              variants={fadeInUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+            >
+              Let’s Talk<span className="text-[#FA6F45]">.</span>
+            </motion.h2>
+            <div className="sticky top-0 h-[150vh] bg-[#161719]">
               <FooterContact />
             </div>
 
-            {/* Section 2: Footer Content (Rolls on top) */}
-            <div className="relative z-50 shadow-[0_-20px_50px_rgba(0,0,0,0.5)]">
+            {/* Section 2: Footer Content (Reveals or Scrolls normally) */}
+            <div className="relative z-20 shadow-[0_-20px_50px_rgba(0,0,0,0.5)]">
               <FooterContent />
             </div>
           </section>
