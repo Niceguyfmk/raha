@@ -52,17 +52,8 @@ export default function FooterContact() {
     }
 
     return (
-        <section id="contact" className="relative w-full bg-[#161719] pb-12 px-3 overflow-hidden">
-            <motion.h2
-                className="max-w-[1400px] mx-auto mb-6 text-[72px] md:text-[96px] xl:text-[120px]
-               font-semibold tracking-[-0.04em] text-[#FA6F45]"
-                variants={fadeInUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-            >
-                Let’s Talk<span className="text-[#FA6F45]">.</span>
-            </motion.h2>
+        <section id="contact" className="relative w-full bg-[#161719] pb-8 px-3 overflow-hidden">
+
             <div className="max-w-[1400px] mx-auto grid grid-cols-1 xl:grid-cols-2 gap-1">
 
                 {/* ── LEFT SIDE ─────────────────────────────────── */}
@@ -247,8 +238,8 @@ export default function FooterContact() {
                         value={form.message}
                         onChange={handleChange}
                         required
-                        rows={6}
-                        className="bg-[#2c2c2f] rounded-xl px-6 py-6 text-[#dfd9d7] placeholder-[#888891] outline-none resize-none"
+                        rows={4}
+                        className="bg-[#2c2c2f] rounded-xl px-6 py-5 text-[#dfd9d7] placeholder-[#888891] outline-none resize-none"
                         variants={fadeInUp}
                     />
 
