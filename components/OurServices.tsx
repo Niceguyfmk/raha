@@ -10,7 +10,7 @@ export default function OurServices() {
         <section id="services" className="relative bg-[#161719] pt-24 pb-48 px-6 overflow-hidden border-t border-white/5">
             <div className="max-w-[1400px] mx-auto">
                 <SectionHeader
-                    number="002"
+                    number="003"
                     brandName="Raha x Brands"
                     title="Everything you need to win in the GCC"
                     statement="Operational muscle. Market expertise. Digital infrastructure."

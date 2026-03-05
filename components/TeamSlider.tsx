@@ -22,7 +22,7 @@ interface TeamMember {
 const teamMembers: TeamMember[] = [
     {
         id: 1,
-        name: 'Daryll Netscher',
+        name: 'Talal Aziz',
         title: 'Founder & CEO',
         bio: 'Operator-led vision with 10+ years of experience scaling consumer brands across the GCC market. Daryll leads the overarching strategy for Raha Partners.',
         photo: '/images/t-1.avif',
@@ -32,7 +32,7 @@ const teamMembers: TeamMember[] = [
     {
         id: 2,
         name: 'Faiz Khan',
-        title: 'Strategy & Marketplace',
+        title: 'Digital Solution Architect (Web & E-Commerce)',
         bio: 'Marketplace specialist and ex-Noon operative. Faiz is an expert at navigating the Amazon and Noon ecosystems to maximize brand visibility and sales.',
         photo: '/images/t-2.avif',
         linkedin: 'https://www.linkedin.com/company/raha-partners',
@@ -40,7 +40,7 @@ const teamMembers: TeamMember[] = [
     },
     {
         id: 3,
-        name: 'Hamzah Jamil',
+        name: 'Carol',
         title: 'Logistics & Regulatory',
         bio: 'Logistics architect specializing in GCC market entry. Hamzah manages the complexities of municipality registrations, labeling, and import compliance.',
         photo: '/images/t-3.avif',
@@ -49,7 +49,7 @@ const teamMembers: TeamMember[] = [
     },
     {
         id: 4,
-        name: 'Abdullah Moustafa',
+        name: 'Zeeshan',
         title: 'Performance & Growth',
         bio: 'The growth engine of the team. Abdullah is focused on performance marketing and localized influencer strategies that drive rapid conversion.',
         photo: '/images/t-4.avif',

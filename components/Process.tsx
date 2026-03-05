@@ -8,23 +8,23 @@ import { FaArrowRight } from 'react-icons/fa';
 const processes = [
     {
         id: '01',
-        title: 'Regulatory & Compliance Ready',
-        description: 'We handle everything from municipality registrations to GCC-compliant labeling and import documentation.',
+        title: 'Bespoke distribution with a focus on GCC',
+        description: 'Building a tailored distribution strategy across the GCC, securing the right retail partners, warehousing, and logistics to get your product into market efficiently.',
     },
     {
         id: '02',
-        title: 'Distribution & Ops Set-up',
-        description: 'Securing warehousing, retail partner onboarding, and physical distribution infrastructure.',
+        title: 'Ecommerce, Direct-to-Customer and Digital Presence',
+        description: 'Launching and optimizing your digital storefront across Amazon, Noon, and Shopify while establishing a strong brand-led direct-to-consumer presence.',
     },
     {
         id: '03',
-        title: 'Marketplace & D2C Launch',
-        description: 'Going live on Amazon and Noon while building out your dedicated Shopify-led brand experience.',
+        title: 'Digital Marketing and Optimization',
+        description: 'Driving growth through localized performance marketing, influencer partnerships, and continuous optimization of customer acquisition and conversion.',
     },
     {
         id: '04',
-        title: 'Growth & Scale Engine',
-        description: 'Accelerating sales with localized performance marketing, influencers, and retail-level optimization.',
+        title: 'Market Intelligence, Network & Regulation',
+        description: 'Navigating GCC regulatory requirements, municipality registrations, and compliant labeling while leveraging local market intelligence and partner networks.',
     }
 ];
 
@@ -33,7 +33,7 @@ export default function Process() {
         <section id="process" className="relative bg-[#161719] py-48 px-6 overflow-hidden border-t border-white/5">
             <div className="max-w-[1400px] mx-auto">
                 <SectionHeader
-                    number="003"
+                    number="001"
                     brandName="Raha x Strategy"
                     title="The Raha Playbook"
                     statement="From outside the GCC to dominant within it."

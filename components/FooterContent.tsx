@@ -52,7 +52,7 @@ export default function FooterContent() {
                     </div>
 
                     <div className="relative z-10 flex justify-end">
-                        <a href="mailto:hello@rahapartners.com" className="text-[18px] md:text-[22px] font-medium text-[#dfd9d7] hover:text-[#FA6F45] transition-colors">
+                        <a href="mailto:zeeshan@rahapartners.com" className="text-[18px] md:text-[22px] font-medium text-[#dfd9d7] hover:text-[#FA6F45] transition-colors">
                             hello@rahapartners.com
                         </a>
                     </div>

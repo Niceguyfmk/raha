@@ -64,7 +64,7 @@ export default function OurWork() {
         <section id="our-work" className="relative bg-[#161719] py-48 px-6 overflow-hidden border-t border-white/5">
             <div className="max-w-[1400px] mx-auto">
                 <SectionHeader
-                    number="001"
+                    number="002"
                     brandName="Raha Partners"
                     title="Brands we’ve taken to market"
                     statement="Real work. Real results."
@@ -124,15 +124,23 @@ export default function OurWork() {
 
                                 <button
                                     onClick={() => setIsCard1Open(!isCard1Open)}
-                                    className={`relative z-30 w-[60px] h-[60px] rounded-xl flex items-center justify-center transition-all duration-300 ${isCard1Open ? 'bg-white text-black' : 'bg-[#FF5722] hover:bg-[#E64A19]'}`}
+                                    className={`relative z-30 h-[60px] rounded-xl flex items-center transition-all duration-300 overflow-hidden cursor-pointer
+                                        ${isCard1Open ? 'w-[60px] justify-center bg-white text-black' : 'w-[60px] group-hover:w-[160px] justify-start bg-[#FF5722] hover:bg-[#E64A19]'}`}
                                 >
-                                    {isCard1Open ? (
-                                        <FaTimes size={24} />
-                                    ) : (
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#161719" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                        </svg>
-                                    )}
+                                    <div className="flex items-center gap-4 px-[20px] whitespace-nowrap">
+                                        {isCard1Open ? (
+                                            <FaTimes size={24} className="flex-shrink-0" />
+                                        ) : (
+                                            <>
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="flex-shrink-0">
+                                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#161719" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                                </svg>
+                                                <span className="font-medium text-[#161719] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                                    View Details
+                                                </span>
+                                            </>
+                                        )}
+                                    </div>
                                 </button>
                             </div>
                         </motion.div>
@@ -192,7 +200,7 @@ export default function OurWork() {
                         </div>
 
                         <div className="relative z-10 p-6 h-full flex flex-col justify-between">
-                            <h3 className="text-2xl font-medium text-white">Audience Analytics</h3>
+                            <h3 className="text-2xl font-medium text-white">Indian Electronics Brand    </h3>
 
                             <div className="absolute top-6 right-6 grid grid-cols-3 gap-2 group-hover:rotate-90 transition-transform duration-300">
                                 {[...Array(9)].map((_, i) => (
@@ -204,14 +212,21 @@ export default function OurWork() {
                             </div>
 
                             <p className="absolute bottom-32 left-6 text-white text-[1.0625rem] leading-[1.4] tracking-tighter max-w-[15.8rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                Real-time tracking and evaluation of consumer behavior, conversion paths, and brand sentiment.
+                                Built the GCC e-commerce playbook for an Indian consumer electronics brand. Set up marketplace operations on Amazon and Noon, developed the content and listing strategy, and ran performance marketing to build initial traction.
                             </p>
 
-                            <button className="w-[60px] h-[60px] group-hover:w-[140px] rounded-xl bg-[#FF5722] flex items-center justify-center hover:bg-[#E64A19] transition-all duration-300">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#161719" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                            </button>
+                            <a href="#contact" className="flex items-start group/btn">
+                                <div className="h-[60px] w-[60px] group-hover/btn:w-[160px] rounded-xl bg-[#FF5722] flex items-center transition-all duration-300 hover:bg-[#E64A19] cursor-pointer overflow-hidden">
+                                    <div className="flex items-center gap-4 px-[20px] whitespace-nowrap">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="flex-shrink-0">
+                                            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#161719" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                        </svg>
+                                        <span className="font-medium text-[#161719] opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300">
+                                            Talk to us
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </motion.div>
 
@@ -235,7 +250,7 @@ export default function OurWork() {
                         </div>
 
                         <div className="relative z-10 p-6 h-full flex flex-col justify-between">
-                            <h3 className="text-2xl font-medium text-white">Global Fulfillment</h3>
+                            <h3 className="text-2xl font-medium text-white">Performance Marketing</h3>
 
                             <div className="absolute top-6 right-6 grid grid-cols-3 gap-2 group-hover:rotate-90 transition-transform duration-300">
                                 {[...Array(9)].map((_, i) => (
@@ -247,14 +262,21 @@ export default function OurWork() {
                             </div>
 
                             <p className="absolute bottom-32 left-6 text-white text-[1.0625rem] leading-[1.4] tracking-tighter max-w-[15.8rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                Optimized logistics and distribution systems that ensure your products reach customers everywhere, fast.
+                                SEO, paid social, influencer partnerships, and in-store activations. Designed for conversion, not vanity metrics.
                             </p>
 
-                            <button className="w-[60px] h-[60px] group-hover:w-[140px] rounded-xl bg-[#FF5722] flex items-center justify-center hover:bg-[#E64A19] transition-all duration-300">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#161719" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                            </button>
+                            <a href="#contact" className="flex items-start group/btn">
+                                <div className="h-[60px] w-[60px] group-hover/btn:w-[160px] rounded-xl bg-[#FF5722] flex items-center transition-all duration-300 hover:bg-[#E64A19] cursor-pointer overflow-hidden">
+                                    <div className="flex items-center gap-4 px-[20px] whitespace-nowrap">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="flex-shrink-0">
+                                            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#161719" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                        </svg>
+                                        <span className="font-medium text-[#161719] opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300">
+                                            Talk to us
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </motion.div>
 
@@ -281,7 +303,7 @@ export default function OurWork() {
                         </div>
 
                         <div className="relative z-10 p-6 h-full flex flex-col justify-between">
-                            <h3 className="text-2xl font-medium text-white">Personalization</h3>
+                            <h3 className="text-2xl font-medium text-white">Regulatory & Compliance</h3>
 
                             <div className="absolute top-6 right-6 grid grid-cols-3 gap-2 group-hover:rotate-90 transition-transform duration-300">
                                 {[...Array(9)].map((_, i) => (
@@ -293,14 +315,21 @@ export default function OurWork() {
                             </div>
 
                             <p className="absolute bottom-32 left-6 text-white text-[1.0625rem] leading-[1.4] tracking-tighter max-w-[15.8rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                AI-driven product recommendations and content tailoring that makes every customer feel seen.
+                                Municipality registrations, product labeling, import documentation, and GCC conformity. We handle the paperwork that stops most international brands at the border.
                             </p>
 
-                            <button className="w-[60px] h-[60px] group-hover:w-[140px] rounded-xl bg-[#FF5722] flex items-center justify-center hover:bg-[#E64A19] transition-all duration-300">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#161719" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                            </button>
+                            <a href="#contact" className="flex items-start group/btn">
+                                <div className="h-[60px] w-[60px] group-hover/btn:w-[160px] rounded-xl bg-[#FF5722] flex items-center transition-all duration-300 hover:bg-[#E64A19] cursor-pointer overflow-hidden">
+                                    <div className="flex items-center gap-4 px-[20px] whitespace-nowrap">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="flex-shrink-0">
+                                            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#161719" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                        </svg>
+                                        <span className="font-medium text-[#161719] opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300">
+                                            Talk to us
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </motion.div>
                 </div>
@@ -327,7 +356,7 @@ export default function OurWork() {
                         </div>
 
                         <div className="relative z-10 p-6 h-full flex flex-col justify-between">
-                            <h3 className="text-2xl font-medium text-white">Market Expansion</h3>
+                            <h3 className="text-2xl font-medium text-white">Marketplace Operations</h3>
 
                             <div className="absolute top-6 right-6 grid grid-cols-3 gap-2 group-hover:rotate-90 transition-transform duration-300">
                                 {[...Array(9)].map((_, i) => (
@@ -339,14 +368,21 @@ export default function OurWork() {
                             </div>
 
                             <p className="absolute bottom-32 left-6 text-white text-[1.0625rem] leading-[1.4] tracking-tighter max-w-[15.8rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                Scalable frameworks for entering new territories and adapting to local consumer preferences.
+                                We don’t just list your products. We manage the full stack — catalog setup, pricing strategy, content optimization, inventory sync, and seller performance across Amazon, Noon, and Mumzworld.
                             </p>
 
-                            <button className="w-[60px] h-[60px] group-hover:w-[140px] rounded-xl bg-[#FF5722] flex items-center justify-center hover:bg-[#E64A19] transition-all duration-300">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#161719" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                            </button>
+                            <a href="#contact" className="flex items-start group/btn">
+                                <div className="h-[60px] w-[60px] group-hover/btn:w-[160px] rounded-xl bg-[#FF5722] flex items-center transition-all duration-300 hover:bg-[#E64A19] cursor-pointer overflow-hidden">
+                                    <div className="flex items-center gap-4 px-[20px] whitespace-nowrap">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="flex-shrink-0">
+                                            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#161719" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                        </svg>
+                                        <span className="font-medium text-[#161719] opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300">
+                                            Talk to us
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </motion.div>
 
@@ -410,30 +446,27 @@ export default function OurWork() {
                     <motion.div className="relative rounded-2xl bg-[#1C1D20] h-[380px] p-10 flex flex-col justify-between">
                         <div>
                             <h3 className="text-4xl font-medium text-white">
-                                Brand Engine <span className="text-white/40">2.0</span>
+                                Raha Launchpad
                             </h3>
 
                             <p className="text-[#FF5722] mt-4">
-                                Early beta access now available.
+                                Our end-to-end brand launch system.
                             </p>
 
                             <div className="mt-8">
-                                <span className="text-white/40 text-sm">
-                                    Scaling Progress
-                                </span>
-                                <div className="text-6xl font-medium text-white mt-4">
-                                    84.7%
-                                </div>
+                                <p className="text-[#888891] text-lg leading-relaxed">
+                                    From regulatory clearance to first sale, compressed into a single managed process.
+                                </p>
                             </div>
                         </div>
 
-                        <div className="flex justify-between items-center">
-                            <span className="text-white/60">Talk to us</span>
+                        <a href="#contact" className="flex justify-between items-center group/btn">
+                            <span className="text-white/60 group-hover/btn:text-[#FF5722] transition-colors">Talk to us</span>
 
-                            <button className="w-[60px] h-[60px] rounded-xl bg-[#FF5722] flex items-center justify-center">
-                                →
-                            </button>
-                        </div>
+                            <div className="w-[60px] h-[60px] rounded-xl bg-[#FF5722] group-hover/btn:bg-[#E64A19] flex items-center justify-center cursor-pointer transition-colors">
+                                <span className="text-2xl text-[#161719]">→</span>
+                            </div>
+                        </a>
                     </motion.div>
 
                 </div>

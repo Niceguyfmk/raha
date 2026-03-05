@@ -154,7 +154,7 @@ export default function FooterContact() {
                                 <span className="text-[22px] font-medium">Digital</span>
                             </motion.div>
                             <motion.a
-                                href="mailto:hello@rahapartners.com"
+                                href="mailto:zeeshan@rahapartners.com"
                                 className="text-[18px] text-[#FA6F45] hover:underline"
                                 variants={fadeInUp}
                             >

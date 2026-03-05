@@ -84,10 +84,10 @@ export default function Hero() {
                         {/* Left Side - Subtitle */}
                         <div className="lg:col-span-3 flex items-start pt-4">
                             <div className="hero-subtitle">
-                                <p className="text-white text-sm md:text-base leading-relaxed font-medium uppercase tracking-[0.2em]">
-                                    Your brand.
+                                <p className="text-white text-sm md:text-base leading-tight font-medium">
+                                    Your <span className="italic">Brand.</span>
                                     <br />
-                                    Our market.
+                                    Our Execution.
                                 </p>
                             </div>
                         </div>
@@ -95,7 +95,7 @@ export default function Hero() {
                         {/* Center - Main Heading */}
                         <div className="lg:col-span-9">
                             <div className="space-y-1 md:space-y-2 overflow-hidden">
-                                {['We take brands into', 'the markets they', 'can’t crack alone'].map((line, i) => (
+                                {['We turn ideas', 'into revenue'].map((line, i) => (
                                     <div key={i} className="overflow-hidden">
                                         <h1 className="hero-text-line
                                             text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl
@@ -117,13 +117,13 @@ export default function Hero() {
 
                                         {/* Left Text */}
                                         <div className="max-w-md">
-                                            <p className="text-[#888891] text-[1.0625rem] leading-[1.5]">
-                                                Distribution, marketing, and e-commerce operations across the GCC — for brands that are ready to scale but need the right partner on the ground.
+                                            <p className="text-[#C0C0C0] text-[1.0625rem] leading-[1.5]">
+                                                Distribution, marketing, and e-commerce operations for brands that are ready to scale but need the right partner on the ground.
                                             </p>
                                         </div>
 
                                         {/* Divider */}
-                                        <div className="hidden lg:block h-px w-16 bg-white/15" />
+                                        <div className="hidden lg:block h-px w-24 bg-white/15" />
 
                                         {/* Button */}
                                         <motion.a
@@ -135,7 +135,7 @@ export default function Hero() {
                                             className="inline-flex items-center gap-3
                                              bg-[#FA6F45] hover:bg-[#E65C35]
                                              text-[#161719]
-                                             px-7 py-4
+                                             px-10 py-4
                                              rounded-xl
                                              text-base font-medium
                                              transition-all duration-300"
