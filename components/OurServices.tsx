@@ -10,11 +10,11 @@ export default function OurServices() {
         <section id="services" className="relative bg-[#161719] pt-24 pb-48 px-6 overflow-hidden border-t border-white/5">
             <div className="max-w-[1400px] mx-auto">
                 <SectionHeader
-                    number="002"
+                    number="003"
                     brandName="Raha x Brands"
-                    title="Our Services"
-                    statement="Strategic solutions for building modern consumer digital platforms."
-                    description="Future-proof experiences that scale seamlessly."
+                    title="Everything you need to win in the GCC"
+                    statement="Operational muscle. Market expertise. Digital infrastructure."
+                    description="We turn your brand into a local market leader with end-to-end execution."
                 />
 
                 <ServicesGrid />

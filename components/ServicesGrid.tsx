@@ -56,26 +56,26 @@ const GrowIcon = () => (
 const services = [
     {
         id: '01',
-        title: 'Marketing',
-        shortTitle: 'Digital & Offline',
-        description: 'End-to-end marketing including SEO, Gen AI search optimization, influencer & affiliate campaigns, retail analytics, and in-store activations to boost brand visibility.',
-        icon: <WavesIcon />,
-        arrow: <ArrowUpRight />
-    },
-    {
-        id: '02',
-        title: 'Ecommerce',
-        shortTitle: 'D2C & Platforms',
-        description: 'Comprehensive Shopify builds, marketplace operations (Amazon, Noon, Trendyol), performance marketing, and seamless OMS/WMS/3PL integrations to maximize revenue.',
+        title: 'Marketplace & Retail',
+        shortTitle: 'Amazon, Noon & Retail',
+        description: 'Comprehensive setup and management across Amazon, Noon, and local retail partners. We handle listing, pricing, and fulfillment to maximize your reach.',
         icon: <BuildIcon />,
         arrow: <ArrowUpRight />
     },
     {
-        id: '03',
-        title: 'Distribution',
-        shortTitle: 'GCC, India, SEA',
-        description: 'Strategic market expansion with offline partnerships, retailer onboarding, customs management, and localized media PR to establish your presence in new regions.',
+        id: '02',
+        title: 'Regulatory & Distro',
+        shortTitle: 'Clearance & Logistics',
+        description: 'End-to-end management of municipality approvals, labeling, warehousing, and 3PL integrations. We make the GCC feel like your home market.',
         icon: <GrowIcon />,
+        arrow: <ArrowUpRight />
+    },
+    {
+        id: '03',
+        title: 'Growth & Local PR',
+        shortTitle: 'Performance & PR',
+        description: 'Data-driven performance marketing, influencer strategy, and localized PR campaigns designed to build brand trust and drive rapid conversion.',
+        icon: <WavesIcon />,
         arrow: <ArrowDown />
     }
 ];
@@ -358,16 +358,16 @@ export default function ServicesGrid() {
             >
                 <div> {/* Wrapper for top content to separate from Footer and Grid */}
                     <div className="flex justify-between items-center text-white/40 text-sm tracking-wide border-b border-white/10 pb-6 mb-4 xl:mb-8">
-                        <span>Core Services</span>
+                        <span>Capabilities</span>
                         <span>3/3</span>
                     </div>
 
                     <div className="space-y-4 xl:space-y-6 mb-8">
                         <h2 className="text-3xl md:text-[48px] font-medium text-[#c0c0c0] leading-[1.1] tracking-[-0.05em] text-balance">
-                            Built to achieve your business objectives
+                            Everything you need to win in the GCC
                         </h2>
                         <p className="text-[#888891] text-md leading-relaxed max-w-md">
-                            We drive lead generation, increase revenue, and boost brand visibility across digital, ecommerce, and distribution channels.
+                            We provide the operational muscle, market expertise, and digital infrastructure to turn your brand into a local market leader.
                         </p>
                     </div>
                 </div>
@@ -381,7 +381,7 @@ export default function ServicesGrid() {
                             <div key={i} className={`w-1 h-1 ${i % 2 === 0 ? 'bg-[#FF5722]' : 'bg-white/20'}`} />
                         ))}
                     </div>
-                    <span className="text-sm font-medium tracking-wide">Marketing, Ecommerce, and Distribution at scale.</span>
+                    <span className="text-sm font-medium tracking-wide">Marketplace, Logistics, and Growth at scale.</span>
                 </div>
             </motion.div>
 

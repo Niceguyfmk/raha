@@ -33,9 +33,9 @@ export default function Home() {
         <Navigation />
         <main>
           <Hero />
+          <Process />
           <OurWork />
           <OurServices />
-          <Process />
           <Team />
           {/* Footer Experience: A professional slide-over reveal */}
           <section className="relative bg-[#161719]">

@@ -8,23 +8,23 @@ import { FaArrowRight } from 'react-icons/fa';
 const processes = [
     {
         id: '01',
-        title: 'Deep Discovery',
-        description: 'We dive into consumer behavior and market data to identify untapped opportunities for your brand.',
+        title: 'Bespoke distribution with a focus on GCC',
+        description: 'Building a tailored distribution strategy across the GCC, securing the right retail partners, warehousing, and logistics to get your product into market efficiently.',
     },
     {
         id: '02',
-        title: 'Strategic Build',
-        description: 'Design and engineering concentrated on lead generation and high-conversion user journeys.',
+        title: 'Ecommerce, Direct-to-Customer and Digital Presence',
+        description: 'Launching and optimizing your digital storefront across Amazon, Noon, and Shopify while establishing a strong brand-led direct-to-consumer presence.',
     },
     {
         id: '03',
-        title: 'Multi-Channel Launch',
-        description: 'Deploying across D2C, marketplaces, and offline retail for maximum market penetration.',
+        title: 'Digital Marketing and Optimization',
+        description: 'Driving growth through localized performance marketing, influencer partnerships, and continuous optimization of customer acquisition and conversion.',
     },
     {
         id: '04',
-        title: 'Data-Driven Growth',
-        description: 'Continuous optimization and feedback loops to maximize retention and customer lifetime value.',
+        title: 'Market Intelligence, Network & Regulation',
+        description: 'Navigating GCC regulatory requirements, municipality registrations, and compliant labeling while leveraging local market intelligence and partner networks.',
     }
 ];
 
@@ -33,11 +33,11 @@ export default function Process() {
         <section id="process" className="relative bg-[#161719] py-48 px-6 overflow-hidden border-t border-white/5">
             <div className="max-w-[1400px] mx-auto">
                 <SectionHeader
-                    number="003"
+                    number="001"
                     brandName="Raha x Strategy"
-                    title="Our Process"
-                    statement="From behavior analysis to global scale — how we drive results."
-                    description="A systematic methodology designed to achieve your business objectives."
+                    title="The Raha Playbook"
+                    statement="From outside the GCC to dominant within it."
+                    description="Our systematic approach to taking a brand into the market and scaling it fast."
                 />
 
                 <div className="mt-32 grid grid-cols-1 lg:grid-cols-4 gap-1">

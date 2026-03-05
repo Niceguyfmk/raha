@@ -126,11 +126,11 @@ export default function FooterContact() {
                             viewport={{ once: true }}
                         >
                             {[
-                                'Consumer-first growth engines',
-                                'Experience-driven platforms',
-                                'High-volume commerce setup',
-                                'Market-ready digital brands',
-                                'End-to-end customer support',
+                                'Regulatory & Labeling',
+                                'Marketplace Operations',
+                                'Distribution & Retail',
+                                'Performance Marketing',
+                                'GCC Market Entry',
                             ].map((item, i) => (
                                 <motion.li
                                     key={i}
@@ -154,11 +154,11 @@ export default function FooterContact() {
                                 <span className="text-[22px] font-medium">Digital</span>
                             </motion.div>
                             <motion.a
-                                href="mailto:faiz@rahapartners.com"
+                                href="mailto:zeeshan@rahapartners.com"
                                 className="text-[18px] text-[#FA6F45] hover:underline"
                                 variants={fadeInUp}
                             >
-                                support@rahapartners.com
+                                hello@rahapartners.com
                             </motion.a>
                         </motion.div>
 
