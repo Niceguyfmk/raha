@@ -127,7 +127,9 @@ export default function Hero() {
 
                                         {/* Button */}
                                         <motion.a
-                                            href="#contact"
+                                            href="https://calendar.app.google/gWSCEHNpq7X7drDC6"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                             whileHover={{ scale: 1.02 }}
                                             whileTap={{ scale: 0.98 }}
                                             className="inline-flex items-center gap-3
@@ -153,21 +155,22 @@ export default function Hero() {
 
 
                             {/* Stats Section */}
-                            <div className="mt-16 md:mt-24 flex flex-wrap gap-12 md:gap-16">
+                            <div className="mt-16 md:mt-24 flex flex-wrap gap-12 md:gap-16 text-balance">
                                 <div className="hero-stats">
                                     <div className="flex items-start gap-2 mb-2">
-                                        <span className="text-4xl md:text-5xl font-light text-white">6</span>
+                                        <span className="text-4xl md:text-5xl font-light text-white">15</span>
                                         <span className="text-2xl md:text-3xl font-light text-[#FF5722] mt-1">+</span>
                                     </div>
-                                    <div className="text-white font-medium text-sm mb-1">Brands Launched</div>
-                                    <div className="text-white/50 text-xs">In the GCC market</div>
+                                    <div className="text-white font-medium text-sm mb-1">Retail & Marketplace Partners</div>
+                                    <div className="text-white/50 text-xs">From Carrefour to Amazon</div>
                                 </div>
 
                                 <div className="hero-stats">
                                     <div className="flex items-start gap-2 mb-2">
-                                        <span className="text-4xl md:text-5xl font-light text-white">4</span>
+                                        <span className="text-4xl md:text-5xl font-light text-white">10</span>
+                                        <span className="text-2xl md:text-3xl font-light text-[#FF5722] mt-1">+</span>
                                     </div>
-                                    <div className="text-white font-medium text-sm mb-1">Countries Covered</div>
+                                    <div className="text-white font-medium text-sm mb-1">Countries</div>
                                     <div className="text-white/50 text-xs">Middle East region</div>
                                 </div>
 
@@ -176,8 +179,8 @@ export default function Hero() {
                                         <span className="text-4xl md:text-5xl font-light text-white">90</span>
                                         <span className="text-lg md:text-xl font-light text-[#FF5722] mt-3 ml-1 uppercase">Days</span>
                                     </div>
-                                    <div className="text-white font-medium text-sm mb-1">Average Time</div>
-                                    <div className="text-white/50 text-xs">To first sale</div>
+                                    <div className="text-white font-medium text-sm mb-1">Concept to First Sale</div>
+                                    <div className="text-white/50 text-xs text-balance">Average launch timeline</div>
                                 </div>
                             </div>
                         </div>
