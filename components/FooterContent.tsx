@@ -27,7 +27,7 @@ export default function FooterContent() {
                                 <path id="footer-text-path" d={textPath} fill="transparent" />
                                 <text className="text-[12px] uppercase font-medium fill-[#c0c0c0] tracking-widest">
                                     <textPath href="#footer-text-path" startOffset="0">
-                                        we build brands, you lead markets —&nbsp;
+                                        distribution. marketing. GCC market entry —&nbsp;
                                     </textPath>
                                 </text>
                             </svg>
@@ -36,7 +36,7 @@ export default function FooterContent() {
                     </div>
 
                     <h5 className="text-[28px] md:text-[34px] font-medium tracking-[-0.04em] text-[#888891] leading-tight text-balance">
-                        The smarter way to build, run and scale your brand.
+                        The operator-led partner for brands winning in the GCC.
                     </h5>
                 </div>
 
@@ -140,7 +140,7 @@ export default function FooterContent() {
                     <div className="text-[#888891] text-sm text-center md:text-left">
                         <p className="mb-2">2025 © Raha Partners. All rights reserved.</p>
                         <p className="max-w-md text-[13px] leading-relaxed">
-                            <strong className="text-[#c0c0c0]">Raha Partners</strong>, registered in Dubai, specializes in disruptive B2C brands and consumer digital platforms.
+                            <strong className="text-[#c0c0c0]">Raha Partners</strong>, registered in Dubai, specializes in GCC market entry, distribution, and marketplace operations for global consumer brands.
                         </p>
                     </div>
 

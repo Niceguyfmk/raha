@@ -8,7 +8,7 @@ import AnimatedCounter from './AnimatedCounter';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const REVEAL_TEXT = "We build the experiences, platforms, and growth engines that connect brands with millions of customers — making every interaction meaningful, effortless, and scalable.";
+const REVEAL_TEXT = "We handle distribution, marketplace operations, and marketing execution so brands can focus on building great products. Dubai-based. GCC-focused. Operator-led.";
 
 export default function Hero() {
     const containerRef = useRef<HTMLDivElement>(null);
@@ -84,10 +84,10 @@ export default function Hero() {
                         {/* Left Side - Subtitle */}
                         <div className="lg:col-span-3 flex items-start pt-4">
                             <div className="hero-subtitle">
-                                <p className="text-white text-sm md:text-base leading-relaxed">
-                                    You in<span className="italic">spire</span>,
+                                <p className="text-white text-sm md:text-base leading-relaxed font-medium uppercase tracking-[0.2em]">
+                                    Your brand.
                                     <br />
-                                    we deliver.
+                                    Our market.
                                 </p>
                             </div>
                         </div>
@@ -95,9 +95,9 @@ export default function Hero() {
                         {/* Center - Main Heading */}
                         <div className="lg:col-span-9">
                             <div className="space-y-1 md:space-y-2 overflow-hidden">
-                                {['— We craft the B2C', 'experiences your', 'customers wish they', 'had'].map((line, i) => (
+                                {['We take brands into', 'the markets they', 'can’t crack alone'].map((line, i) => (
                                     <div key={i} className="overflow-hidden">
-                                        <h1 className="  hero-text-line
+                                        <h1 className="hero-text-line
                                             text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl
                                             font-semibold
                                             tracking-[-0.01em]
@@ -111,18 +111,14 @@ export default function Hero() {
                             </div>
 
                             {/* CTA Section */}
-                            <div className="mt-20">
+                            <div className="mt-20 hero-cta">
                                 <div className="max-w-2xl flex justify-left">
                                     <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
 
                                         {/* Left Text */}
                                         <div className="max-w-md">
-                                            <h2 className="text-[#C0C0C0] text-3xl font-medium tracking-[-0.02em]">
-                                                Scale your community
-                                            </h2>
-
-                                            <p className="mt-3 text-[#888891] text-[1.0625rem] leading-[1.5]">
-                                                Explore how we transform consumer brands into market leaders.
+                                            <p className="text-[#888891] text-[1.0625rem] leading-[1.5]">
+                                                Distribution, marketing, and e-commerce operations across the GCC — for brands that are ready to scale but need the right partner on the ground.
                                             </p>
                                         </div>
 
@@ -148,7 +144,7 @@ export default function Hero() {
                                                 <path d="M2 12L12 17L22 12" stroke="#161719" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                             </svg>
 
-                                            Start Growing
+                                            Let’s Talk
                                         </motion.a>
 
                                     </div>
@@ -160,21 +156,28 @@ export default function Hero() {
                             <div className="mt-16 md:mt-24 flex flex-wrap gap-12 md:gap-16">
                                 <div className="hero-stats">
                                     <div className="flex items-start gap-2 mb-2">
-                                        <AnimatedCounter end={40} duration={2.5} className="text-4xl md:text-5xl font-light text-white" />
-                                        <span className="text-2xl md:text-3xl font-light text-[#FF5722] mt-1">%</span>
+                                        <span className="text-4xl md:text-5xl font-light text-white">6</span>
+                                        <span className="text-2xl md:text-3xl font-light text-[#FF5722] mt-1">+</span>
                                     </div>
-                                    <div className="text-white font-medium text-sm mb-1">Retention Rate</div>
-                                    <div className="text-white/50 text-xs">Returning customers</div>
+                                    <div className="text-white font-medium text-sm mb-1">Brands Launched</div>
+                                    <div className="text-white/50 text-xs">In the GCC market</div>
                                 </div>
 
                                 <div className="hero-stats">
                                     <div className="flex items-start gap-2 mb-2">
-                                        <span className="text-4xl md:text-5xl font-light text-[#FF5722]">+</span>
-                                        <AnimatedCounter end={300} duration={2.5} className="text-4xl md:text-5xl font-light text-white" />
-                                        <span className="text-2xl md:text-3xl font-light text-[#FF5722] mt-1">%</span>
+                                        <span className="text-4xl md:text-5xl font-light text-white">4</span>
                                     </div>
-                                    <div className="text-white font-medium text-sm mb-1">Active Users</div>
-                                    <div className="text-white/50 text-xs">Quarterly growth</div>
+                                    <div className="text-white font-medium text-sm mb-1">Countries Covered</div>
+                                    <div className="text-white/50 text-xs">Middle East region</div>
+                                </div>
+
+                                <div className="hero-stats">
+                                    <div className="flex items-start gap-2 mb-2">
+                                        <span className="text-4xl md:text-5xl font-light text-white">90</span>
+                                        <span className="text-lg md:text-xl font-light text-[#FF5722] mt-3 ml-1 uppercase">Days</span>
+                                    </div>
+                                    <div className="text-white font-medium text-sm mb-1">Average Time</div>
+                                    <div className="text-white/50 text-xs">To first sale</div>
                                 </div>
                             </div>
                         </div>
@@ -191,10 +194,10 @@ export default function Hero() {
                 </div>
 
                 <div className="max-w-[1200px] mx-auto w-full z-10">
-                    <p ref={textRef} className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.25] tracking-[-0.015em] text-white select-none">
+                    <p ref={textRef} className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.25] tracking-[-0.015em] text-white select-none">
                         {REVEAL_TEXT.split(' ').map((word, i) => (
                             <span key={i} className="inline-block">
-                                <span className="word text-white/30 transition-colors duration-300">
+                                <span className="word text-white/20 transition-colors duration-300">
                                     {word}
                                 </span>
                                 <span className="inline-block">&nbsp;</span>

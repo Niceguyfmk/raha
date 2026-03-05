@@ -8,23 +8,23 @@ import { FaArrowRight } from 'react-icons/fa';
 const processes = [
     {
         id: '01',
-        title: 'Deep Discovery',
-        description: 'We dive into consumer behavior and market data to identify untapped opportunities for your brand.',
+        title: 'Regulatory & Compliance Ready',
+        description: 'We handle everything from municipality registrations to GCC-compliant labeling and import documentation.',
     },
     {
         id: '02',
-        title: 'Strategic Build',
-        description: 'Design and engineering concentrated on lead generation and high-conversion user journeys.',
+        title: 'Distribution & Ops Set-up',
+        description: 'Securing warehousing, retail partner onboarding, and physical distribution infrastructure.',
     },
     {
         id: '03',
-        title: 'Multi-Channel Launch',
-        description: 'Deploying across D2C, marketplaces, and offline retail for maximum market penetration.',
+        title: 'Marketplace & D2C Launch',
+        description: 'Going live on Amazon and Noon while building out your dedicated Shopify-led brand experience.',
     },
     {
         id: '04',
-        title: 'Data-Driven Growth',
-        description: 'Continuous optimization and feedback loops to maximize retention and customer lifetime value.',
+        title: 'Growth & Scale Engine',
+        description: 'Accelerating sales with localized performance marketing, influencers, and retail-level optimization.',
     }
 ];
 
@@ -35,9 +35,9 @@ export default function Process() {
                 <SectionHeader
                     number="003"
                     brandName="Raha x Strategy"
-                    title="Our Process"
-                    statement="From behavior analysis to global scale — how we drive results."
-                    description="A systematic methodology designed to achieve your business objectives."
+                    title="The Raha Playbook"
+                    statement="From outside the GCC to dominant within it."
+                    description="Our systematic approach to taking a brand into the market and scaling it fast."
                 />
 
                 <div className="mt-32 grid grid-cols-1 lg:grid-cols-4 gap-1">

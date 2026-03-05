@@ -1,6 +1,6 @@
 'use client';
-import React from 'react';
 import { motion } from 'framer-motion';
+import { FaArrowRight } from 'react-icons/fa';
 
 import SectionHeader from './SectionHeader';
 
@@ -63,16 +63,16 @@ export default function OurWork() {
                 <SectionHeader
                     number="001"
                     brandName="Raha Partners"
-                    title="Our Work"
-                    statement="Transforming consumer behavior into loyal communities that drive sustainable growth every day."
-                    description="Every solution is designed to solve real problems, delivering practical value over mere aesthetics."
+                    title="Brands we’ve taken to market"
+                    statement="Real work. Real results."
+                    description="Every engagement below started with a brand that needed GCC market access and ended with products on shelves and screens."
                 />
 
                 {/* Bento Grid Layout */}
                 <div className="grid grid-cols-1 lg:grid-cols-3 auto-rows-[380px] gap-1 mb-1">
                     {/* Top Row: 2 large cards */}
                     <div className="lg:col-span-2 lg:row-span-2">
-                        {/* Digital Commerce - Large Left Card */}
+                        {/* Case Study 1 */}
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -80,35 +80,26 @@ export default function OurWork() {
                             viewport={{ once: true }}
                             className="relative overflow-hidden rounded-3xl bg-[#2a2a2c] h-full group"
                         >
-                            {/* Image Background */}
                             <div className="absolute inset-0 z-0 overflow-hidden">
                                 <img
                                     src="/images/training.avif"
-                                    alt="Training"
+                                    alt="Electronics"
                                     className="w-full h-full object-cover opacity-90 grayscale transition-transform duration-500 group-hover:scale-110"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
                             </div>
 
-                            {/* Content */}
                             <div className="relative z-10 p-8 h-full flex flex-col justify-between">
-                                {/* Top: Title */}
                                 <div>
-                                    <p className="text-sm text-white/60 mb-2">Digital Commerce & Marketplaces</p>
-                                    <h3 className="text-3xl font-medium text-white">Direct-to-Consumer Growth</h3>
+                                    <p className="text-sm text-white/60 mb-2">Distribution + E-commerce</p>
+                                    <h3 className="text-3xl font-medium text-white max-w-lg leading-tight">Premium Electronics — UAE Market Entry</h3>
                                 </div>
 
-                                {/* Top Right: Grid Icon */}
-                                <div className="absolute top-8 right-8 grid grid-cols-3 gap-2 group-hover:rotate-90 transition-transform duration-300">
-                                    {[...Array(9)].map((_, i) => (
-                                        <div
-                                            key={i}
-                                            className="w-[4px] h-[4px] rounded-sm bg-[#E3DBD8]/70"
-                                        />
-                                    ))}
+                                <div className="max-w-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <p className="text-white/80 mb-4">Took a European premium appliance brand from zero GCC presence to full marketplace and retail coverage across the UAE. Built the distribution infrastructure and secured retail partnerships.</p>
+                                    <div className="text-[#FF5722] font-medium">Result: Live across 5+ retail and online channels within 120 days</div>
                                 </div>
 
-                                {/* Bottom Left: Arrow Button */}
                                 <button className="w-[60px] h-[60px] group-hover:w-[140px] rounded-xl bg-[#FF5722] flex items-center justify-center hover:bg-[#E64A19] transition-all duration-300">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                                         <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#161719" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -118,7 +109,7 @@ export default function OurWork() {
                         </motion.div>
                     </div>
 
-                    {/* Omnichannel Scale - Large Right Card (Orange) */}
+                    {/* Case Study 2 */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -126,81 +117,31 @@ export default function OurWork() {
                         viewport={{ once: true }}
                         className="relative overflow-hidden rounded-3xl lg:row-span-2 bg-[#FF5722] h-full group"
                     >
-                        {/* Content */}
                         <div className="relative z-10 p-8 h-full flex flex-col justify-between">
-
-                            {/* Top Section */}
                             <div>
-                                <div className="flex justify-between items-start mb-4">
-                                    <p className="text-sm text-white/80">Product Lineup</p>
-                                    <span className="text-xs text-white/60">5/8</span>
+                                <p className="text-sm text-white/80 mb-2">Market Entry + Compliance</p>
+                                <h3 className="text-4xl font-medium text-white mb-6 leading-tight">Thai Consumer Brand — GCC Regulatory & Launch</h3>
+                                <p className="text-white/90 text-base leading-relaxed mb-8">Managed end-to-end market entry including regulatory clearance, municipality approvals, and labeling compliance.</p>
+                                <div className="bg-black/10 p-6 rounded-xl border border-white/10">
+                                    <div className="text-white/60 text-xs uppercase tracking-widest mb-1">Impact</div>
+                                    <div className="text-white font-medium">Regulatory clearance secured. Product market-ready in UAE.</div>
                                 </div>
-
-                                <h3 className="text-5xl font-medium text-white mb-6">
-                                    Omnichannel
-                                </h3>
-
-                                <p className="text-white/90 text-base leading-relaxed max-w-sm">
-                                    Seamless customer journeys that connect digital engagement with real-world conversion.
-                                </p>
-
-                                {/* Animated Dot Section */}
-                                <div className="relative mt-12 flex justify-center">
-
-                                    <div className="relative w-full max-w-[420px] h-[220px] sm:h-[240px] lg:h-[272px] overflow-hidden">
-
-                                        {/* Layer 1 */}
-                                        <motion.div
-                                            className="absolute inset-0 grid grid-cols-6 sm:grid-cols-7 lg:grid-cols-8 gap-6 place-items-center"
-                                            animate={{ y: [0, 14, 0] }}
-                                            transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }}
-                                        >
-                                            {[...Array(48)].map((_, i) => (
-                                                <div
-                                                    key={`base-${i}`}
-                                                    className="w-[6px] h-[6px] rounded-full bg-white/40"
-                                                />
-                                            ))}
-                                        </motion.div>
-
-                                        {/* Layer 2 (reverse drift) */}
-                                        <motion.div
-                                            className="absolute inset-0 grid grid-cols-6 sm:grid-cols-7 lg:grid-cols-8 gap-6 place-items-center rotate-180"
-                                            animate={{ y: [0, -18, 0] }}
-                                            transition={{ duration: 11, repeat: Infinity, ease: "easeInOut" }}
-                                        >
-                                            {[...Array(48)].map((_, i) => (
-                                                <div
-                                                    key={`reverse-${i}`}
-                                                    className="w-[6px] h-[6px] rounded-full bg-white/25"
-                                                />
-                                            ))}
-                                        </motion.div>
-
-                                    </div>
-                                </div>
-
                             </div>
 
-                            {/* Bottom Section */}
                             <div className="flex items-center gap-2 text-white/90">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                                     <circle cx="10" cy="10" r="8" stroke="white" strokeWidth="1.5" fill="none" />
                                     <circle cx="10" cy="10" r="3" fill="white" />
                                 </svg>
-                                <span className="text-sm font-medium">
-                                    Consumer First Experience
-                                </span>
+                                <span className="text-sm font-medium">Regulatory & Compliance Mastery</span>
                             </div>
-
                         </div>
                     </motion.div>
-
                 </div>
 
-                {/* Middle Row: 3 equal cards */}
+                {/* Middle Row: Case Study 3 + 2 Capabilities */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-1 mb-1">
-                    {/* Audience Analytics */}
+                    {/* Case Study 3 */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -209,265 +150,91 @@ export default function OurWork() {
                         className="relative overflow-hidden rounded-lg bg-[#2a2a2c] h-[380px] group"
                     >
                         <div className="absolute inset-0 z-0">
-                            <video
-                                autoPlay
-                                loop
-                                muted
-                                playsInline
-                                className="w-full h-full object-cover opacity-70 grayscale"
-                            >
+                            <video autoPlay loop muted playsInline className="w-full h-full object-cover opacity-70 grayscale">
                                 <source src="/videos/training_vid2.mp4" type="video/mp4" />
                             </video>
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
                         </div>
-
                         <div className="relative z-10 p-6 h-full flex flex-col justify-between">
-                            <h3 className="text-2xl font-medium text-white">Audience Analytics</h3>
-
-                            <div className="absolute top-6 right-6 grid grid-cols-3 gap-2 group-hover:rotate-90 transition-transform duration-300">
-                                {[...Array(9)].map((_, i) => (
-                                    <div
-                                        key={i}
-                                        className="w-[4px] h-[4px] rounded-sm bg-[#E3DBD8]/70"
-                                    />
-                                ))}
+                            <div>
+                                <p className="text-xs text-white/40 mb-1">E-commerce + Marketing</p>
+                                <h3 className="text-2xl font-medium text-white">Indian Electronics Brand — GCC Scale</h3>
                             </div>
-
-                            <p className="absolute bottom-32 left-6 text-white text-[1.0625rem] leading-[1.4] tracking-tighter max-w-[15.8rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                Real-time tracking and evaluation of consumer behavior, conversion paths, and brand sentiment.
+                            <p className="text-white/70 text-sm leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                Built the GCC e-commerce playbook, set up marketplace operations on Amazon and Noon, and ran performance marketing to establish traction.
+                                <br /><br />
+                                <span className="text-[#FF5722]">Result: Full marketplace presence established across 3 platforms</span>
                             </p>
-
-                            <button className="w-[60px] h-[60px] group-hover:w-[140px] rounded-xl bg-[#FF5722] flex items-center justify-center hover:bg-[#E64A19] transition-all duration-300">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#161719" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
+                            <button className="w-12 h-12 rounded-xl bg-[#FF5722] flex items-center justify-center">
+                                <FaArrowRight className="-rotate-45" />
                             </button>
                         </div>
                     </motion.div>
 
-
-                    {/* Global Fulfillment */}
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, delay: 0.3 }}
-                        viewport={{ once: true }}
-                        className="relative overflow-hidden rounded-lg bg-[#2a2a2c] h-[380px] group"
+                    {/* Capability 1: Marketplace Operations */}
+                    <Card
+                        title="Marketplace Operations"
+                        subtitle="E-commerce"
+                        className="rounded-lg h-[380px]"
                     >
-                        {/* Image Background */}
-                        <div className="absolute inset-0 z-0 overflow-hidden">
-                            <img
-                                src="/images/prediction.avif"
-                                alt="Prediction"
-                                className="w-full h-full object-cover opacity-70 grayscale transition-transform duration-500 group-hover:scale-110"
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
-                        </div>
+                        We don’t just list your products. We manage the full stack — catalog setup, pricing strategy, content optimization, and performance across Amazon, Noon, and Mumzworld.
+                    </Card>
 
-                        <div className="relative z-10 p-6 h-full flex flex-col justify-between">
-                            <h3 className="text-2xl font-medium text-white">Global Fulfillment</h3>
-
-                            <div className="absolute top-6 right-6 grid grid-cols-3 gap-2 group-hover:rotate-90 transition-transform duration-300">
-                                {[...Array(9)].map((_, i) => (
-                                    <div
-                                        key={i}
-                                        className="w-[4px] h-[4px] rounded-sm bg-[#E3DBD8]/70"
-                                    />
-                                ))}
-                            </div>
-
-                            <p className="absolute bottom-32 left-6 text-white text-[1.0625rem] leading-[1.4] tracking-tighter max-w-[15.8rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                Optimized logistics and distribution systems that ensure your products reach customers everywhere, fast.
-                            </p>
-
-                            <button className="w-[60px] h-[60px] group-hover:w-[140px] rounded-xl bg-[#FF5722] flex items-center justify-center hover:bg-[#E64A19] transition-all duration-300">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#161719" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                            </button>
-                        </div>
-                    </motion.div>
-
-                    {/* Personalization */}
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, delay: 0.4 }}
-                        viewport={{ once: true }}
-                        className="relative overflow-hidden rounded-lg bg-[#2a2a2c] h-[380px] group"
+                    {/* Capability 2: Distribution & Retail */}
+                    <Card
+                        title="Distribution & Retail"
+                        subtitle="Logistics"
+                        videoSrc="/videos/stableworks_vid3.mp4"
+                        className="rounded-lg h-[380px]"
                     >
-                        {/* Video Background */}
-                        <div className="absolute inset-0 z-0">
-                            <video
-                                autoPlay
-                                loop
-                                muted
-                                playsInline
-                                className="w-full h-full object-cover opacity-70 grayscale"
-                            >
-                                <source src="/videos/stableworks_vid3.mp4" type="video/mp4" />
-                            </video>
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
-                        </div>
-
-                        <div className="relative z-10 p-6 h-full flex flex-col justify-between">
-                            <h3 className="text-2xl font-medium text-white">Personalization</h3>
-
-                            <div className="absolute top-6 right-6 grid grid-cols-3 gap-2 group-hover:rotate-90 transition-transform duration-300">
-                                {[...Array(9)].map((_, i) => (
-                                    <div
-                                        key={i}
-                                        className="w-[4px] h-[4px] rounded-sm bg-[#E3DBD8]/70"
-                                    />
-                                ))}
-                            </div>
-
-                            <p className="absolute bottom-32 left-6 text-white text-[1.0625rem] leading-[1.4] tracking-tighter max-w-[15.8rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                AI-driven product recommendations and content tailoring that makes every customer feel seen.
-                            </p>
-
-                            <button className="w-[60px] h-[60px] group-hover:w-[140px] rounded-xl bg-[#FF5722] flex items-center justify-center hover:bg-[#E64A19] transition-all duration-300">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#161719" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                            </button>
-                        </div>
-                    </motion.div>
+                        Warehousing, retail partner onboarding, and physical distribution across UAE and GCC. We have the relationships to get your product on shelves.
+                    </Card>
                 </div>
 
-                {/* Bottom Row: 3 equal cards, cta middle */}
+                {/* Bottom Row: 4 Capabilities */}
+                <div className="grid grid-cols-1 lg:grid-cols-4 gap-1 mb-1">
+                    <Card title="Regulatory & Compliance" subtitle="Market Entry" className="rounded-lg h-[380px]">
+                        Municipality registrations, labeling, import documentation, and GCC conformity. We handle the paperwork that stops most brands at the border.
+                    </Card>
+                    <Card title="Performance Marketing" subtitle="Growth" className="rounded-lg h-[380px]">
+                        SEO, paid social, influencer partnerships, and in-store activations. Designed for conversion, not vanity metrics.
+                    </Card>
+                    <Card title="D2C & Shopify" subtitle="Experience" className="rounded-lg h-[380px]">
+                        Standalone e-commerce builds for brands that want to own their customer relationship. From Shopify setup to CRM integration.
+                    </Card>
+                    <Card title="Market Intelligence" subtitle="Analytics" className="rounded-lg h-[380px]">
+                        Competitive pricing analysis, demand forecasting, and channel performance tracking. Data-led decisions, not guesswork.
+                    </Card>
+                </div>
+
+                {/* Teaser Row */}
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-1">
-
-                    {/* Market Expansion */}
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, delay: 0.2 }}
-                        viewport={{ once: true }}
-                        className="relative overflow-hidden rounded-lg bg-[#2a2a2c] h-[380px] group"
-                    >
-                        <div className="absolute inset-0 z-0 overflow-hidden">
-                            <img
-                                src="/images/inference.avif"
-                                alt="Inference"
-                                className="w-full h-full object-cover opacity-70 grayscale transition-transform duration-500 group-hover:scale-110"
-                            />
-
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
-                        </div>
-
-                        <div className="relative z-10 p-6 h-full flex flex-col justify-between">
-                            <h3 className="text-2xl font-medium text-white">Market Expansion</h3>
-
-                            <div className="absolute top-6 right-6 grid grid-cols-3 gap-2 group-hover:rotate-90 transition-transform duration-300">
-                                {[...Array(9)].map((_, i) => (
-                                    <div
-                                        key={i}
-                                        className="w-[4px] h-[4px] rounded-sm bg-[#E3DBD8]/70"
-                                    />
-                                ))}
-                            </div>
-
-                            <p className="absolute bottom-32 left-6 text-white text-[1.0625rem] leading-[1.4] tracking-tighter max-w-[15.8rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                Scalable frameworks for entering new territories and adapting to local consumer preferences.
-                            </p>
-
-                            <button className="w-[60px] h-[60px] group-hover:w-[140px] rounded-xl bg-[#FF5722] flex items-center justify-center hover:bg-[#E64A19] transition-all duration-300">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#161719" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                            </button>
-                        </div>
-                    </motion.div>
-
-                    {/* Middle Image Card (NO TEXT, NO CTA) */}
-                    <motion.div className="relative overflow-hidden rounded-lg h-[380px] flex items-center justify-center">
-                        <svg
-                            viewBox="0 0 200 120"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="w-40 h-24 text-white/10"
-                        >
-                            {/* Base Block */}
-                            <path
-                                d="M30 50 L150 50 L170 70 L50 70 Z"
-                                stroke="currentColor"
-                                strokeWidth="4"
-                            />
-
-                            {/* Left Side */}
-                            <path
-                                d="M30 50 L50 70 L50 110 L30 90 Z"
-                                stroke="currentColor"
-                                strokeWidth="4"
-                            />
-
-                            {/* Front Face */}
-                            <rect
-                                x="50"
-                                y="70"
-                                width="120"
-                                height="40"
-                                stroke="currentColor"
-                                strokeWidth="4"
-                            />
-
-                            {/* Top Circles */}
-                            <circle
-                                cx="80"
-                                cy="40"
-                                r="14"
-                                stroke="currentColor"
-                                strokeWidth="4"
-                            />
-                            <circle
-                                cx="120"
-                                cy="40"
-                                r="14"
-                                stroke="currentColor"
-                                strokeWidth="4"
-                            />
-
-                            {/* Circle Connectors */}
-                            <line x1="80" y1="54" x2="80" y2="50" stroke="currentColor" strokeWidth="4" />
-                            <line x1="120" y1="54" x2="120" y2="50" stroke="currentColor" strokeWidth="4" />
-                        </svg>
-
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
-                    </motion.div>
-
-                    {/* Right Info Card */}
-                    <motion.div className="relative rounded-2xl bg-[#1C1D20] h-[380px] p-10 flex flex-col justify-between">
+                    <motion.div className="lg:col-span-2 relative rounded-2xl bg-[#1C1D20] p-10 flex flex-col justify-between min-h-[300px]">
                         <div>
-                            <h3 className="text-4xl font-medium text-white">
-                                Brand Engine <span className="text-white/40">2.0</span>
+                            <h3 className="text-4xl font-medium text-white mb-4">
+                                Raha Launchpad <span className="text-white/40">v1.0</span>
                             </h3>
-
-                            <p className="text-[#FF5722] mt-4">
-                                Early beta access now available.
+                            <p className="text-[#888891] text-xl max-w-2xl leading-relaxed">
+                                Our end-to-end brand launch system. From regulatory clearance to first sale, compressed into a single managed process. Early access available.
                             </p>
-
-                            <div className="mt-8">
-                                <span className="text-white/40 text-sm">
-                                    Scaling Progress
-                                </span>
-                                <div className="text-6xl font-medium text-white mt-4">
-                                    84.7%
-                                </div>
-                            </div>
                         </div>
-
-                        <div className="flex justify-between items-center">
-                            <span className="text-white/60">Talk to us</span>
-
-                            <button className="w-[60px] h-[60px] rounded-xl bg-[#FF5722] flex items-center justify-center">
-                                →
-                            </button>
+                        <div className="flex items-center gap-4 text-[#FF5722] font-medium">
+                            <span className="w-12 h-px bg-[#FF5722]" />
+                            Accelerate your GCC entry
                         </div>
                     </motion.div>
 
+                    <motion.div className="relative rounded-2xl bg-[#FF5722] h-full p-10 flex flex-col justify-between text-[#161719]">
+                        <div className="text-6xl font-bold leading-none">84%</div>
+                        <div>
+                            <p className="font-semibold text-xl mb-2">Efficiency Gain</p>
+                            <p className="opacity-80">Average reduction in market entry time with Raha Launchpad.</p>
+                        </div>
+                        <button className="w-full py-4 bg-[#161719] text-white rounded-xl font-medium">
+                            Request Beta Access
+                        </button>
+                    </motion.div>
                 </div>
-
             </div>
         </section>
     );

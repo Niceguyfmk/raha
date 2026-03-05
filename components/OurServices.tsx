@@ -12,9 +12,9 @@ export default function OurServices() {
                 <SectionHeader
                     number="002"
                     brandName="Raha x Brands"
-                    title="Our Services"
-                    statement="Strategic solutions for building modern consumer digital platforms."
-                    description="Future-proof experiences that scale seamlessly."
+                    title="Everything you need to win in the GCC"
+                    statement="Operational muscle. Market expertise. Digital infrastructure."
+                    description="We turn your brand into a local market leader with end-to-end execution."
                 />
 
                 <ServicesGrid />
