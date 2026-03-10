@@ -49,12 +49,12 @@ const teamMembers: TeamMember[] = [
     },
     {
         id: 4,
-        name: 'Zeeshan',
-        title: 'Performance & Growth',
-        bio: 'The growth engine of the team. Abdullah is focused on performance marketing and localized influencer strategies that drive rapid conversion.',
+        name: 'Zeeshan Ali',
+        title: 'Head of International Business',
+        bio: 'With 6+ years experience in the European & UK market, Zeeshan is responsible for expanding RAHA Partners\' footprint in the international market.',
         photo: '/images/t-4.avif',
-        linkedin: 'https://www.linkedin.com/company/raha-partners',
-        whatsapp: "https://wa.me/971585799283?text=Hi%20Raha%20Partners,%20I'm%20interested%20in%20learning%20more%20about%20your%20services.",
+        linkedin: 'https://www.linkedin.com/in/zeeshan-laique-ali/',
+        whatsapp: "https://wa.me/34612505467?text=Hi%20Raha%20Partners,%20I'm%20interested%20in%20learning%20more%20about%20your%20services.",
     },
     {
         id: 5,

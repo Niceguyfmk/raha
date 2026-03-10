@@ -57,7 +57,7 @@ export default function Hero() {
                 scrollTrigger: {
                     trigger: revealRef.current,
                     start: "top 70%",
-                    end: "bottom 40%",
+                    end: "bottom 95%",
                     scrub: true,
                 }
             });
@@ -83,25 +83,17 @@ export default function Hero() {
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
                         {/* Left Side - Subtitle */}
                         <div className="lg:col-span-3 flex items-start pt-4">
-                            <div className="hero-subtitle">
-                                <p className="text-white text-sm md:text-base leading-tight font-medium">
-                                    Your <span className="italic">Brand.</span>
-                                    <br />
-                                    Our Execution.
-                                </p>
-                            </div>
+
                         </div>
 
                         {/* Center - Main Heading */}
                         <div className="lg:col-span-9">
                             <div className="space-y-1 md:space-y-2 overflow-hidden">
-                                {['We turn ideas', 'into revenue'].map((line, i) => (
-                                    <div key={i} className="overflow-hidden">
+                                {['— Build & scale brands across retail & digital ecosystems'].map((line, i) => (
+                                    < div key={i} className="overflow-hidden" >
                                         <h1 className="hero-text-line
-                                            text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl
-                                            font-semibold
-                                            tracking-[-0.01em]
-                                            leading-[1.15]
+                                            text-5xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl
+                                            font-heading
                                             text-[#FF6A3D]
                                             ">
                                             {line}
@@ -132,10 +124,10 @@ export default function Hero() {
                                             rel="noopener noreferrer"
                                             whileHover={{ scale: 1.02 }}
                                             whileTap={{ scale: 0.98 }}
-                                            className="inline-flex items-center gap-3
+                                            className="inline-flex items-center gap-3 whitespace-nowrap
                                              bg-[#FA6F45] hover:bg-[#E65C35]
                                              text-[#161719]
-                                             px-10 py-4
+                                             px-5 py-4
                                              rounded-xl
                                              text-base font-medium
                                              transition-all duration-300"
@@ -186,15 +178,15 @@ export default function Hero() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section >
 
             {/* Part 2: Scroll Reveal (Long Hero Continuation) */}
-            <section ref={revealRef} className="relative min-h-[120vh] flex items-center justify-center px-6 md:px-20 py-32 overflow-hidden">
+            < section ref={revealRef} className="relative min-h-[120vh] flex items-center justify-center px-6 md:px-20 py-32 overflow-hidden" >
                 {/* Background Orange Circles (Image 3 Style) */}
-                <div className="absolute inset-0 pointer-events-none">
+                < div className="absolute inset-0 pointer-events-none" >
                     <div className="absolute top-[20%] right-[10%] w-[500px] h-[500px] rounded-full blur-[120px]" />
                     <div className="absolute bottom-[20%] left-[5%] w-[400px] h-[400px] rounded-full blur-[100px]" />
-                </div>
+                </div >
 
                 <div className="max-w-[1200px] mx-auto w-full z-10">
                     <p ref={textRef} className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.25] tracking-[-0.015em] text-white select-none">
@@ -209,8 +201,8 @@ export default function Hero() {
                     </p>
                 </div>
 
-            </section>
-        </div>
+            </section >
+        </div >
     );
 }
 

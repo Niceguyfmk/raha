@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
 /* ── Local Inter Variable Fonts ─────────────────────────────────────── */
 @font-face {
   font-family: 'Inter';
@@ -31,6 +33,41 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Telegraf';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/TelegrafRegular_272984568a25d8528fe2de8b20b29011.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Telegraf';
+  font-style: normal;
+  font-weight: 200;
+  src: url('/fonts/Telegraf%20UltraLight%20200.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Telegraf';
+  font-style: normal;
+  font-weight: 800;
+  src: url('/fonts/Telegraf%20UltraBold%20800.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('/fonts/centurygothic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('/fonts/centurygothic_bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
 @import "tailwindcss";
 
 :root {
@@ -45,7 +82,8 @@
   --color-foreground: var(--foreground);
   --color-orange: var(--orange);
   --color-gray: var(--gray);
-  --font-sans: "Inter Display", "Inter", "Inter Display Placeholder", sans-serif;
+  --font-sans: "Telegraf", sans-serif;
+  --font-heading: "Noto Sans JP", sans-serif;
   --font-mono: ui-monospace, SFMono-Regular;
 }
 
@@ -62,7 +100,7 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Inter Display", "Inter", "Inter Display Placeholder", sans-serif;
+  font-family: "Telegraf", sans-serif;
   font-feature-settings: 'cv11', 'ss01';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
