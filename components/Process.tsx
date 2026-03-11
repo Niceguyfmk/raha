@@ -30,12 +30,12 @@ const processes = [
 
 export default function Process() {
     return (
-        <section id="process" className="relative bg-[#161719] py-48 px-6 overflow-hidden border-t border-white/5">
+        <section id="process" className="relative bg-bg-section py-20 lg:py-48 px-6 overflow-hidden border-t border-white/5">
             <div className="max-w-[1400px] mx-auto">
                 <SectionHeader
-                    number="001"
+                    number="002"
                     brandName="Raha x Strategy"
-                    title="The Raha Playbook"
+                    title="Raha Playbook"
                     statement="From outside the GCC to dominant within it."
                     description="Our systematic approach to taking a brand into the market and scaling it fast."
                 />
@@ -48,12 +48,12 @@ export default function Process() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="relative group bg-[#1C1D20] p-10 h-full min-h-[400px] flex flex-col justify-between rounded-xl hover:bg-[#252629] transition-colors"
+                            className="relative group bg-bg-card p-10 h-full min-h-[400px] flex flex-col justify-between rounded-xl hover:bg-bg-card-hover transition-colors"
                         >
                             <div className="space-y-8">
                                 <div className="flex items-center justify-between">
                                     <span className="text-white/20 text-5xl font-medium tracking-tighter">{step.id}</span>
-                                    <div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white/40 group-hover:bg-[#FF5722] group-hover:text-white group-hover:border-[#FF5722] transition-all">
+                                    <div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white/40 group-hover:bg-orange-main group-hover:text-white group-hover:border-orange-main transition-all">
                                         <FaArrowRight className="-rotate-45" size={14} />
                                     </div>
                                 </div>
@@ -62,38 +62,15 @@ export default function Process() {
                                 </h3>
                             </div>
 
-                            <p className="text-[#888891] text-lg leading-relaxed max-w-[280px]">
+                            <p className="text-text-muted text-lg leading-relaxed max-w-[280px]">
                                 {step.description}
                             </p>
 
                             {/* Decorative line */}
-                            <div className="absolute bottom-0 left-0 w-full h-[2px] bg-white/5 group-hover:bg-[#FF5722] transition-colors" />
+                            <div className="absolute bottom-0 left-0 w-full h-[2px] bg-white/5 group-hover:bg-orange-main transition-colors" />
                         </motion.div>
                     ))}
                 </div>
-
-                {/* Bottom Summary / Flow */}
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
-                    className="mt-20 flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16 text-center"
-                >
-                    <div className="flex flex-col items-center gap-4">
-                        <span className="text-white/40 text-xs uppercase tracking-[0.2em]">Objective</span>
-                        <span className="text-2xl text-white font-medium">Growth Engine</span>
-                    </div>
-                    <div className="hidden lg:block w-32 h-[1px] bg-white/10" />
-                    <div className="flex flex-col items-center gap-4">
-                        <span className="text-white/40 text-xs uppercase tracking-[0.2em]">Strategy</span>
-                        <span className="text-2xl text-white font-medium">Market Dominance</span>
-                    </div>
-                    <div className="hidden lg:block w-32 h-[1px] bg-white/10" />
-                    <div className="flex flex-col items-center gap-4">
-                        <span className="text-white/40 text-xs uppercase tracking-[0.2em]">Outcome</span>
-                        <span className="text-2xl text-[#FF5722] font-medium">Maximized Revenue</span>
-                    </div>
-                </motion.div>
             </div>
         </section>
     );

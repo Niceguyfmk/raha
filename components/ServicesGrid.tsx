@@ -228,7 +228,7 @@ const BouncingColumn = ({ colIndex }: { colIndex: number }) => {
                     <style jsx>{`
                         @keyframes pingPongHighlight {
                             0%, 100% { background-color: rgba(255,255,255,0.2); }
-                            10% { background-color: #FF5722; }
+                            10% { background-color: var(--orange-main); }
                             20% { background-color: rgba(255,255,255,0.2); }
                         }
                     `}</style>
@@ -255,22 +255,22 @@ const BouncingDots = () => {
         <div className="flex-1 min-h-[160px] flex items-center justify-center py-8">
             <style jsx global>{`
                 @keyframes bounceColor0 {
-                    0%, 16% { background-color: #FF5722; } /* Active at start */
+                    0%, 16% { background-color: var(--orange-main); } /* Active at start */
                     33% { background-color: rgba(255,255,255,0.2); }
                     83% { background-color: rgba(255,255,255,0.2); }
-                    100% { background-color: #FF5722; } /* Back to active */
+                    100% { background-color: var(--orange-main); } /* Back to active */
                 }
                 @keyframes bounceColor1 {
                     0% { background-color: rgba(255,255,255,0.2); }
-                    16%, 33% { background-color: #FF5722; } /* Active at 1/6 */
+                    16%, 33% { background-color: var(--orange-main); } /* Active at 1/6 */
                     50% { background-color: rgba(255,255,255,0.2); }
-                    83%, 100% { background-color: #FF5722; } /* Active at 5/6 (Back up) */
+                    83%, 100% { background-color: var(--orange-main); } /* Active at 5/6 (Back up) */
                     /* Wait, simple linear bounce means distinct keyframes per row */
                 }
                 /* Let's simplify: A generic "ActivePulse" animation. We delay it. */
                 @keyframes activePulse {
                     0% { background-color: rgba(255,255,255,0.2); }
-                    5% { background-color: #FF5722; transform: scale(1.2); }
+                    5% { background-color: var(--orange-main); transform: scale(1.2); }
                     10% { background-color: rgba(255,255,255,0.2); transform: scale(1); }
                     100% { background-color: rgba(255,255,255,0.2); }
                 }
@@ -302,15 +302,15 @@ const BouncingDots = () => {
 
                             // Active states logic:
                             // Row 0: Active at beat 0 and beat 8
-                            if (row === 0) { keyframes[0] = "#FF5722"; keyframes[8] = "#FF5722"; }
+                            if (row === 0) { keyframes[0] = "var(--orange-main)"; keyframes[8] = "var(--orange-main)"; }
                             // Row 1: Active at beat 1 and beat 7
-                            if (row === 1) { keyframes[1] = "#FF5722"; keyframes[7] = "#FF5722"; }
+                            if (row === 1) { keyframes[1] = "var(--orange-main)"; keyframes[7] = "var(--orange-main)"; }
                             // Row 2: Active at beat 2 and beat 6
-                            if (row === 2) { keyframes[2] = "#FF5722"; keyframes[6] = "#FF5722"; }
+                            if (row === 2) { keyframes[2] = "var(--orange-main)"; keyframes[6] = "var(--orange-main)"; }
                             // Row 3: Active at beat 3 and beat 5
-                            if (row === 3) { keyframes[3] = "#FF5722"; keyframes[5] = "#FF5722"; }
+                            if (row === 3) { keyframes[3] = "var(--orange-main)"; keyframes[5] = "var(--orange-main)"; }
                             // Row 4: Active at beat 4 (center of wave)
-                            if (row === 4) { keyframes[4] = "#FF5722"; }
+                            if (row === 4) { keyframes[4] = "var(--orange-main)"; }
 
                             return (
                                 <motion.div
@@ -351,7 +351,7 @@ export default function ServicesGrid() {
             {/* Summary Card (Info) */}
             <motion.div
                 layout
-                className={`relative rounded-xl bg-[#1C1D20] p-8 flex flex-col justify-between flex-shrink-0 
+                className={`relative rounded-xl bg-bg-card p-8 flex flex-col justify-between flex-shrink-0 
                             order-1 xl:order-last xl:flex-[4.5] xl:w-auto mb-1 xl:mb-0
                             w-full h-auto min-h-0
                             `}
@@ -363,10 +363,10 @@ export default function ServicesGrid() {
                     </div>
 
                     <div className="space-y-4 xl:space-y-6 mb-8">
-                        <h2 className="text-3xl md:text-[48px] font-medium text-[#c0c0c0] leading-[1.1] tracking-[-0.05em] text-balance">
+                        <h2 className="text-3xl md:text-[48px] font-medium text-text-dim leading-[1.1] tracking-[-0.05em] text-balance">
                             Everything you need to win in the GCC
                         </h2>
-                        <p className="text-[#888891] text-md leading-relaxed max-w-md">
+                        <p className="text-text-muted text-md leading-relaxed max-w-md">
                             We provide the operational muscle, market expertise, and digital infrastructure to turn your brand into a local market leader.
                         </p>
                     </div>
@@ -378,7 +378,7 @@ export default function ServicesGrid() {
                 <div className="flex items-center gap-4 text-white/40 pt-6 border-t border-white/10 mt-6">
                     <div className="grid grid-cols-3 gap-0.5">
                         {[...Array(9)].map((_, i) => (
-                            <div key={i} className={`w-1 h-1 ${i % 2 === 0 ? 'bg-[#FF5722]' : 'bg-white/20'}`} />
+                            <div key={i} className={`w-1 h-1 ${i % 2 === 0 ? 'bg-orange-main' : 'bg-white/20'}`} />
                         ))}
                     </div>
                     <span className="text-sm font-medium tracking-wide">Marketplace, Logistics, and Growth at scale.</span>
@@ -395,7 +395,7 @@ export default function ServicesGrid() {
                             layout
                             onClick={() => setActiveId(service.id)}
                             className={`relative rounded-xl overflow-hidden cursor-pointer select-none group flex-shrink-0 flex flex-col justify-between p-8 transition-colors duration-500 ease-in-out order-2
-                                ${isActive ? 'bg-[#FF5722]' : 'bg-[#1C1D20] hover:bg-[#252629]'}
+                                ${isActive ? 'bg-orange-main' : 'bg-bg-card hover:bg-bg-card-hover'}
                                 w-full xl:w-auto mb-1 xl:mb-0
                             `}
                             animate={{
@@ -409,7 +409,7 @@ export default function ServicesGrid() {
                                     <div className={`transform transition-all duration-300 ${isActive ? '-rotate-[135deg] w-[48px] h-[48px]' : 'group-hover:-rotate-[135deg] w-[36px] h-[36px]'}`}>
                                         <ArrowDown />
                                     </div>
-                                    <span className={`font-light tracking-tight leading-none transition-all duration-300 ${isActive ? 'text-[70px] text-[#e3dbd8]' : 'text-[35px]'}`}>
+                                    <span className={`font-light tracking-tight leading-none transition-all duration-300 ${isActive ? 'text-[70px] text-dot-color' : 'text-[35px]'}`}>
                                         {service.id}
                                     </span>
                                 </div>

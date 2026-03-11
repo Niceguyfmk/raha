@@ -33,8 +33,8 @@ export default function Home() {
         <Navigation />
         <main>
           <Hero />
-          <Process />
           <OurWork />
+          <Process />
           <OurServices />
           <Team />
           {/* Footer Experience: A professional slide-over reveal */}

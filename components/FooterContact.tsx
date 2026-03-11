@@ -74,7 +74,7 @@ export default function FooterContact() {
     }
 
     return (
-        <section id="contact" className="relative w-full bg-[#161719] pb-8 px-3 overflow-hidden">
+        <section id="contact" className="relative w-full bg-bg-section pb-8 px-3 overflow-hidden">
             <div className="max-w-[1400px] mx-auto grid grid-cols-1 xl:grid-cols-2 gap-1">
 
                 {/* ── LEFT SIDE ─────────────────────────────────── */}
@@ -87,20 +87,20 @@ export default function FooterContact() {
                 >
                     {/* Contact Us */}
                     <motion.div
-                        className="bg-[#212225] rounded-xl p-[32px] flex justify-between items-center"
+                        className="bg-bg-footer-card rounded-xl p-[32px] flex justify-between items-center"
                         variants={fadeInUp}
                     >
                         <motion.h5
-                            className="text-[28px] font-medium tracking-[-0.04em] text-[#c0c0c0]"
+                            className="text-[28px] font-medium tracking-[-0.04em] text-text-dim"
                             variants={fadeInUp}
                         >
                             Contact Us
                         </motion.h5>
                         <motion.div className="flex gap-10" variants={fadeInUp}>
-                            <a href="https://www.linkedin.com/company/raha-partners" target="_blank" rel="noopener noreferrer" className="text-[#dfd9d7] hover:text-[#FA6F45]">
+                            <a href="https://www.linkedin.com/company/raha-partners" target="_blank" rel="noopener noreferrer" className="text-text-warm hover:text-orange-accent">
                                 <FaLinkedinIn size={22} />
                             </a>
-                            <a href="https://wa.me/971585799283?text=Hi%20Raha%20Partners,%20I'm%20interested%20in%20learning%20more%20about%20your%20services." target="_blank" rel="noopener noreferrer" className="text-[#dfd9d7] hover:text-[#FA6F45]">
+                            <a href="https://wa.me/971585799283?text=Hi%20Raha%20Partners,%20I'm%20interested%20in%20learning%20more%20about%20your%20services." target="_blank" rel="noopener noreferrer" className="text-text-warm hover:text-orange-accent">
                                 <FaWhatsapp size={22} />
                             </a>
                         </motion.div>
@@ -108,11 +108,11 @@ export default function FooterContact() {
 
                     {/* What We Offer */}
                     <motion.div
-                        className="bg-[#212225] rounded-xl p-[32px]"
+                        className="bg-bg-footer-card rounded-xl p-[32px]"
                         variants={fadeInUp}
                     >
                         <motion.h5
-                            className="text-[28px] font-medium tracking-[-0.04em] text-[#c0c0c0] mb-6"
+                            className="text-[28px] font-medium tracking-[-0.04em] text-text-dim mb-6"
                             variants={fadeInUp}
                         >
                             What we offer
@@ -134,7 +134,7 @@ export default function FooterContact() {
                             ].map((item, i) => (
                                 <motion.li
                                     key={i}
-                                    className="text-[18px] tracking-[-0.02em] text-[#888891] list-disc ml-5"
+                                    className="text-[18px] tracking-[-0.02em] text-text-muted list-disc ml-5"
                                     variants={listItem}
                                 >
                                     {item}
@@ -145,17 +145,17 @@ export default function FooterContact() {
 
                     {/* Digital + Office */}
                     <motion.div
-                        className="bg-[#212225] rounded-xl p-[32px] grid md:grid-cols-2 gap-10"
+                        className="bg-bg-footer-card rounded-xl p-[32px] grid md:grid-cols-2 gap-10"
                         variants={fadeInUp}
                     >
                         <motion.div variants={fadeInUp}>
-                            <motion.div className="flex items-center gap-3 mb-4 text-[#c0c0c0]" variants={fadeInUp}>
+                            <motion.div className="flex items-center gap-3 mb-4 text-text-dim" variants={fadeInUp}>
                                 <FaLaptop size={20} />
                                 <span className="text-[22px] font-medium">Digital</span>
                             </motion.div>
                             <motion.a
                                 href="mailto:zeeshan@rahapartners.com"
-                                className="text-[18px] text-[#FA6F45] hover:underline"
+                                className="text-[18px] text-orange-accent hover:underline"
                                 variants={fadeInUp}
                             >
                                 hello@rahapartners.com
@@ -163,13 +163,13 @@ export default function FooterContact() {
                         </motion.div>
 
                         <motion.div variants={fadeInUp}>
-                            <motion.div className="flex items-center gap-3 mb-4 text-[#c0c0c0]" variants={fadeInUp}>
+                            <motion.div className="flex items-center gap-3 mb-4 text-text-dim" variants={fadeInUp}>
                                 <FaBuilding size={20} />
                                 <span className="text-[22px] font-medium">Office</span>
                             </motion.div>
-                            <motion.p className="text-[18px] text-[#888891] leading-relaxed" variants={fadeInUp}>
+                            <motion.p className="text-[18px] text-text-muted leading-relaxed" variants={fadeInUp}>
                                 1246 Lake Road, Jumeirah<br />
-                                <strong className="text-[#c0c0c0]">Dubai, UAE</strong>
+                                <strong className="text-text-dim">Dubai, UAE</strong>
                             </motion.p>
                         </motion.div>
                     </motion.div>
@@ -177,7 +177,7 @@ export default function FooterContact() {
 
                 {/* ── RIGHT SIDE (FORM) ─────────────────────────────── */}
                 <motion.div
-                    className="relative bg-[#212225] rounded-xl overflow-hidden"
+                    className="relative bg-bg-footer-card rounded-xl overflow-hidden"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
@@ -191,14 +191,14 @@ export default function FooterContact() {
                                 exit={{ opacity: 0, scale: 0.9 }}
                                 className="absolute inset-0 flex flex-col items-center justify-center p-12 text-center bg-[#212225] z-30"
                             >
-                                <FaCheckCircle className="text-[#FA6F45] mb-6" size={80} />
+                                <FaCheckCircle className="text-orange-accent mb-6" size={80} />
                                 <h3 className="text-[40px] font-bold text-white mb-4 tracking-tight">Message Sent!</h3>
-                                <p className="text-[#c0c0c0] text-[20px] max-w-sm leading-relaxed">
+                                <p className="text-text-dim text-[20px] max-w-sm leading-relaxed">
                                     Thank you for reaching out. A member of the Raha Partners team will be in touch with you shortly.
                                 </p>
                                 <button
                                     onClick={() => setStatus('IDLE')}
-                                    className="mt-10 text-[#FA6F45] font-medium hover:underline text-lg transition-all"
+                                    className="mt-10 text-orange-accent font-medium hover:underline text-lg transition-all"
                                 >
                                     Send another message
                                 </button>
@@ -212,11 +212,11 @@ export default function FooterContact() {
                                 exit={{ opacity: 0 }}
                             >
                                 {/* Header Card */}
-                                <motion.div className="bg-[#212225] p-[32px] pb-4" variants={fadeInUp}>
-                                    <h5 className="text-[28px] font-medium tracking-[-0.04em] text-[#c0c0c0] mb-2">
+                                <motion.div className="bg-bg-footer-card p-[32px] pb-4" variants={fadeInUp}>
+                                    <h5 className="text-[28px] font-medium tracking-[-0.04em] text-text-dim mb-2">
                                         Got a question, challenge, or idea?
                                     </h5>
-                                    <p className="text-[#888891] text-[18px]">
+                                    <p className="text-text-muted text-[18px]">
                                         Fill out the form — we’ll get back to you shortly.
                                     </p>
                                 </motion.div>
@@ -229,7 +229,7 @@ export default function FooterContact() {
                                     value={form.name}
                                     onChange={handleChange}
                                     required
-                                    className="bg-[#2c2c2f] px-6 py-6 text-[#dfd9d7] placeholder-[#888891] outline-none border-b border-white/5 mx-1 mb-1 rounded-xl"
+                                    className="bg-bg-footer-input px-6 py-6 text-text-warm placeholder-text-muted outline-none border-b border-white/5 mx-1 mb-1 rounded-xl"
                                     variants={fadeInUp}
                                 />
 
@@ -241,7 +241,7 @@ export default function FooterContact() {
                                     value={form.email}
                                     onChange={handleChange}
                                     required
-                                    className="bg-[#2c2c2f] px-6 py-6 text-[#dfd9d7] placeholder-[#888891] outline-none border-b border-white/5 mx-1 mb-1 rounded-xl"
+                                    className="bg-bg-footer-input px-6 py-6 text-text-warm placeholder-text-muted outline-none border-b border-white/5 mx-1 mb-1 rounded-xl"
                                     variants={fadeInUp}
                                 />
 
@@ -253,7 +253,7 @@ export default function FooterContact() {
                                     value={form.company}
                                     onChange={handleChange}
                                     required
-                                    className="bg-[#2c2c2f] px-6 py-6 text-[#dfd9d7] placeholder-[#888891] outline-none border-b border-white/5 mx-1 mb-1 rounded-xl"
+                                    className="bg-bg-footer-input px-6 py-6 text-text-warm placeholder-text-muted outline-none border-b border-white/5 mx-1 mb-1 rounded-xl"
                                     variants={fadeInUp}
                                 />
 
@@ -265,19 +265,19 @@ export default function FooterContact() {
                                     onChange={handleChange}
                                     required
                                     rows={4}
-                                    className="bg-[#2c2c2f] px-6 py-5 text-[#dfd9d7] placeholder-[#888891] outline-none resize-none mx-1 mb-1 rounded-xl"
+                                    className="bg-bg-footer-input px-6 py-5 text-text-warm placeholder-text-muted outline-none resize-none mx-1 mb-1 rounded-xl"
                                     variants={fadeInUp}
                                 />
 
                                 {/* Terms + Button Card */}
                                 <motion.div
-                                    className="bg-[#2c2c2f] p-[32px] flex items-center justify-between mx-1 mb-1 rounded-xl"
+                                    className="bg-bg-footer-input p-[32px] flex items-center justify-between mx-1 mb-1 rounded-xl"
                                     variants={fadeInUp}
                                 >
                                     <div className="space-y-1">
-                                        <p className="text-[14px] text-[#888891] italic max-w-[240px]">
+                                        <p className="text-[14px] text-text-muted italic max-w-[240px]">
                                             By submitting, you agree to our{' '}
-                                            <a href="/privacy-policy" className="text-[#FA6F45]">Privacy Policy.</a>
+                                            <a href="/privacy-policy" className="text-orange-accent">Privacy Policy.</a>
                                         </p>
                                         {status === 'ERROR' && (
                                             <p className="text-red-400 text-xs font-medium">Something went wrong. Please try again.</p>
@@ -287,12 +287,12 @@ export default function FooterContact() {
                                     <button
                                         type="submit"
                                         disabled={status === 'SUBMITTING'}
-                                        className="bg-[#FA6F45] hover:bg-[#ff7a4f] transition-all rounded-xl w-[64px] h-[64px] flex items-center justify-center shadow-lg hover:shadow-[#FA6F45]/20 disabled:opacity-50"
+                                        className="bg-orange-accent hover:bg-orange-hover transition-all rounded-xl w-[64px] h-[64px] flex items-center justify-center shadow-lg hover:shadow-orange-accent/20 disabled:opacity-50"
                                     >
                                         {status === 'SUBMITTING' ? (
-                                            <FaSpinner className="animate-spin text-[#212225]" size={20} />
+                                            <FaSpinner className="animate-spin text-bg-footer-card" size={20} />
                                         ) : (
-                                            <FaArrowRight size={20} className="text-[#212225]" />
+                                            <FaArrowRight size={20} className="text-bg-footer-card" />
                                         )}
                                     </button>
                                 </motion.div>

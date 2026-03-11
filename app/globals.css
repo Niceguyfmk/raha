@@ -33,56 +33,75 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: 'Telegraf';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/fonts/TelegrafRegular_272984568a25d8528fe2de8b20b29011.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Telegraf';
-  font-style: normal;
-  font-weight: 200;
-  src: url('/fonts/Telegraf%20UltraLight%20200.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Telegraf';
-  font-style: normal;
-  font-weight: 800;
-  src: url('/fonts/Telegraf%20UltraBold%20800.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Century Gothic';
-  src: url('/fonts/centurygothic.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Century Gothic';
-  src: url('/fonts/centurygothic_bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
 @import "tailwindcss";
 
 :root {
-  --background: #000000;
-  --foreground: #ffffff;
-  --orange: #FF5722;
-  --gray: #999999;
+  /* Base Colors */
+  --black: #000000;
+  --white: #ffffff;
+  
+  /* Backgrounds */
+  --bg-main: #000000;
+  --bg-soft: #0F0F11;
+  --bg-section: #161719;
+  --bg-card: #1C1D20;
+  --bg-card-hover: #252629;
+  --bg-card-alt: #2a2a2c;
+  --bg-footer-card: #212225;
+  --bg-footer-input: #2c2c2f;
+  --bg-team-card-from: #232428;
+  --bg-dot-inactive: #434346;
+  
+  /* Brand Oranges */
+  --orange-main: #FF5722;
+  --orange-light: #FF6A3D;
+  --orange-accent: #FA6F45;
+  --orange-hover: #E65C35;
+  --orange-dark: #E64A19;
+  
+  /* Text & Accents */
+  --text-primary: #ffffff;
+  --text-muted: #888891;
+  --text-dim: #C0C0C0;
+  --text-warm: #dfd9d7;
+  --dot-color: #E3DBD8;
+  --gray-medium: #999999;
+  --gray-dark: #333333;
+  --gray-border: rgba(255, 255, 255, 0.05);
+
+  /* Legacy aliases for compatibility */
+  --background: var(--bg-main);
+  --foreground: var(--text-primary);
+  --orange: var(--orange-main);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-orange: var(--orange);
-  --color-gray: var(--gray);
-  --font-sans: "Telegraf", sans-serif;
+  --color-black: var(--black);
+  --color-white: var(--white);
+  --color-bg-main: var(--bg-main);
+  --color-bg-soft: var(--bg-soft);
+  --color-bg-section: var(--bg-section);
+  --color-bg-card: var(--bg-card);
+  --color-bg-card-hover: var(--bg-card-hover);
+  --color-bg-card-alt: var(--bg-card-alt);
+  --color-bg-footer-card: var(--bg-footer-card);
+  --color-bg-footer-input: var(--bg-footer-input);
+  --color-bg-team-card-from: var(--bg-team-card-from);
+  --color-bg-dot-inactive: var(--bg-dot-inactive);
+  
+  --color-orange-main: var(--orange-main);
+  --color-orange-light: var(--orange-light);
+  --color-orange-accent: var(--orange-accent);
+  --color-orange-hover: var(--orange-hover);
+  --color-orange-dark: var(--orange-dark);
+  
+  --color-text-muted: var(--text-muted);
+  --color-text-dim: var(--text-dim);
+  --color-text-warm: var(--text-warm);
+  --color-dot-color: var(--dot-color);
+  --color-gray-medium: var(--gray-medium);
+  
+  --font-sans: "Inter", sans-serif;
   --font-heading: "Noto Sans JP", sans-serif;
   --font-mono: ui-monospace, SFMono-Regular;
 }
@@ -100,7 +119,7 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Telegraf", sans-serif;
+  font-family: "Inter Display", sans-serif;
   font-feature-settings: 'cv11', 'ss01';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
