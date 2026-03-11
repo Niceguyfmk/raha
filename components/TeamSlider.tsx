@@ -103,9 +103,9 @@ export default function TeamSlider() {
             <div className="flex flex-col gap-[6px] h-full w-full">
 
                 {/* Top Stepper Card */}
-                <div className="bg-gradient-to-br from-[#232428] to-[#1c1d20] rounded-xl h-[180px] p-6 xl:p-13 flex items-center justify-between">
+                <div className="bg-gradient-to-br from-bg-team-card-from to-bg-card rounded-xl h-[180px] p-6 xl:p-13 flex items-center justify-between">
 
-                    <span className="text-[22px] md:text-[26px] xl:text-[28px] font-medium tracking-[-0.04em] leading-[1.2] text-[#888891]">
+                    <span className="text-[22px] md:text-[26px] xl:text-[28px] font-medium tracking-[-0.04em] leading-[1.2] text-text-muted">
                         Team Raha Partners
                     </span>
                     <div className="flex items-center gap-1 w-[120px] h-[12px] justify-end">
@@ -114,8 +114,8 @@ export default function TeamSlider() {
                                 key={i}
                                 onClick={() => goTo(i, i > current ? 1 : -1)}
                                 className={`rounded-full transition-all duration-500 ${i === current
-                                    ? 'w-[40px] h-[12px] bg-[#FF5722]'
-                                    : 'w-[12px] h-[12px] bg-[#434346]'
+                                    ? 'w-[40px] h-[12px] bg-orange-main'
+                                    : 'w-[12px] h-[12px] bg-bg-dot-inactive'
                                     }`}
                             />
                         ))}
@@ -123,7 +123,7 @@ export default function TeamSlider() {
                 </div>
 
                 {/* Bottom Info Card */}
-                <div className="bg-gradient-to-br from-[#232428] to-[#1c1d20] rounded-xl flex flex-col justify-between flex-1 p-6 xl:p-13">
+                <div className="bg-gradient-to-br from-bg-team-card-from to-bg-card rounded-xl flex flex-col justify-between flex-1 p-6 xl:p-13">
 
                     <AnimatePresence mode="wait" custom={direction}>
                         <motion.div
@@ -134,11 +134,11 @@ export default function TeamSlider() {
                             animate="animate"
                             exit="exit"
                         >
-                            <h3 className="text-[48px] font-medium tracking-[-0.05em] leading-[1.1] text-[#dfd9d7] text-balance mb-2">
+                            <h3 className="text-[48px] font-medium tracking-[-0.05em] leading-[1.1] text-text-warm text-balance mb-2">
                                 {member.name}
                             </h3>
 
-                            <p className="text-[16px] md:text-[18px] xl:text-[21px] font-normal tracking-[-0.05em] leading-[1.4] text-[#888891]">
+                            <p className="text-[16px] md:text-[18px] xl:text-[21px] font-normal tracking-[-0.05em] leading-[1.4] text-text-muted">
                                 {member.title}
                             </p>
                         </motion.div>
@@ -152,7 +152,7 @@ export default function TeamSlider() {
                             initial="initial"
                             animate="animate"
                             exit="exit"
-                            className="text-[16px] md:text-[18px] xl:text-[21px] font-normal tracking-[-0.05em] leading-[1.4] text-[#888891] mt-auto"
+                            className="text-[16px] md:text-[18px] xl:text-[21px] font-normal tracking-[-0.05em] leading-[1.4] text-text-muted mt-auto"
                         >
                             {member.bio}
                         </motion.p>
@@ -185,7 +185,7 @@ export default function TeamSlider() {
                             initial="initial"
                             animate="animate"
                             exit="exit"
-                            className={`absolute inset-0 bg-[#1c1d20] flex items-end p-8`}
+                            className={`absolute inset-0 bg-bg-card flex items-end p-8`}
                         >
                             {/* Initials placeholder */}
                             <div className="w-full h-full flex items-center justify-center">
@@ -202,17 +202,17 @@ export default function TeamSlider() {
             <div className="flex flex-col gap-[6px] h-full w-full">
 
                 {/* Top: Arrows Card — same height as stepper card on the left */}
-                <div className="bg-gradient-to-br from-[#232428] to-[#1c1d20] rounded-xl h-[180px] p-6 xl:p-13 flex items-center justify-center gap-6">
+                <div className="bg-gradient-to-br from-bg-team-card-from to-bg-card rounded-xl h-[180px] p-6 xl:p-13 flex items-center justify-center gap-6">
                     <button
                         onClick={prev}
-                        className="text-[#FF5722] hover:text-[#ff7a4f] transition-colors duration-200 hover:scale-110 transform"
+                        className="text-orange-main hover:text-orange-hover transition-colors duration-200 hover:scale-110 transform"
                         aria-label="Previous member"
                     >
                         <FaArrowLeft size={28} />
                     </button>
                     <button
                         onClick={next}
-                        className="text-[#FF5722] hover:text-[#ff7a4f] transition-colors duration-200 hover:scale-110 transform"
+                        className="text-orange-main hover:text-orange-hover transition-colors duration-200 hover:scale-110 transform"
                         aria-label="Next member"
                     >
                         <FaArrowRight size={28} />
@@ -227,13 +227,13 @@ export default function TeamSlider() {
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         transition={{ duration: 0.3 }}
-                        className="bg-gradient-to-br from-[#232428] to-[#1c1d20] rounded-xl flex-1 p-6 xl:p-13 flex flex-col justify-center items-center gap-4"
+                        className="bg-gradient-to-br from-bg-team-card-from to-bg-card rounded-xl flex-1 p-6 xl:p-13 flex flex-col justify-center items-center gap-4"
                     >
                         <a
                             href={member.linkedin}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-[#e3dbd8] hover:text-[#FF5722] transition-colors duration-200 p-2 rounded-lg hover:bg-white/5 w-fit"
+                            className="text-dot-color hover:text-orange-main transition-colors duration-200 p-2 rounded-lg hover:bg-white/5 w-fit"
                             aria-label="LinkedIn"
                         >
                             <FaLinkedinIn size={18} />
@@ -242,7 +242,7 @@ export default function TeamSlider() {
                             href={member.whatsapp}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-[#e3dbd8] hover:text-[#FF5722] transition-colors duration-200 p-2 rounded-lg hover:bg-white/5 w-fit"
+                            className="text-dot-color hover:text-orange-main transition-colors duration-200 p-2 rounded-lg hover:bg-white/5 w-fit"
                             aria-label="WhatsApp"
                         >
                             <FaWhatsapp size={18} />

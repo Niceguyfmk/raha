@@ -8,7 +8,7 @@ import SectionHeader from './SectionHeader';
 const Card = ({ title, subtitle, videoSrc, className, children }: { title: string, subtitle: string, videoSrc?: string, className?: string, children?: React.ReactNode }) => {
     return (
         <motion.div
-            className={`relative overflow-hidden rounded-2xl bg-[#0f0f11] border border-white/5 group ${className}`}
+            className={`relative overflow-hidden rounded-2xl bg-bg-soft border border-white/5 group ${className}`}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -33,7 +33,7 @@ const Card = ({ title, subtitle, videoSrc, className, children }: { title: strin
                 {/* Top Content */}
                 <div className="flex justify-between items-start">
                     <div>
-                        <h3 className="text-lg md:text-xl font-normal text-[#888891] tracking-tight leading-snug">{subtitle}</h3>
+                        <h3 className="text-lg md:text-xl font-normal text-muted tracking-tight leading-snug">{subtitle}</h3>
                         <h2 className="text-2xl md:text-3xl font-medium text-white tracking-tight leading-tight">{title}</h2>
                     </div>
                     <div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -61,27 +61,27 @@ export default function OurWork() {
     const [isCard1Open, setIsCard1Open] = useState(false);
 
     return (
-        <section id="our-work" className="relative bg-[#161719] py-48 px-6 overflow-hidden border-t border-white/5">
+        <section id="our-work" className="relative bg-bg-section py-20 lg:py-48 px-6 overflow-hidden border-t border-white/5">
             <div className="max-w-[1400px] mx-auto">
                 <SectionHeader
-                    number="002"
+                    number="001"
                     brandName="Raha Partners"
-                    title="Brands we’ve taken to market"
+                    title="Brands We Scale"
                     statement="Real work. Real results."
                     description="Every engagement below started with a brand that needed GCC market access and ended with products on shelves and screens."
                 />
 
                 {/* Bento Grid Layout */}
-                <div className="grid grid-cols-1 lg:grid-cols-3 auto-rows-[380px] gap-1 mb-1">
-                    {/* Top Row: 2 large cards */}
-                    <div className="lg:col-span-2 lg:row-span-2">
+                <div className="grid grid-cols-1 lg:grid-cols-3 auto-rows-[300px] gap-1 mb-1">
+                    {/* Top Row: Case Study 1 (Spans 2 columns, 2 rows) */}
+                    <div className="lg:col-span-2 row-span-2 h-[600px]">
                         {/* Case Study 1 */}
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5 }}
                             viewport={{ once: true }}
-                            className="relative overflow-hidden rounded-3xl bg-[#2a2a2c] h-full group"
+                            className="relative overflow-hidden rounded-3xl bg-bg-card-alt h-full group"
                         >
                             <div className="absolute inset-0 z-0 overflow-hidden">
                                 <img
@@ -89,7 +89,7 @@ export default function OurWork() {
                                     alt="Electronics"
                                     className="w-full h-full object-cover opacity-90 grayscale transition-transform duration-500 group-hover:scale-110"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
                             </div>
 
                             <div className="relative z-10 p-8 h-full flex flex-col justify-between">
@@ -98,34 +98,38 @@ export default function OurWork() {
                                     <h3 className="text-3xl font-medium text-white max-w-lg leading-tight">Premium Electronics — UAE Market Entry</h3>
                                 </div>
 
-                                {/* Overlay Content (z-20) */}
+                                {/* Mobile/Tablet Description (Fixed at bottom) */}
+                                <div className="lg:hidden mt-auto">
+                                    <p className="text-white/90 text-[1.0625rem] leading-[1.44] tracking-tight">
+                                        Took a European premium appliance brand from zero GCC presence to full marketplace and retail coverage across the UAE. Built the distribution infrastructure and secured retail partnerships.
+                                    </p>
+                                </div>
+
+                                {/* Overlay Content (z-20) - Desktop Only Toggle */}
                                 <AnimatePresence>
                                     {isCard1Open && (
                                         <motion.div
                                             initial={{ opacity: 0 }}
                                             animate={{ opacity: 1 }}
                                             exit={{ opacity: 0 }}
-                                            className="absolute inset-0 z-20 bg-black/90 p-12 flex flex-col justify-center"
+                                            className="absolute inset-0 z-20 bg-black/90 p-12 hidden lg:flex flex-col justify-center"
                                         >
                                             <div className="max-w-md">
-                                                <p className="text-white/90 text-xl leading-relaxed mb-8">
+                                                <p className="text-white/90 text-[1.0625rem] leading-[1.44] tracking-tight mb-8">
                                                     Took a European premium appliance brand from zero GCC presence to full marketplace and retail coverage across the UAE. Built the distribution infrastructure and secured retail partnerships.
                                                 </p>
-                                                <div className="text-[#FF5722] text-2xl font-bold">
+                                                <div className="text-orange-main text-2xl font-bold">
                                                     Result: <span className="text-white">Live across 5+ retail and online channels within 120 days</span>
                                                 </div>
                                             </div>
-
-                                            {/* Close logic handled by the main button or a separate close icon if needed, 
-                                                but we'll keep the main button accessible */}
                                         </motion.div>
                                     )}
                                 </AnimatePresence>
 
                                 <button
                                     onClick={() => setIsCard1Open(!isCard1Open)}
-                                    className={`relative z-30 h-[60px] rounded-xl flex items-center transition-all duration-300 overflow-hidden cursor-pointer
-                                        ${isCard1Open ? 'w-[60px] justify-center bg-white text-black' : 'w-[60px] group-hover:w-[160px] justify-start bg-[#FF5722] hover:bg-[#E64A19]'}`}
+                                    className={`relative z-30 h-[60px] rounded-xl hidden lg:flex items-center transition-all duration-300 overflow-hidden cursor-pointer
+                                        ${isCard1Open ? 'w-[60px] justify-center bg-white text-bg-main' : 'w-[60px] group-hover:w-[160px] justify-start bg-orange-main hover:bg-orange-dark'}`}
                                 >
                                     <div className="flex items-center gap-4 px-[20px] whitespace-nowrap">
                                         {isCard1Open ? (
@@ -133,9 +137,9 @@ export default function OurWork() {
                                         ) : (
                                             <>
                                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="flex-shrink-0">
-                                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#161719" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                                 </svg>
-                                                <span className="font-medium text-[#161719] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                                <span className="font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                                     View Details
                                                 </span>
                                             </>
@@ -146,19 +150,19 @@ export default function OurWork() {
                         </motion.div>
                     </div>
 
-                    {/* Case Study 2 */}
+                    {/* Case Study 2 (Spans 1 column, 2 rows) */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.1 }}
                         viewport={{ once: true }}
-                        className="relative overflow-hidden rounded-3xl lg:row-span-2 bg-[#FF5722] h-full group"
+                        className="relative overflow-hidden rounded-3xl row-span-2 bg-orange-main h-[600px] group"
                     >
                         <div className="relative z-10 p-8 h-full flex flex-col justify-between">
                             <div>
-                                <p className="text-sm text-white/80 mb-2">Market Entry + Compliance</p>
+                                <p className="text-white/90 text-sm text-white/80 mb-2">Market Entry + Compliance</p>
                                 <h3 className="text-4xl font-medium text-white mb-6 leading-tight">Thai Consumer Brand — GCC Regulatory & Launch</h3>
-                                <p className="text-white/90 text-base leading-relaxed mb-8">Managed end-to-end market entry including regulatory clearance, municipality approvals, and labeling compliance.</p>
+                                <p className="text-white/90 text-[1.0625rem] leading-[1.44] tracking-tight mb-8">Managed end-to-end market entry including regulatory clearance, municipality approvals, and labeling compliance.</p>
                                 <div className="bg-black/10 p-6 rounded-xl border border-white/10">
                                     <div className="text-white/60 text-xs uppercase tracking-widest mb-1">Impact</div>
                                     <div className="text-white font-medium">Regulatory clearance secured. Product market-ready in UAE.</div>
@@ -184,7 +188,7 @@ export default function OurWork() {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.2 }}
                         viewport={{ once: true }}
-                        className="relative overflow-hidden rounded-lg bg-[#2a2a2c] h-[380px] group"
+                        className="relative overflow-hidden rounded-lg bg-bg-card-alt h-[380px] group"
                     >
                         <div className="absolute inset-0 z-0">
                             <video
@@ -196,7 +200,7 @@ export default function OurWork() {
                             >
                                 <source src="/videos/training_vid2.mp4" type="video/mp4" />
                             </video>
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent" />
                         </div>
 
                         <div className="relative z-10 p-6 h-full flex flex-col justify-between">
@@ -206,22 +210,22 @@ export default function OurWork() {
                                 {[...Array(9)].map((_, i) => (
                                     <div
                                         key={i}
-                                        className="w-[4px] h-[4px] rounded-sm bg-[#E3DBD8]/70"
+                                        className="w-[4px] h-[4px] rounded-sm bg-dot-color/70"
                                     />
                                 ))}
                             </div>
 
-                            <p className="absolute bottom-32 left-6 text-white text-[1.0625rem] leading-[1.4] tracking-tighter max-w-[15.8rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <p className="absolute bottom-10 lg:bottom-32 left-6 text-white text-[1.0625rem] leading-[1.44] tracking-tight max-w-[15.8rem] opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
                                 Built the GCC e-commerce playbook for an Indian consumer electronics brand. Set up marketplace operations on Amazon and Noon, developed the content and listing strategy, and ran performance marketing to build initial traction.
                             </p>
 
-                            <a href="#contact" className="flex items-start group/btn">
-                                <div className="h-[60px] w-[60px] group-hover/btn:w-[160px] rounded-xl bg-[#FF5722] flex items-center transition-all duration-300 hover:bg-[#E64A19] cursor-pointer overflow-hidden">
+                            <a href="#contact" className="hidden lg:flex items-start group/btn">
+                                <div className="h-[60px] w-[60px] group-hover/btn:w-[160px] rounded-xl bg-orange-main flex items-center transition-all duration-300 hover:bg-orange-dark cursor-pointer overflow-hidden">
                                     <div className="flex items-center gap-4 px-[20px] whitespace-nowrap">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="flex-shrink-0">
-                                            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#161719" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                         </svg>
-                                        <span className="font-medium text-[#161719] opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300">
+                                        <span className="font-medium opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300">
                                             Talk to us
                                         </span>
                                     </div>
@@ -237,7 +241,7 @@ export default function OurWork() {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.3 }}
                         viewport={{ once: true }}
-                        className="relative overflow-hidden rounded-lg bg-[#2a2a2c] h-[380px] group"
+                        className="relative overflow-hidden rounded-lg bg-bg-card-alt h-[380px] group"
                     >
                         {/* Image Background */}
                         <div className="absolute inset-0 z-0 overflow-hidden">
@@ -256,16 +260,16 @@ export default function OurWork() {
                                 {[...Array(9)].map((_, i) => (
                                     <div
                                         key={i}
-                                        className="w-[4px] h-[4px] rounded-sm bg-[#E3DBD8]/70"
+                                        className="w-[4px] h-[4px] rounded-sm bg-dot-color/70"
                                     />
                                 ))}
                             </div>
 
-                            <p className="absolute bottom-32 left-6 text-white text-[1.0625rem] leading-[1.4] tracking-tighter max-w-[15.8rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <p className="absolute bottom-10 lg:bottom-32 left-6 text-white text-[1.0625rem] leading-[1.44] tracking-tight max-w-[15.8rem] opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
                                 SEO, paid social, influencer partnerships, and in-store activations. Designed for conversion, not vanity metrics.
                             </p>
 
-                            <a href="#contact" className="flex items-start group/btn">
+                            <a href="#contact" className="hidden lg:flex items-start group/btn">
                                 <div className="h-[60px] w-[60px] group-hover/btn:w-[160px] rounded-xl bg-[#FF5722] flex items-center transition-all duration-300 hover:bg-[#E64A19] cursor-pointer overflow-hidden">
                                     <div className="flex items-center gap-4 px-[20px] whitespace-nowrap">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="flex-shrink-0">
@@ -286,7 +290,7 @@ export default function OurWork() {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.4 }}
                         viewport={{ once: true }}
-                        className="relative overflow-hidden rounded-lg bg-[#2a2a2c] h-[380px] group"
+                        className="relative overflow-hidden rounded-lg bg-bg-card-alt h-[380px] group"
                     >
                         {/* Video Background */}
                         <div className="absolute inset-0 z-0">
@@ -309,16 +313,16 @@ export default function OurWork() {
                                 {[...Array(9)].map((_, i) => (
                                     <div
                                         key={i}
-                                        className="w-[4px] h-[4px] rounded-sm bg-[#E3DBD8]/70"
+                                        className="w-[4px] h-[4px] rounded-sm bg-dot-color/70"
                                     />
                                 ))}
                             </div>
 
-                            <p className="absolute bottom-32 left-6 text-white text-[1.0625rem] leading-[1.4] tracking-tighter max-w-[15.8rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <p className="absolute bottom-10 lg:bottom-32 left-6 text-white text-[1.0625rem] leading-[1.44] tracking-tight max-w-[15.8rem] opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
                                 Municipality registrations, product labeling, import documentation, and GCC conformity. We handle the paperwork that stops most international brands at the border.
                             </p>
 
-                            <a href="#contact" className="flex items-start group/btn">
+                            <a href="#contact" className="hidden lg:flex items-start group/btn">
                                 <div className="h-[60px] w-[60px] group-hover/btn:w-[160px] rounded-xl bg-[#FF5722] flex items-center transition-all duration-300 hover:bg-[#E64A19] cursor-pointer overflow-hidden">
                                     <div className="flex items-center gap-4 px-[20px] whitespace-nowrap">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="flex-shrink-0">
@@ -343,7 +347,7 @@ export default function OurWork() {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.2 }}
                         viewport={{ once: true }}
-                        className="relative overflow-hidden rounded-lg bg-[#2a2a2c] h-[380px] group"
+                        className="relative overflow-hidden rounded-lg bg-bg-card-alt h-[380px] group"
                     >
                         <div className="absolute inset-0 z-0 overflow-hidden">
                             <img
@@ -367,11 +371,11 @@ export default function OurWork() {
                                 ))}
                             </div>
 
-                            <p className="absolute bottom-32 left-6 text-white text-[1.0625rem] leading-[1.4] tracking-tighter max-w-[15.8rem] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <p className="absolute bottom-10 lg:bottom-32 left-6 text-white text-[1.0625rem] leading-[1.44] tracking-tight max-w-[15.8rem] opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
                                 We don’t just list your products. We manage the full stack — catalog setup, pricing strategy, content optimization, inventory sync, and seller performance across Amazon, Noon, and Mumzworld.
                             </p>
 
-                            <a href="#contact" className="flex items-start group/btn">
+                            <a href="#contact" className="hidden lg:flex items-start group/btn">
                                 <div className="h-[60px] w-[60px] group-hover/btn:w-[160px] rounded-xl bg-[#FF5722] flex items-center transition-all duration-300 hover:bg-[#E64A19] cursor-pointer overflow-hidden">
                                     <div className="flex items-center gap-4 px-[20px] whitespace-nowrap">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="flex-shrink-0">
@@ -443,28 +447,28 @@ export default function OurWork() {
                     </motion.div>
 
                     {/* Right Info Card */}
-                    <motion.div className="relative rounded-2xl bg-[#1C1D20] h-[380px] p-10 flex flex-col justify-between">
+                    <motion.div className="relative rounded-2xl bg-bg-card h-[380px] p-10 flex flex-col justify-between">
                         <div>
                             <h3 className="text-4xl font-medium text-white">
                                 Raha Launchpad
                             </h3>
 
-                            <p className="text-[#FF5722] mt-4">
+                            <p className="text-orange-main mt-4">
                                 Our end-to-end brand launch system.
                             </p>
 
                             <div className="mt-8">
-                                <p className="text-[#888891] text-lg leading-relaxed">
+                                <p className="text-text-muted text-lg leading-relaxed">
                                     From regulatory clearance to first sale, compressed into a single managed process.
                                 </p>
                             </div>
                         </div>
 
                         <a href="#contact" className="flex justify-between items-center group/btn">
-                            <span className="text-white/60 group-hover/btn:text-[#FF5722] transition-colors">Talk to us</span>
+                            <span className="text-white/60 group-hover/btn:text-orange-main transition-colors">Talk to us</span>
 
-                            <div className="w-[60px] h-[60px] rounded-xl bg-[#FF5722] group-hover/btn:bg-[#E64A19] flex items-center justify-center cursor-pointer transition-colors">
-                                <span className="text-2xl text-[#161719]">→</span>
+                            <div className="w-[60px] h-[60px] rounded-xl bg-orange-main group-hover/btn:bg-orange-dark flex items-center justify-center cursor-pointer transition-colors">
+                                <span className="text-2xl text-bg-section">→</span>
                             </div>
                         </a>
                     </motion.div>

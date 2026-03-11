@@ -6,6 +6,7 @@ import { useInView } from 'framer-motion';
 interface AnimatedCounterProps {
     end: number;
     duration?: number;
+    delay?: number;
     prefix?: string;
     suffix?: string;
     className?: string;
@@ -14,6 +15,7 @@ interface AnimatedCounterProps {
 export default function AnimatedCounter({
     end,
     duration = 2,
+    delay = 2,
     prefix = '',
     suffix = '',
     className = '',
@@ -24,31 +26,42 @@ export default function AnimatedCounter({
     const hasAnimated = useRef(false);
 
     useEffect(() => {
+        let timeout: NodeJS.Timeout;
+
         if (isInView && !hasAnimated.current) {
             hasAnimated.current = true;
-            const startTime = Date.now();
-            const endTime = startTime + duration * 1000;
 
-            const updateCount = () => {
-                const now = Date.now();
-                const progress = Math.min((now - startTime) / (endTime - startTime), 1);
+            timeout = setTimeout(() => {
+                const startTime = Date.now();
+                const durationMs = duration * 1000;
+                const endTime = startTime + durationMs;
 
-                // Easing function for smooth animation
-                const easeOutQuart = 1 - Math.pow(1 - progress, 4);
-                const currentCount = Math.floor(easeOutQuart * end);
+                const updateCount = () => {
+                    const now = Date.now();
+                    const elapsed = now - startTime;
+                    const progress = Math.min(elapsed / durationMs, 1);
 
-                setCount(currentCount);
+                    // Easing function for smooth animation
+                    const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+                    const currentCount = Math.round(easeOutQuart * end);
 
-                if (progress < 1) {
-                    requestAnimationFrame(updateCount);
-                } else {
-                    setCount(end);
-                }
-            };
+                    setCount(currentCount);
 
-            requestAnimationFrame(updateCount);
+                    if (progress < 1) {
+                        requestAnimationFrame(updateCount);
+                    } else {
+                        setCount(end);
+                    }
+                };
+
+                requestAnimationFrame(updateCount);
+            }, delay * 1000);
         }
-    }, [isInView, end, duration]);
+
+        return () => {
+            if (timeout) clearTimeout(timeout);
+        };
+    }, [isInView, end, duration, delay]);
 
     return (
         <span ref={ref} className={className}>
