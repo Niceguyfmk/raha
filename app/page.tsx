@@ -34,14 +34,14 @@ export default function Home() {
         <main>
           <Hero />
           <OurWork />
-          <Process />
           <OurServices />
+          <Process />
           <Team />
           {/* Footer Experience: A professional slide-over reveal */}
-          <section className="relative bg-[#161719]">
+          <section className="relative bg-[#161719] pt-20 lg:pt-48">
             {/* Section 1: Contact (Natural scroll) */}
             <motion.h2
-              className="max-w-[1400px] mx-auto mb-4 text-[60px] md:text-[80px] xl:text-[100px]
+              className="max-w-[1400px] mx-auto px-6 mb-4 text-[60px] md:text-[80px] xl:text-[100px]
                font-semibold tracking-[-0.04em] text-[#FA6F45]"
               variants={fadeInUp}
               initial="hidden"

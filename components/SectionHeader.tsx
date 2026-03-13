@@ -33,7 +33,7 @@ export default function SectionHeader({
                     transition={{ duration: 0.8 }}
                     className="mb-6 md:mb-10 lg:mb-14"
                 >
-                    <h2 className="text-5xl md:text-8xl lg:text-[6.875rem] font-medium tracking-[-0.05em] leading-[0.9] text-muted">
+                    <h2 className="text-[5rem] md:text-8xl lg:text-[6.875rem] font-medium tracking-[-0.05em] leading-[0.9] text-text-muted">
                         {title}
                     </h2>
                 </motion.div>
@@ -53,7 +53,7 @@ export default function SectionHeader({
                             className="flex flex-col justify-start min-w-[70px] md:min-w-[120px] lg:col-span-2 pt-2"
                         >
                             <span className="block text-white text-lg md:text-2xl font-light tracking-widest leading-none">{number}</span>
-                            <span className="block text-white text-[9px] md:text-xs font-bold tracking-[0.2em] uppercase opacity-80 mt-2 leading-tight">
+                            <span className="block text-white text-[9px] md:text-xs font-bold tracking-[0.2em] uppercase opacity-60 mt-2 leading-tight">
                                 {brandName}
                             </span>
                         </motion.div>
@@ -75,7 +75,7 @@ export default function SectionHeader({
                                 </h3>
 
                                 {/* Mobile/Tablet Description (Aligned with statement) */}
-                                <p className="lg:hidden text-muted text-[1.0625rem] leading-[1.44] tracking-tight max-w-[24rem]">
+                                <p className="lg:hidden text-white opacity-60 text-[15px] md:text-[1.0625rem] leading-[1.44] tracking-tight max-w-[24rem]">
                                     {description}
                                 </p>
                             </motion.div>
@@ -90,7 +90,7 @@ export default function SectionHeader({
                         transition={{ duration: 0.8, delay: 0.4 }}
                         className="hidden lg:flex lg:col-span-3 lg:justify-end lg:pt-2"
                     >
-                        <p className="text-muted text-[1rem] leading-[1.3] max-w-[11.4375rem] tracking-tight text-right">
+                        <p className="text-white opacity-60 text-[1rem] leading-[1.3] max-w-[11.4375rem] tracking-tight text-right">
                             {description}
                         </p>
                     </motion.div>

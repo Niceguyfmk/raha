@@ -153,7 +153,7 @@ export default function Hero() {
                             <div className="mt-16 md:mt-24 flex flex-wrap gap-12 md:gap-16 text-balance">
                                 <div className="hero-stats">
                                     <div className="flex items-start gap-2 mb-2">
-                                        <span className="text-4xl md:text-5xl font-light text-white"><AnimatedCounter end={15} /></span>
+                                        <span className="text-4xl md:text-5xl font-light text-orange-main"><AnimatedCounter end={15} /></span>
                                         <span className="text-2xl md:text-3xl font-light text-orange-main mt-1">+</span>
                                     </div>
                                     <div className="text-white font-medium text-sm mb-1">Retail & Marketplace Partners</div>
@@ -162,7 +162,7 @@ export default function Hero() {
 
                                 <div className="hero-stats">
                                     <div className="flex items-start gap-2 mb-2">
-                                        <span className="text-4xl md:text-5xl font-light text-white"><AnimatedCounter end={10} /></span>
+                                        <span className="text-4xl md:text-5xl font-light text-orange-main"><AnimatedCounter end={10} /></span>
                                         <span className="text-2xl md:text-3xl font-light text-orange-main mt-1">+</span>
                                     </div>
                                     <div className="text-white font-medium text-sm mb-1">Countries</div>
@@ -171,7 +171,7 @@ export default function Hero() {
 
                                 <div className="hero-stats">
                                     <div className="flex items-start gap-2 mb-2">
-                                        <span className="text-4xl md:text-5xl font-light text-white"><AnimatedCounter end={90} /></span>
+                                        <span className="text-4xl md:text-5xl font-light text-orange-main"><AnimatedCounter end={90} /></span>
                                         <span className="text-lg md:text-xl font-light text-orange-main mt-3 ml-1 uppercase">Days</span>
                                     </div>
                                     <div className="text-white font-medium text-sm mb-1">Concept to First Sale</div>
