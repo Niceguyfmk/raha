@@ -33,7 +33,7 @@ export default function Process() {
         <section id="process" className="relative bg-bg-section py-20 lg:py-48 px-6 overflow-hidden border-t border-white/5">
             <div className="max-w-[1400px] mx-auto">
                 <SectionHeader
-                    number="002"
+                    number="003"
                     brandName="Raha x Strategy"
                     title="Raha Playbook"
                     statement="From outside the GCC to dominant within it."

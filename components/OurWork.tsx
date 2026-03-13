@@ -84,11 +84,14 @@ export default function OurWork() {
                             className="relative overflow-hidden rounded-3xl bg-bg-card-alt h-full group"
                         >
                             <div className="absolute inset-0 z-0 overflow-hidden">
-                                <img
-                                    src="/images/training.avif"
-                                    alt="Electronics"
-                                    className="w-full h-full object-cover opacity-90 grayscale transition-transform duration-500 group-hover:scale-110"
-                                />
+                                <picture>
+                                    <source media="(max-width: 765px)" srcSet="/images/lift_xtra_ALU_1.webp" />
+                                    <img
+                                        src="/images/training.avif"
+                                        alt="Electronics"
+                                        className="w-full h-full object-cover opacity-90 grayscale transition-transform duration-500 group-hover:scale-110"
+                                    />
+                                </picture>
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
                             </div>
 
@@ -100,7 +103,7 @@ export default function OurWork() {
 
                                 {/* Mobile/Tablet Description (Fixed at bottom) */}
                                 <div className="lg:hidden mt-auto">
-                                    <p className="text-white/90 text-[1.0625rem] leading-[1.44] tracking-tight">
+                                    <p className="text-white/90 text-[14px] md:text-[1.0625rem] leading-[1.44] tracking-tight">
                                         Took a European premium appliance brand from zero GCC presence to full marketplace and retail coverage across the UAE. Built the distribution infrastructure and secured retail partnerships.
                                     </p>
                                 </div>
@@ -115,7 +118,7 @@ export default function OurWork() {
                                             className="absolute inset-0 z-20 bg-black/90 p-12 hidden lg:flex flex-col justify-center"
                                         >
                                             <div className="max-w-md">
-                                                <p className="text-white/90 text-[1.0625rem] leading-[1.44] tracking-tight mb-8">
+                                                <p className="text-white/90 text-[14px] md:text-[1.0625rem] leading-[1.44] tracking-tight mb-8">
                                                     Took a European premium appliance brand from zero GCC presence to full marketplace and retail coverage across the UAE. Built the distribution infrastructure and secured retail partnerships.
                                                 </p>
                                                 <div className="text-orange-main text-2xl font-bold">
@@ -162,7 +165,7 @@ export default function OurWork() {
                             <div>
                                 <p className="text-white/90 text-sm text-white/80 mb-2">Market Entry + Compliance</p>
                                 <h3 className="text-4xl font-medium text-white mb-6 leading-tight">Thai Consumer Brand — GCC Regulatory & Launch</h3>
-                                <p className="text-white/90 text-[1.0625rem] leading-[1.44] tracking-tight mb-8">Managed end-to-end market entry including regulatory clearance, municipality approvals, and labeling compliance.</p>
+                                <p className="text-white/90 text-[14px] md:text-[1.0625rem] leading-[1.44] tracking-tight mb-8">Managed end-to-end market entry including regulatory clearance, municipality approvals, and labeling compliance.</p>
                                 <div className="bg-black/10 p-6 rounded-xl border border-white/10">
                                     <div className="text-white/60 text-xs uppercase tracking-widest mb-1">Impact</div>
                                     <div className="text-white font-medium">Regulatory clearance secured. Product market-ready in UAE.</div>
@@ -215,7 +218,7 @@ export default function OurWork() {
                                 ))}
                             </div>
 
-                            <p className="absolute bottom-10 lg:bottom-32 left-6 text-white text-[1.0625rem] leading-[1.44] tracking-tight max-w-[15.8rem] opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
+                            <p className="absolute bottom-10 lg:bottom-32 left-6 right-6 text-white text-[14px] md:text-[1.0625rem] leading-[1.44] tracking-tight opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
                                 Built the GCC e-commerce playbook for an Indian consumer electronics brand. Set up marketplace operations on Amazon and Noon, developed the content and listing strategy, and ran performance marketing to build initial traction.
                             </p>
 
@@ -265,7 +268,7 @@ export default function OurWork() {
                                 ))}
                             </div>
 
-                            <p className="absolute bottom-10 lg:bottom-32 left-6 text-white text-[1.0625rem] leading-[1.44] tracking-tight max-w-[15.8rem] opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
+                            <p className="absolute bottom-10 lg:bottom-32 left-6 right-6 text-white text-[14px] md:text-[1.0625rem] leading-[1.44] tracking-tight opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
                                 SEO, paid social, influencer partnerships, and in-store activations. Designed for conversion, not vanity metrics.
                             </p>
 
@@ -318,7 +321,7 @@ export default function OurWork() {
                                 ))}
                             </div>
 
-                            <p className="absolute bottom-10 lg:bottom-32 left-6 text-white text-[1.0625rem] leading-[1.44] tracking-tight max-w-[15.8rem] opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
+                            <p className="absolute bottom-10 lg:bottom-32 left-6 right-6 text-white text-[14px] md:text-[1.0625rem] leading-[1.44] tracking-tight opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
                                 Municipality registrations, product labeling, import documentation, and GCC conformity. We handle the paperwork that stops most international brands at the border.
                             </p>
 
@@ -371,8 +374,8 @@ export default function OurWork() {
                                 ))}
                             </div>
 
-                            <p className="absolute bottom-10 lg:bottom-32 left-6 text-white text-[1.0625rem] leading-[1.44] tracking-tight max-w-[15.8rem] opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
-                                We don’t just list your products. We manage the full stack — catalog setup, pricing strategy, content optimization, inventory sync, and seller performance across Amazon, Noon, and Mumzworld.
+                            <p className="absolute bottom-10 lg:bottom-32 left-6 right-6 text-white text-[14px] md:text-[1.0625rem] leading-[1.44] tracking-tight opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
+                                We manage the full stack — catalog setup, pricing strategy, content optimization, inventory sync, and seller performance across Amazon, Noon, and Mumzworld.
                             </p>
 
                             <a href="#contact" className="hidden lg:flex items-start group/btn">

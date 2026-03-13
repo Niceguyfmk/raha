@@ -12,7 +12,7 @@ export default function FooterContent() {
 
     return (
         <div ref={containerRef} className="relative w-full bg-[#161719] text-[#dfd9d7] font-sans overflow-hidden">
-            <div className="max-w-[1400px] mx-auto p-3 grid grid-cols-1 md:grid-cols-2 gap-1">
+            <div className="max-w-[1400px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-1">
 
                 {/* ── PANEL 1: MESSAGE ────────────────────────────────── */}
                 <div className="bg-[#212225] rounded-xl p-8 md:p-12 flex flex-col justify-between min-h-[400px] border border-white/5">
@@ -53,13 +53,13 @@ export default function FooterContent() {
 
                     <div className="relative z-10 flex justify-end">
                         <a href="mailto:zeeshan@rahapartners.com" className="text-[18px] md:text-[22px] font-medium text-[#dfd9d7] hover:text-[#FA6F45] transition-colors">
-                            hello@rahapartners.com
+                            info@rahapartners.com
                         </a>
                     </div>
 
                     <div className="relative z-10 py-12">
-                        <h2 className="text-[60px] md:text-[100px] xl:text-[140px] font-black tracking-[-0.08em] leading-none text-[#FA6F45] select-none opacity-90">
-                            RAHA
+                        <h2 className="text-[60px] md:text-[100px] font-black tracking-[-0.08em] leading-none text-[#FA6F45] select-none opacity-90">
+                            RAHA PARTNERS
                         </h2>
                     </div>
 
@@ -78,7 +78,7 @@ export default function FooterContent() {
                             <span className="w-4 h-1.5 bg-[#FA6F45] rounded-full" />
                             <span className="w-1.5 h-1.5 bg-[#434346] rounded-full" />
                         </div>
-                        {['Home', 'Work', 'Services', 'Process', 'FAQ', 'Testimonials'].map(link => (
+                        {['Home', 'Work', 'Services', 'Process'].map(link => (
                             <a key={link} href="#" className="block text-[18px] md:text-[22px] text-[#dfd9d7] hover:text-[#FA6F45] transition-colors">
                                 {link}
                             </a>
@@ -89,7 +89,7 @@ export default function FooterContent() {
                             <span className="w-1.5 h-1.5 bg-[#434346] rounded-full" />
                             <span className="w-4 h-1.5 bg-[#FA6F45] rounded-full" />
                         </div>
-                        {['The Team', 'Blog', 'Contact', 'Terms & Service', 'Privacy Policy'].map(link => (
+                        {['The Team', 'Contact', 'Terms & Service', 'Privacy Policy'].map(link => (
                             <a key={link} href="#" className="block text-[18px] md:text-[22px] text-[#dfd9d7] hover:text-[#FA6F45] transition-colors">
                                 {link}
                             </a>

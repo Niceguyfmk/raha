@@ -74,7 +74,7 @@ export default function FooterContact() {
     }
 
     return (
-        <section id="contact" className="relative w-full bg-bg-section pb-8 px-3 overflow-hidden">
+        <section id="contact" className="relative w-full bg-bg-section pb-8 px-6 overflow-hidden">
             <div className="max-w-[1400px] mx-auto grid grid-cols-1 xl:grid-cols-2 gap-1">
 
                 {/* ── LEFT SIDE ─────────────────────────────────── */}
@@ -94,7 +94,9 @@ export default function FooterContact() {
                             className="text-[28px] font-medium tracking-[-0.04em] text-text-dim"
                             variants={fadeInUp}
                         >
-                            Contact Us
+                            <a href="tel:+971585799283" className="hover:text-orange-accent transition-colors">
+                                +971 58 579 9283
+                            </a>
                         </motion.h5>
                         <motion.div className="flex gap-10" variants={fadeInUp}>
                             <a href="https://www.linkedin.com/company/raha-partners" target="_blank" rel="noopener noreferrer" className="text-text-warm hover:text-orange-accent">
@@ -112,7 +114,7 @@ export default function FooterContact() {
                         variants={fadeInUp}
                     >
                         <motion.h5
-                            className="text-[28px] font-medium tracking-[-0.04em] text-text-dim mb-6"
+                            className="text-[28px] font-medium tracking-[-0.04em] text-[#FA6F45] mb-6"
                             variants={fadeInUp}
                         >
                             What we offer
@@ -158,7 +160,7 @@ export default function FooterContact() {
                                 className="text-[18px] text-orange-accent hover:underline"
                                 variants={fadeInUp}
                             >
-                                hello@rahapartners.com
+                                info@rahapartners.com
                             </motion.a>
                         </motion.div>
 
