@@ -1,10 +1,19 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Navigation() {
     const [isOpen, setIsOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 50);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     return (
         <>
@@ -12,7 +21,10 @@ export default function Navigation() {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: 'easeOut' }}
-                className="fixed top-8 left-0 right-0 z-50 px-6"
+                className={`fixed left-0 right-0 z-50 px-6 transition-all duration-300 ${isScrolled
+                        ? 'top-0 py-5 bg-black/80 backdrop-blur-md border-b border-white/10'
+                        : 'top-8 bg-transparent'
+                    }`}
             >
                 <div className="flex items-center justify-between max-w-[1800px] mx-auto">
                     {/* Logo */}

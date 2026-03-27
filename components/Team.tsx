@@ -8,7 +8,7 @@ export default function Team() {
         <section id="team" className="relative bg-[#161719] pt-24 pb-48 px-6 overflow-hidden">
             <div className="max-w-[1400px] mx-auto">
                 <SectionHeader
-                    number="004"
+                    number="003"
                     brandName="Raha x Team"
                     title="Meet the Team"
                     statement="Get to know the team behind the work. Makers, thinkers, and problem-solvers."

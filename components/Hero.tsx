@@ -9,7 +9,7 @@ import { FaCalendarAlt } from 'react-icons/fa'
 
 gsap.registerPlugin(ScrollTrigger);
 
-const REVEAL_TEXT = "We handle distribution, marketplace operations, and marketing execution so brands can focus on building great products. Dubai-based. GCC-focused. Operator-led.";
+const REVEAL_TEXT = "We handle distribution, marketplace operations, and marketing execution so brands can focus on building great products.";
 
 export default function Hero() {
     const containerRef = useRef<HTMLDivElement>(null);
@@ -114,10 +114,10 @@ export default function Hero() {
                                         {/* Left Text */}
                                         <div className="max-w-[250px] md:max-w-md-[230px]">
                                             <h2 className="text-text-dim text-[28px] md:text-3xl font-medium tracking-[-1.12px]">
-                                                See it for yourself
+                                                Talk to our team
                                             </h2>
                                             <p className="mt-3 text-text-muted text-[17px] font-normal tracking-[-0.04em] leading-[1.3]">
-                                                Join our guided tour and explore all features live
+                                                Bespoke solutions for your business
                                             </p>
                                         </div>
 
@@ -150,32 +150,41 @@ export default function Hero() {
 
 
                             {/* Stats Section */}
-                            <div className="mt-16 md:mt-24 flex flex-wrap gap-12 md:gap-16 text-balance">
+                            <div className="mt-16 md:mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12 w-full text-balance">
                                 <div className="hero-stats">
-                                    <div className="flex items-start gap-2 mb-2">
-                                        <span className="text-4xl md:text-5xl font-light text-orange-main"><AnimatedCounter end={15} /></span>
+                                    <div className="flex items-start mb-2">
+                                        <span className="text-4xl md:text-5xl font-light text-orange-main"><AnimatedCounter end={50} /></span>
                                         <span className="text-2xl md:text-3xl font-light text-orange-main mt-1">+</span>
                                     </div>
-                                    <div className="text-white font-medium text-sm mb-1">Retail & Marketplace Partners</div>
+                                    <div className="text-white font-medium text-sm mb-1">Retail Partners</div>
                                     <div className="text-white/50 text-xs">From Carrefour to Amazon</div>
                                 </div>
 
                                 <div className="hero-stats">
-                                    <div className="flex items-start gap-2 mb-2">
-                                        <span className="text-4xl md:text-5xl font-light text-orange-main"><AnimatedCounter end={10} /></span>
+                                    <div className="flex items-start mb-2">
+                                        <span className="text-4xl md:text-5xl font-light text-orange-main"><AnimatedCounter end={15} /></span>
                                         <span className="text-2xl md:text-3xl font-light text-orange-main mt-1">+</span>
                                     </div>
                                     <div className="text-white font-medium text-sm mb-1">Countries</div>
-                                    <div className="text-white/50 text-xs">Middle East region</div>
+                                    <div className="text-white/50 text-xs">EMEA, India & SE Asia</div>
                                 </div>
 
                                 <div className="hero-stats">
-                                    <div className="flex items-start gap-2 mb-2">
-                                        <span className="text-4xl md:text-5xl font-light text-orange-main"><AnimatedCounter end={90} /></span>
-                                        <span className="text-lg md:text-xl font-light text-orange-main mt-3 ml-1 uppercase">Days</span>
+                                    <div className="flex items-start mb-2">
+                                        <span className="text-4xl md:text-5xl font-light text-orange-main"><AnimatedCounter end={30} /></span>
+                                        <span className="text-lg md:text-xl font-light text-orange-main mt-3 ml-2 uppercase">Days</span>
                                     </div>
                                     <div className="text-white font-medium text-sm mb-1">Concept to First Sale</div>
                                     <div className="text-white/50 text-xs text-balance">Average launch timeline</div>
+                                </div>
+
+                                <div className="hero-stats">
+                                    <div className="flex items-start mb-2">
+                                        <span className="text-4xl md:text-5xl font-light text-orange-main"><AnimatedCounter end={10} /></span>
+                                        <span className="text-lg md:text-xl font-light text-orange-main mt-3 ml-2 uppercase">Brands</span>
+                                    </div>
+                                    <div className="text-white font-medium text-sm mb-1">Multi-Category Execution</div>
+                                    <div className="text-white/50 text-xs text-balance">Across marketplaces</div>
                                 </div>
                             </div>
                         </div>

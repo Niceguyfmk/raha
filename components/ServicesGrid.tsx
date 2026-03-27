@@ -3,80 +3,36 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 
-// Icons need to be defined outside or imported
-const ArrowUpRight = () => (
-    <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M7 17L17 7" />
-        <path d="M7 7h10v10" />
-    </svg>
-);
-
-const ArrowDown = () => (
-    <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 5v14" />
-        <path d="M19 12l-7 7-7-7" />
-    </svg>
-);
-
-const WavesIcon = () => (
-    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M2 12c.6.5 1.2 1 2.5 1s2.5-.5 2.5-1S8.2 11 9.5 11s2.5.5 2.5 1 1.2 1 2.5 1 2.5-.5 2.5-1S18.2 11 19.5 11s2.5.5 2.5 1" />
-        <path d="M2 17c.6.5 1.2 1 2.5 1s2.5-.5 2.5-1S8.2 16 9.5 16s2.5.5 2.5 1 1.2 1 2.5 1 2.5-.5 2.5-1S18.2 16 19.5 16s2.5.5 2.5 1" />
-        <path d="M2 7c.6.5 1.2 1 2.5 1s2.5-.5 2.5-1S8.2 6 9.5 6s2.5.5 2.5 1 1.2 1 2.5 1 2.5-.5 2.5-1S18.2 6 19.5 6s2.5.5 2.5 1" />
-    </svg>
-);
-
-const BuildIcon = () => (
-    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="2" y="14" width="20" height="8" rx="2" />
-        <rect x="2" y="2" width="20" height="8" rx="2" />
-        <line x1="6" y1="6" x2="6.01" y2="6" />
-        <line x1="6" y1="18" x2="6.01" y2="18" />
-    </svg>
-);
-
-const FingerprintIcon = () => (
-    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M2 12C2 6.5 6.5 2 12 2a10 10 0 0 1 8 6" />
-        <path d="M5 15.3a7 7 0 0 1 14 0" />
-        <path d="M12 20a9 9 0 0 0 9-9" />
-        <path d="M12 20a5 5 0 0 1-5-5" />
-        <path d="M12 15a2 2 0 0 0 2 2" />
-    </svg>
-);
-
-const GrowIcon = () => (
-    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 20V10" />
-        <path d="M18 20V4" />
-        <path d="M6 20v-4" />
-    </svg>
-);
+import { FaBox, FaChartLine, FaBullhorn, FaFingerprint, FaArrowDown } from 'react-icons/fa';
 
 const services = [
     {
         id: '01',
-        title: 'Marketplace & Retail',
+        title: 'Bespoke distribution with a focus on GCC',
         shortTitle: 'Amazon, Noon & Retail',
-        description: 'Comprehensive setup and management across Amazon, Noon, and local retail partners. We handle listing, pricing, and fulfillment to maximize your reach.',
-        icon: <BuildIcon />,
-        arrow: <ArrowUpRight />
+        description: 'Building a tailored distribution strategy across the GCC, securing the right retail partners, warehousing, and logistics to get your product into market efficiently.',
+        icon: <FaBox size={32} />
     },
     {
         id: '02',
-        title: 'Regulatory & Distro',
+        title: 'Ecommerce, Direct-to-Customer and Digital Presence',
         shortTitle: 'Clearance & Logistics',
-        description: 'End-to-end management of municipality approvals, labeling, warehousing, and 3PL integrations. We make the GCC feel like your home market.',
-        icon: <GrowIcon />,
-        arrow: <ArrowUpRight />
+        description: 'Launching and optimizing your digital storefront across Amazon, Noon, and Shopify while establishing a strong brand-led direct-to-consumer presence.',
+        icon: <FaChartLine size={32} />
     },
     {
         id: '03',
-        title: 'Growth & Local PR',
+        title: 'Digital Marketing and Optimization',
         shortTitle: 'Performance & PR',
-        description: 'Data-driven performance marketing, influencer strategy, and localized PR campaigns designed to build brand trust and drive rapid conversion.',
-        icon: <WavesIcon />,
-        arrow: <ArrowDown />
+        description: 'Driving growth through localized performance marketing, influencer partnerships, and continuous optimization of customer acquisition and conversion.',
+        icon: <FaBullhorn size={32} />
+    },
+    {
+        id: '04',
+        title: 'Market Intelligence, Network & Regulation',
+        shortTitle: 'Intel & Regulation',
+        description: 'Navigating GCC regulatory requirements, municipality registrations, and compliant labeling while leveraging local market intelligence and partner networks.',
+        icon: <FaFingerprint size={32} />
     }
 ];
 
@@ -405,9 +361,11 @@ export default function ServicesGrid() {
                             transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
                         >
                             <div className="flex flex-col gap-6">
-                                <div className={`flex items-start gap-4 transition-colors pb-6 border-b border-white/10 ${isActive ? 'text-[#e3dbd8]' : 'text-white/50 group-hover:text-white'}`}>
-                                    <div className={`transform transition-all duration-300 ${isActive ? '-rotate-[135deg] w-[48px] h-[48px]' : 'group-hover:-rotate-[135deg] w-[36px] h-[36px]'}`}>
-                                        <ArrowDown />
+                                <div className={`flex items-center gap-4 transition-colors pb-6 border-b border-white/10 ${isActive ? 'text-[#e3dbd8]' : 'text-white/50 group-hover:text-white'}`}>
+                                    <div className="flex-shrink-0 w-[48px] h-[48px] flex items-center justify-center">
+                                        <div className={`transform transition-all duration-300 flex items-center justify-center ${isActive ? '-rotate-[135deg] w-[48px] h-[48px]' : 'group-hover:-rotate-[135deg] w-[36px] h-[36px]'}`}>
+                                            <FaArrowDown className="w-full h-full" />
+                                        </div>
                                     </div>
                                     <span className={`font-light tracking-tight leading-none transition-all duration-300 ${isActive ? 'text-[70px] text-dot-color' : 'text-[35px]'}`}>
                                         {service.id}
@@ -439,9 +397,24 @@ export default function ServicesGrid() {
                             <div className="mt-auto">
                                 <motion.div className={`flex flex-col gap-3 ${isActive ? 'text-white' : 'text-white/40'}`} layout style={{ opacity: (!isActive && !isDesktop) ? 0 : 1 }}>
                                     <div className="flex items-center justify-between">
-                                        <div className="flex flex-col gap-3">
-                                            {service.icon}
-                                            <span className="font-medium text-lg tracking-wide">{service.shortTitle}</span>
+                                        <div className="flex flex-col items-start w-full">
+                                            <div className="flex-shrink-0 flex items-center justify-center">
+                                                {service.icon}
+                                            </div>
+                                            <AnimatePresence>
+                                                {isActive && (
+                                                    <motion.div
+                                                        initial={{ opacity: 0, height: 0 }}
+                                                        animate={{ opacity: 1, height: 'auto' }}
+                                                        exit={{ opacity: 0, height: 0 }}
+                                                        className="overflow-hidden"
+                                                    >
+                                                        <span className="font-medium text-lg tracking-wide whitespace-nowrap block mt-3">
+                                                            {service.shortTitle}
+                                                        </span>
+                                                    </motion.div>
+                                                )}
+                                            </AnimatePresence>
                                         </div>
                                     </div>
                                 </motion.div>
