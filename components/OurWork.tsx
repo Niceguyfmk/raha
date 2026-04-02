@@ -106,17 +106,17 @@ export default function OurWork() {
                                 ))}
                             </div>
 
-                            <p className="absolute bottom-10 lg:bottom-32 left-6 right-6 text-white text-[14px] md:text-[1.0625rem] leading-[1.44] tracking-tight opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
+                            <p className="hidden lg:block absolute bottom-10 lg:bottom-32 left-6 right-6 text-white text-[14px] md:text-[1.0625rem] leading-[1.44] tracking-tight opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
                                 Built the GCC e-commerce playbook for an Indian consumer electronics brand. Set up marketplace operations on Amazon and Noon, developed the content and listing strategy, and ran performance marketing to build initial traction.
                             </p>
 
-                            <a href="#contact" className="hidden lg:flex items-start group/btn">
-                                <div className="h-[60px] w-[60px] group-hover/btn:w-[160px] rounded-xl bg-[#FF5722] flex items-center transition-all duration-300 hover:bg-[#E64A19] cursor-pointer overflow-hidden">
+                            <a href="#contact" className="flex items-start group/btn">
+                                <div className="h-[60px] w-[160px] lg:w-[60px] group-hover/btn:w-[160px] rounded-xl bg-[#FF5722] flex items-center transition-all duration-300 hover:bg-[#E64A19] cursor-pointer overflow-hidden">
                                     <div className="flex items-center gap-4 px-[20px] whitespace-nowrap">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="flex-shrink-0">
                                             <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#161719" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                         </svg>
-                                        <span className="font-medium text-[#161719] opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300">
+                                        <span className="font-medium text-[#161719] opacity-100 lg:opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300">
                                             Talk to us
                                         </span>
                                     </div>
@@ -156,17 +156,17 @@ export default function OurWork() {
                                 ))}
                             </div>
 
-                            <p className="absolute bottom-10 lg:bottom-32 left-6 right-6 text-white text-[14px] md:text-[1.0625rem] leading-[1.44] tracking-tight opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
+                            <p className="hidden lg:block absolute bottom-10 lg:bottom-32 left-6 right-6 text-white text-[14px] md:text-[1.0625rem] leading-[1.44] tracking-tight opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
                                 SEO, paid social, influencer partnerships, and in-store activations. Designed for conversion, not vanity metrics.
                             </p>
 
-                            <a href="#contact" className="hidden lg:flex items-start group/btn">
-                                <div className="h-[60px] w-[60px] group-hover/btn:w-[160px] rounded-xl bg-[#FF5722] flex items-center transition-all duration-300 hover:bg-[#E64A19] cursor-pointer overflow-hidden">
+                            <a href="#contact" className="flex items-start group/btn">
+                                <div className="h-[60px] w-[160px] lg:w-[60px] group-hover/btn:w-[160px] rounded-xl bg-[#FF5722] flex items-center transition-all duration-300 hover:bg-[#E64A19] cursor-pointer overflow-hidden">
                                     <div className="flex items-center gap-4 px-[20px] whitespace-nowrap">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="flex-shrink-0">
                                             <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#161719" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                         </svg>
-                                        <span className="font-medium text-[#161719] opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300">
+                                        <span className="font-medium text-[#161719] opacity-100 lg:opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300">
                                             Talk to us
                                         </span>
                                     </div>
@@ -209,17 +209,17 @@ export default function OurWork() {
                                 ))}
                             </div>
 
-                            <p className="absolute bottom-10 lg:bottom-32 left-6 right-6 text-white text-[14px] md:text-[1.0625rem] leading-[1.44] tracking-tight opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
+                            <p className="hidden lg:block absolute bottom-10 lg:bottom-32 left-6 right-6 text-white text-[14px] md:text-[1.0625rem] leading-[1.44] tracking-tight opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
                                 Municipality registrations, product labeling, import documentation, and GCC conformity. We handle the paperwork that stops most international brands at the border.
                             </p>
 
-                            <a href="#contact" className="hidden lg:flex items-start group/btn">
-                                <div className="h-[60px] w-[60px] group-hover/btn:w-[160px] rounded-xl bg-[#FF5722] flex items-center transition-all duration-300 hover:bg-[#E64A19] cursor-pointer overflow-hidden">
+                            <a href="#contact" className="flex items-start group/btn">
+                                <div className="h-[60px] w-[160px] lg:w-[60px] group-hover/btn:w-[160px] rounded-xl bg-[#FF5722] flex items-center transition-all duration-300 hover:bg-[#E64A19] cursor-pointer overflow-hidden">
                                     <div className="flex items-center gap-4 px-[20px] whitespace-nowrap">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="flex-shrink-0">
                                             <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#161719" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                         </svg>
-                                        <span className="font-medium text-[#161719] opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300">
+                                        <span className="font-medium text-[#161719] opacity-100 lg:opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300">
                                             Talk to us
                                         </span>
                                     </div>
@@ -262,17 +262,17 @@ export default function OurWork() {
                                 ))}
                             </div>
 
-                            <p className="absolute bottom-10 lg:bottom-32 left-6 right-6 text-white text-[14px] md:text-[1.0625rem] leading-[1.44] tracking-tight opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
+                            <p className="hidden lg:block absolute bottom-10 lg:bottom-32 left-6 right-6 text-white text-[14px] md:text-[1.0625rem] leading-[1.44] tracking-tight opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
                                 We manage the full stack — catalog setup, pricing strategy, content optimization, inventory sync, and seller performance across Amazon, Noon, and Mumzworld.
                             </p>
 
-                            <a href="#contact" className="hidden lg:flex items-start group/btn">
-                                <div className="h-[60px] w-[60px] group-hover/btn:w-[160px] rounded-xl bg-[#FF5722] flex items-center transition-all duration-300 hover:bg-[#E64A19] cursor-pointer overflow-hidden">
+                            <a href="#contact" className="flex items-start group/btn">
+                                <div className="h-[60px] w-[160px] lg:w-[60px] group-hover/btn:w-[160px] rounded-xl bg-[#FF5722] flex items-center transition-all duration-300 hover:bg-[#E64A19] cursor-pointer overflow-hidden">
                                     <div className="flex items-center gap-4 px-[20px] whitespace-nowrap">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="flex-shrink-0">
                                             <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#161719" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                         </svg>
-                                        <span className="font-medium text-[#161719] opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300">
+                                        <span className="font-medium text-[#161719] opacity-100 lg:opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300">
                                             Talk to us
                                         </span>
                                     </div>
@@ -311,17 +311,17 @@ export default function OurWork() {
                                 ))}
                             </div>
 
-                            <p className="absolute bottom-10 lg:bottom-32 left-6 right-6 text-white text-[14px] md:text-[1.0625rem] leading-[1.44] tracking-tight opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
+                            <p className="hidden lg:block absolute bottom-10 lg:bottom-32 left-6 right-6 text-white text-[14px] md:text-[1.0625rem] leading-[1.44] tracking-tight opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
                                 Real-time insights on market performance, competitor analysis, and customer behavior to drive data-backed decisions and scale your brand profitably.
                             </p>
 
-                            <a href="#contact" className="hidden lg:flex items-start group/btn">
-                                <div className="h-[60px] w-[60px] group-hover/btn:w-[160px] rounded-xl bg-[#FF5722] flex items-center transition-all duration-300 hover:bg-[#E64A19] cursor-pointer overflow-hidden">
+                            <a href="#contact" className="flex items-start group/btn">
+                                <div className="h-[60px] w-[160px] lg:w-[60px] group-hover/btn:w-[160px] rounded-xl bg-[#FF5722] flex items-center transition-all duration-300 hover:bg-[#E64A19] cursor-pointer overflow-hidden">
                                     <div className="flex items-center gap-4 px-[20px] whitespace-nowrap">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="flex-shrink-0">
                                             <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#161719" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                         </svg>
-                                        <span className="font-medium text-[#161719] opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300">
+                                        <span className="font-medium text-[#161719] opacity-100 lg:opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300">
                                             Talk to us
                                         </span>
                                     </div>
@@ -364,17 +364,17 @@ export default function OurWork() {
                                 ))}
                             </div>
 
-                            <p className="absolute bottom-10 lg:bottom-32 left-6 right-6 text-white text-[14px] md:text-[1.0625rem] leading-[1.44] tracking-tight opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
+                            <p className="hidden lg:block absolute bottom-10 lg:bottom-32 left-6 right-6 text-white text-[14px] md:text-[1.0625rem] leading-[1.44] tracking-tight opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
                                 Our end-to-end brand launch system. From regulatory clearance to first sale, compressed into a single managed process.
                             </p>
 
-                            <a href="#contact" className="hidden lg:flex items-start group/btn">
-                                <div className="h-[60px] w-[60px] group-hover/btn:w-[160px] rounded-xl bg-[#FF5722] flex items-center transition-all duration-300 hover:bg-[#E64A19] cursor-pointer overflow-hidden">
+                            <a href="#contact" className="flex items-start group/btn">
+                                <div className="h-[60px] w-[160px] lg:w-[60px] group-hover/btn:w-[160px] rounded-xl bg-[#FF5722] flex items-center transition-all duration-300 hover:bg-[#E64A19] cursor-pointer overflow-hidden">
                                     <div className="flex items-center gap-4 px-[20px] whitespace-nowrap">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="flex-shrink-0">
                                             <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#161719" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                         </svg>
-                                        <span className="font-medium text-[#161719] opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300">
+                                        <span className="font-medium text-[#161719] opacity-100 lg:opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300">
                                             Talk to us
                                         </span>
                                     </div>
