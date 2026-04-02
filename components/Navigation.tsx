@@ -22,7 +22,7 @@ export default function Navigation() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: 'easeOut' }}
                 className={`fixed left-0 right-0 z-50 px-6 transition-all duration-300 ${isScrolled
-                        ? 'top-0 py-5 bg-black/80 backdrop-blur-md border-b border-white/10'
+                        ? 'top-0 py-5 bg-bg-section/90 backdrop-blur-md border-b border-white/10'
                         : 'top-8 bg-transparent'
                     }`}
             >

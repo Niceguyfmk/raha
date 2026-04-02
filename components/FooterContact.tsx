@@ -94,8 +94,8 @@ export default function FooterContact() {
                             className="text-[28px] font-medium tracking-[-0.04em] text-text-dim"
                             variants={fadeInUp}
                         >
-                            <a href="tel:+971585799283" className="hover:text-orange-accent transition-colors">
-                                +971 58 579 9283
+                            <a href="tel:+971585717283" className="hover:text-orange-accent transition-colors">
+                                +971 58 571 7283
                             </a>
                         </motion.h5>
                         <motion.div className="flex gap-10" variants={fadeInUp}>
