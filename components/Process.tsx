@@ -30,7 +30,7 @@ const processes = [
 
 export default function Process() {
     return (
-        <section id="process" className="relative bg-bg-section py-20 lg:py-48 px-6 overflow-hidden border-t border-white/5">
+        <section id="process" className="relative bg-bg-section py-20 lg:py-48 px-6 overflow-hidden">
             <div className="max-w-[1400px] mx-auto">
                 <SectionHeader
                     number="003"

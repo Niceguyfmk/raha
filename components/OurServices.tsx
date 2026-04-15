@@ -7,7 +7,7 @@ import ServicesGrid from './ServicesGrid';
 
 export default function OurServices() {
     return (
-        <section id="services" className="relative bg-bg-section py-20 lg:py-48 px-6 overflow-hidden border-t border-white/5">
+        <section id="services" className="relative bg-bg-section pt-0 pb-20 lg:pt-0 lg:pb-24 px-6 overflow-hidden">
             <div className="max-w-[1400px] mx-auto">
                 <SectionHeader
                     number="002"

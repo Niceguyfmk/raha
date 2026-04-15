@@ -22,49 +22,49 @@ interface TeamMember {
 const teamMembers: TeamMember[] = [
     {
         id: 1,
-        name: 'Talal Aziz',
-        title: 'Founder & CEO',
-        bio: 'Operator-led vision with 10+ years of experience scaling consumer brands across the GCC market. Daryll leads the overarching strategy for Raha Partners.',
-        photo: '/images/t-1.avif',
-        linkedin: 'https://www.linkedin.com/company/raha-partners',
+        name: 'Mohammed Ayub',
+        title: 'Investor & Advisor',
+        bio: 'With a strong background in the GCC market, Ayub brings invaluable strategic guidance and investment expertise to Raha Partners. His experience helps shape our growth trajectory and market approach.',
+        photo: '/images/ayub-pp.png',
+        linkedin: 'https://www.linkedin.com/in/mohammedayub/',
         whatsapp: "https://wa.me/971585799283?text=Hi%20Raha%20Partners,%20I'm%20interested%20in%20learning%20more%20about%20your%20services.",
     },
     {
         id: 2,
-        name: 'Faiz Khan',
-        title: 'Digital Solution Architect (Web & E-Commerce)',
-        bio: 'Marketplace specialist and ex-Noon operative. Faiz is an expert at navigating the Amazon and Noon ecosystems to maximize brand visibility and sales.',
-        photo: '/images/t-2.avif',
-        linkedin: 'https://www.linkedin.com/company/raha-partners',
-        whatsapp: "https://wa.me/971585799283?text=Hi%20Raha%20Partners,%20I'm%20interested%20in%20learning%20more%20about%20your%20services.",
+        name: 'Talal Aziz',
+        title: 'Head of Operations',
+        bio: 'A results-driven operator with a specialized focus on scaling consumer brands across the GCC, European, and Asian markets. Over the last six years, Talal has built a deep expertise in Category Management, specifically in developing private label brands. His work involves managing the growth of these brands across both major marketplaces and D2C websites, ensuring efficient product positioning and sales performance. At Raha Partners, Talal is responsible for leading the day-to-day operations, ensuring the business remains focused on execution and operational efficiency.',
+        photo: '/images/talal-pp.png',
+        linkedin: 'https://www.linkedin.com/in/talal-aziz-381608119/',
+        whatsapp: "https://wa.me/918789845398?text=Hi%20Raha%20Partners,%20I'm%20interested%20in%20learning%20more%20about%20your%20services.",
     },
     {
         id: 3,
-        name: 'Carol Rodrigues',
-        title: 'Head of Admin',
-        bio: 'With over 10 years of diverse experience across various industries in India, Carol brings strong expertise in administrative management. She currently leads hiring operations while overseeing core administrative functions, ensuring smooth and efficient business operations.',
-        photo: '/images/carol-pp.jpg',
-        linkedin: 'https://www.linkedin.com/company/raha-partners',
-        whatsapp: "https://wa.me/971585799283?text=Hi%20Raha%20Partners,%20I'm%20interested%20in%20learning%20more%20about%20your%20services.",
+        name: 'Faiz Mohammed Khan',
+        title: 'Digital Solution Architect (Web & E-Commerce)',
+        bio: 'At Raha Partners, Faiz leads the technology and digital execution backbone of the business, overseeing website development across Shopify, React, Next.js, and WordPress, along with dashboards, automation systems, and SEO/GEO initiatives. His role also extends into design direction and cross-functional team coordination, ensuring projects move seamlessly from strategy to launch while maintaining scalability, efficiency, and strong digital performance.',
+        photo: '/images/faiz-pp.png',
+        linkedin: 'https://www.linkedin.com/in/fmk96/',
+        whatsapp: "https://wa.me/916302983548?text=Hi%20Raha%20Partners,%20I'm%20interested%20in%20learning%20more%20about%20your%20services.",
     },
     {
         id: 4,
-        name: 'Zeeshan Ali',
-        title: 'Head of International Business',
-        bio: 'With 6+ years experience in the European & UK market, Zeeshan is responsible for expanding RAHA Partners\' footprint in the international market.',
-        photo: '/images/t-4.avif',
-        linkedin: 'https://www.linkedin.com/in/zeeshan-laique-ali/',
-        whatsapp: "https://wa.me/34612505467?text=Hi%20Raha%20Partners,%20I'm%20interested%20in%20learning%20more%20about%20your%20services.",
+        name: 'Carol Rodrigues',
+        title: 'Head of Admin',
+        bio: 'With over 10 years of diverse experience across various industries in India, Carol brings strong expertise in administrative management. She currently leads hiring operations while overseeing core administrative functions, ensuring smooth and efficient business operations.',
+        photo: '/images/carol-pp.png',
+        linkedin: 'https://www.linkedin.com/in/carolrodrigues21/',
+        whatsapp: "https://wa.me/919833562773?text=Hi%20Raha%20Partners,%20I'm%20interested%20in%20learning%20more%20about%20your%20services.",
     },
     {
         id: 5,
-        name: 'Salman Ahmed',
-        title: 'Retail & Partnerships',
-        bio: 'Retail connector with deep ties to the region. Salman is responsible for getting brands on the shelves of the biggest retailers across the GCC.',
-        photo: '/images/t-5.avif',
-        linkedin: 'https://www.linkedin.com/company/raha-partners',
-        whatsapp: "https://wa.me/971585799283?text=Hi%20Raha%20Partners,%20I'm%20interested%20in%20learning%20more%20about%20your%20services.",
-    },
+        name: 'Zeeshan Ali',
+        title: 'Head of International Business',
+        bio: 'With 6+ years experience in the European & UK market, Zeeshan is responsible for expanding RAHA Partners\' footprint in the international market.',
+        photo: '/images/zeeshan.jpg',
+        linkedin: 'https://www.linkedin.com/in/zeeshan-laique-ali/',
+        whatsapp: "https://wa.me/34612505467?text=Hi%20Raha%20Partners,%20I'm%20interested%20in%20learning%20more%20about%20your%20services.",
+    }
 ];
 
 
@@ -138,7 +138,7 @@ export default function TeamSlider() {
                                 {member.name}
                             </h3>
 
-                            <p className="text-[16px] md:text-[18px] xl:text-[21px] font-normal tracking-[-0.05em] leading-[1.4] text-text-muted">
+                            <p className="text-[18px] xl:text-[21px] font-normal pb-2 tracking-[-0.05em] leading-[1.4] text-text-muted">
                                 {member.title}
                             </p>
                         </motion.div>

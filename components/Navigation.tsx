@@ -22,8 +22,8 @@ export default function Navigation() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: 'easeOut' }}
                 className={`fixed left-0 right-0 z-50 px-6 transition-all duration-300 ${isScrolled
-                        ? 'top-0 py-5 bg-bg-section/90 backdrop-blur-md border-b border-white/10'
-                        : 'top-8 bg-transparent'
+                    ? 'top-0 py-5 bg-bg-section/90 backdrop-blur-md border-b border-white/10'
+                    : 'top-8 bg-transparent'
                     }`}
             >
                 <div className="flex items-center justify-between max-w-[1800px] mx-auto">
@@ -43,7 +43,7 @@ export default function Navigation() {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
                         onClick={() => setIsOpen(!isOpen)}
-                        className="relative z-50 flex flex-col gap-1.5 group"
+                        className="relative z-50 flex flex-col gap-1.5 group cursor-pointer"
                         aria-label="Toggle menu"
                     >
                         <motion.span
@@ -84,7 +84,7 @@ export default function Navigation() {
                 className="fixed inset-0 bg-black z-40 flex items-center justify-center"
             >
                 <div className="text-center space-y-8">
-                    {['Home', 'Our Work', 'Services', 'Process', 'Team', 'Contact'].map(
+                    {['Home', 'Our Work', 'Services', 'Team', 'Contact'].map(
                         (item, index) => (
                             <motion.a
                                 key={item}
