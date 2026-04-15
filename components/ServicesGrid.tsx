@@ -232,7 +232,7 @@ const BouncingDots = () => {
                 }
             `}</style>
 
-            <div className="grid grid-cols-5 gap-x-12 gap-y-12 h-full">
+            <div className="grid grid-cols-5 gap-x-16 gap-y-12 h-full">
                 {[0, 1, 2, 3, 4].map(col => (
                     <div key={col} className="flex flex-col justify-between h-full gap-12">
                         {[0, 1, 2, 3, 4].map(row => {
@@ -307,24 +307,21 @@ export default function ServicesGrid() {
             {/* Summary Card (Info) */}
             <motion.div
                 layout
-                className={`relative rounded-xl bg-bg-card p-8 flex flex-col justify-between flex-shrink-0 
+                className={`hidden xl:flex relative rounded-xl bg-bg-card p-8 flex-col justify-between flex-shrink-0 
                             order-1 xl:order-last xl:flex-[4.5] xl:w-auto mb-1 xl:mb-0
                             w-full h-auto min-h-0
                             `}
             >
                 <div> {/* Wrapper for top content to separate from Footer and Grid */}
                     <div className="flex justify-between items-center text-white/40 text-sm tracking-wide border-b border-white/10 pb-6 mb-4 xl:mb-8">
-                        <span>Capabilities</span>
-                        <span>3/3</span>
+                        <span>Strategic Capabilities</span>
+
                     </div>
 
                     <div className="space-y-4 xl:space-y-6 mb-8">
-                        <h2 className="text-3xl md:text-[48px] font-medium text-text-dim leading-[1.1] tracking-[-0.05em] text-balance">
-                            Everything you need to win in the GCC
-                        </h2>
-                        <p className="text-text-muted text-md leading-relaxed max-w-md">
+                        <h3 className="text-3xl md:text-[38px] font-medium text-text-dim leading-[1.1] tracking-[-0.05em] text-balance">
                             We provide the operational muscle, market expertise, and digital infrastructure to turn your brand into a local market leader.
-                        </p>
+                        </h3>
                     </div>
                 </div>
 

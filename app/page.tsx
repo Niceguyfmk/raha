@@ -36,7 +36,7 @@ export default function Home() {
           <OurServices />
           <Team />
           {/* Footer Experience: A professional slide-over reveal */}
-          <section className="relative bg-[#161719] pt-20 lg:pt-48">
+          <section className="relative bg-[#161719] pt-20 lg:pt-0">
             {/* Section 1: Contact (Natural scroll) */}
             <motion.h2
               className="max-w-[1400px] mx-auto px-6 mb-4 text-[60px] md:text-[80px] xl:text-[100px]
@@ -48,7 +48,7 @@ export default function Home() {
             >
               Let’s Talk<span className="text-[#FA6F45]">.</span>
             </motion.h2>
-            <div className="sticky top-0 h-[150vh] bg-[#161719]">
+            <div className="sticky top-0 h-[120vh] bg-[#161719]">
               <FooterContact />
             </div>
 

@@ -90,7 +90,7 @@ export default function SectionHeader({
                         transition={{ duration: 0.8, delay: 0.4 }}
                         className="hidden lg:flex lg:col-span-3 lg:justify-end lg:pt-2"
                     >
-                        <p className="text-white opacity-60 text-[1rem] leading-[1.3] max-w-[11.4375rem] tracking-tight text-right">
+                        <p className="text-white opacity-60 text-[1rem] leading-[1.3] max-w-[17rem] tracking-tight text-right">
                             {description}
                         </p>
                     </motion.div>

@@ -79,7 +79,7 @@ export default function Hero() {
     return (
         <div ref={containerRef} className="relative">
             {/* Part 1: Landing */}
-            <section id="home" className="relative min-h-screen flex items-center justify-center px-6 py-24 overflow-hidden">
+            <section id="home" className="relative min-h-screen flex items-center justify-center px-6 pt-24 pb-12 lg:py-24 overflow-hidden">
                 <div className="max-w-[1400px] mx-auto w-full z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-20">
                         {/* Left Side - Subtitle */}
@@ -93,7 +93,7 @@ export default function Hero() {
                                 {['— Build & scale brands across retail & digital ecosystems'].map((line, i) => (
                                     < div key={i} className="overflow-hidden" >
                                         <h1 className="hero-text-line
-                                            text-[48px] sm:text-4xl md:text-5xl lg:text-5xl xl:text-5xl
+                                            text-[48px] sm:text-4xl md:text-5xl lg:text-5xl xl:text-7xl
                                             font-heading
                                             text-orange-light
                                             font-medium
@@ -193,7 +193,7 @@ export default function Hero() {
             </section >
 
             {/* Part 2: Scroll Reveal (Long Hero Continuation) */}
-            < section ref={revealRef} className="relative min-h-lg:[120vh] flex items-center justify-center px-6 md:px-20 py-12 lg:py-32 overflow-hidden" >
+            < section ref={revealRef} className="relative min-h-lg:[120vh] flex items-center justify-center px-6 md:px-20 pt-0 pb-12 lg:py-32 overflow-hidden" >
                 {/* Background Orange Circles (Image 3 Style) */}
                 < div className="absolute inset-0 pointer-events-none" >
                     <div className="absolute top-[20%] right-[10%] w-[500px] h-[500px] rounded-full blur-[120px]" />

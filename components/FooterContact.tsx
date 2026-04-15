@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { motion, AnimatePresence, Variants } from 'framer-motion'
-import { FaLinkedinIn, FaWhatsapp, FaArrowRight, FaLaptop, FaBuilding, FaCheckCircle, FaSpinner } from 'react-icons/fa';
+import { FaLinkedinIn, FaWhatsapp, FaArrowRight, FaLaptop, FaBuilding, FaCheckCircle, FaSpinner, FaChevronUp } from 'react-icons/fa';
 
 // ➤ Animation Variants
 const fadeInUp: Variants = {
@@ -160,7 +160,7 @@ export default function FooterContact() {
                                 className="text-[18px] text-orange-accent hover:underline"
                                 variants={fadeInUp}
                             >
-                                info@rahapartners.com
+                                zeeshan@rahapartners.com
                             </motion.a>
                         </motion.div>
 
@@ -302,6 +302,32 @@ export default function FooterContact() {
                         )}
                     </AnimatePresence>
                 </motion.div>
+
+                {/* ── FOOTER BOTTOM ───────────────────────────────────── */}
+                <div className="xl:col-span-2 bg-bg-footer-card rounded-xl p-8 flex flex-col md:flex-row justify-between items-center gap-8 border border-white/5">
+                    <div className="text-[#888891] text-sm text-center md:text-left">
+                        <p className="mb-2">2025 © Raha Partners. All rights reserved.</p>
+                        <p className="max-w-md text-[13px] leading-relaxed">
+                            <strong className="text-[#c0c0c0]">Raha Partners</strong>, registered in Dubai, specializes in GCC market entry, distribution, and marketplace operations for global consumer brands.
+                        </p>
+                    </div>
+
+                    <div className="flex gap-6 items-center">
+                        <a href="https://www.linkedin.com/company/raha-partners" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-[#2c2c2f] flex items-center justify-center text-[#dfd9d7] hover:text-[#FA6F45] transition-all hover:scale-110">
+                            <FaLinkedinIn size={18} />
+                        </a>
+                        <a href="https://wa.me/971585799283?text=Hi%20Raha%20Partners,%20I'm%20interested%20in%20learning%20more%20about%20your%20services." target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-[#2c2c2f] flex items-center justify-center text-[#dfd9d7] hover:text-[#FA6F45] transition-all hover:scale-110">
+                            <FaWhatsapp size={18} />
+                        </a>
+                        <button
+                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                            className="flex items-center gap-3 bg-[#2c2c2f] px-6 py-3 rounded-xl text-[#dfd9d7] hover:text-[#FA6F45] transition-all group cursor-pointer"
+                        >
+                            <span className="text-sm font-medium tracking-widest">TOP</span>
+                            <FaChevronUp size={14} className="group-hover:-translate-y-1 transition-transform" />
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
     )
