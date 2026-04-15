@@ -198,12 +198,7 @@ export default function FooterContact() {
                                 <p className="text-text-dim text-[20px] max-w-sm leading-relaxed">
                                     Thank you for reaching out. A member of the Raha Partners team will be in touch with you shortly.
                                 </p>
-                                <button
-                                    onClick={() => setStatus('IDLE')}
-                                    className="mt-10 text-orange-accent font-medium hover:underline text-lg transition-all"
-                                >
-                                    Send another message
-                                </button>
+
                             </motion.div>
                         ) : (
                             <motion.form
