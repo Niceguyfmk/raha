@@ -102,7 +102,7 @@ export default function FooterContact() {
                             <a href="https://www.linkedin.com/company/raha-partners" target="_blank" rel="noopener noreferrer" className="text-text-warm hover:text-orange-accent">
                                 <FaLinkedinIn size={22} />
                             </a>
-                            <a href="https://wa.me/971585799283?text=Hi%20Raha%20Partners,%20I'm%20interested%20in%20learning%20more%20about%20your%20services." target="_blank" rel="noopener noreferrer" className="text-text-warm hover:text-orange-accent">
+                            <a href="https://wa.me/971585717283?text=Hi%20Raha%20Partners,%20I'm%20interested%20in%20learning%20more%20about%20your%20services." target="_blank" rel="noopener noreferrer" className="text-text-warm hover:text-orange-accent">
                                 <FaWhatsapp size={22} />
                             </a>
                         </motion.div>
