@@ -8,7 +8,6 @@ import OurWork from '@/components/OurWork';
 import OurServices from '@/components/OurServices';
 import Team from '@/components/Team';
 import FooterContact from '@/components/FooterContact';
-import FooterContent from '@/components/FooterContent';
 import { motion, AnimatePresence, Variants } from 'framer-motion'
 
 const fadeInUp: Variants = {
