@@ -91,15 +91,15 @@ export default function TeamSlider() {
     const member = teamMembers[current];
 
     return (
-        <div className="grid grid-cols-1 xl:grid-cols-[2.4fr_1.6fr_0.8fr] gap-[6px] xl:h-[734px]">
+        <div className="grid grid-cols-1 lg:grid-cols-[2.4fr_1.6fr_0.8fr] gap-[6px] lg:h-[734px]">
 
             {/* ── Left: Info Panel ──────────────────────────────────────── */}
             <div className="flex flex-col gap-[6px] h-full w-full">
 
                 {/* Top Stepper Card */}
-                <div className="bg-gradient-to-br from-bg-team-card-from to-bg-card rounded-xl h-[180px] p-6 xl:p-13 flex items-center justify-between">
+                <div className="bg-gradient-to-br from-bg-team-card-from to-bg-card rounded-xl h-[180px] p-6 lg:p-13 flex items-center justify-between">
 
-                    <span className="text-[22px] md:text-[26px] xl:text-[28px] font-medium tracking-[-0.04em] leading-[1.2] text-text-muted">
+                    <span className="text-[22px] md:text-[26px] lg:text-[28px] font-medium tracking-[-0.04em] leading-[1.2] text-text-muted">
                         Team Raha Partners
                     </span>
                     <div className="flex items-center gap-1 w-[120px] h-[12px] justify-end">
@@ -117,7 +117,7 @@ export default function TeamSlider() {
                 </div>
 
                 {/* Bottom Info Card */}
-                <div className="bg-gradient-to-br from-bg-team-card-from to-bg-card rounded-xl flex flex-col justify-between flex-1 p-6 xl:p-13">
+                <div className="bg-gradient-to-br from-bg-team-card-from to-bg-card rounded-xl flex flex-col justify-between flex-1 p-6 lg:p-13">
 
                     <AnimatePresence mode="wait" custom={direction}>
                         <motion.div
@@ -132,7 +132,7 @@ export default function TeamSlider() {
                                 {member.name}
                             </h3>
 
-                            <p className="text-[18px] xl:text-[21px] font-normal pb-2 tracking-[-0.05em] leading-[1.4] text-text-muted">
+                            <p className="text-[18px] lg:text-[21px] font-normal pb-2 tracking-[-0.05em] leading-[1.4] text-text-muted">
                                 {member.title}
                             </p>
                         </motion.div>
@@ -146,7 +146,7 @@ export default function TeamSlider() {
                             initial="initial"
                             animate="animate"
                             exit="exit"
-                            className="text-[16px] md:text-[18px] xl:text-[21px] font-normal tracking-[-0.05em] leading-[1.4] text-text-muted mt-auto"
+                            className="text-[16px] md:text-[18px] lg:text-[21px] font-normal tracking-[-0.05em] leading-[1.4] text-text-muted mt-auto"
                         >
                             {member.bio}
                         </motion.p>
@@ -157,7 +157,7 @@ export default function TeamSlider() {
             </div>
 
             {/* ── Center: Photo ─────────────────────────────────────────── */}
-            <div className="relative rounded-xl overflow-hidden h-full">
+            <div className="hidden lg:block relative rounded-xl overflow-hidden min-h-[450px] md:min-h-[600px] lg:h-full">
                 <AnimatePresence mode="wait" custom={direction}>
                     {member.photo ? (
                         <motion.img
@@ -196,7 +196,7 @@ export default function TeamSlider() {
             <div className="flex flex-col gap-[6px] h-full w-full">
 
                 {/* Top: Arrows Card — same height as stepper card on the left */}
-                <div className="bg-gradient-to-br from-bg-team-card-from to-bg-card rounded-xl h-[180px] p-6 xl:p-13 flex items-center justify-center gap-6">
+                <div className="bg-gradient-to-br from-bg-team-card-from to-bg-card rounded-xl h-[180px] p-6 lg:p-13 flex items-center justify-center gap-6">
                     <button
                         onClick={prev}
                         className="text-orange-main hover:text-orange-hover transition-colors duration-200 hover:scale-110 transform"
@@ -221,7 +221,7 @@ export default function TeamSlider() {
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         transition={{ duration: 0.3 }}
-                        className="bg-gradient-to-br from-bg-team-card-from to-bg-card rounded-xl flex-1 p-6 xl:p-13 flex flex-col justify-center items-center gap-4"
+                        className="bg-gradient-to-br from-bg-team-card-from to-bg-card rounded-xl flex-1 p-6 lg:p-13 flex flex-col justify-center items-center gap-4"
                     >
                         <a
                             href={member.linkedin}
