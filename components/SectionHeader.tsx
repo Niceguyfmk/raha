@@ -3,8 +3,6 @@
 import { motion } from 'framer-motion';
 
 interface SectionHeaderProps {
-    /** Large section number (e.g., "001", "002") */
-    number: string;
     /** Brand or company name */
     brandName: string;
     /** Main section title */
@@ -16,7 +14,6 @@ interface SectionHeaderProps {
 }
 
 export default function SectionHeader({
-    number,
     brandName,
     title,
     statement,
@@ -52,8 +49,7 @@ export default function SectionHeader({
                             transition={{ duration: 0.8, delay: 0.2 }}
                             className="flex flex-col justify-start min-w-[70px] md:min-w-[120px] lg:col-span-2 pt-2"
                         >
-                            <span className="block text-white text-lg md:text-2xl font-light tracking-widest leading-none">{number}</span>
-                            <span className="block text-white text-[9px] md:text-xs font-bold tracking-[0.2em] uppercase opacity-60 mt-2 leading-tight">
+                            <span className="block text-white text-[9px] md:text-xs font-bold tracking-[0.2em] uppercase opacity-80 mt-2 leading-tight">
                                 {brandName}
                             </span>
                         </motion.div>

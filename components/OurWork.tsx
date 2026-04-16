@@ -64,8 +64,7 @@ export default function OurWork() {
         <section id="our-work" className="relative bg-bg-section pt-20 pb-20 lg:py-24 px-6 overflow-hidden">
             <div className="max-w-[1400px] mx-auto">
                 <SectionHeader
-                    number="001"
-                    brandName="Raha Partners"
+                    brandName="Our Partners"
                     title="Brands We Scale"
                     statement="Real work. Real results."
                     description="Every engagement starts with a brand that needs market access and ends with products on shelves and screens."

@@ -10,8 +10,7 @@ export default function OurServices() {
         <section id="services" className="relative bg-bg-section pt-0 pb-20 lg:pt-0 lg:pb-24 px-6 overflow-hidden">
             <div className="max-w-[1400px] mx-auto">
                 <SectionHeader
-                    number="002"
-                    brandName="Raha x Brands"
+                    brandName="Our Services"
                     title="Everything you need to win in the GCC"
                     statement="Operational muscle. Market expertise. Digital infrastructure."
                     description="We turn your brand into a local market leader with end-to-end execution."

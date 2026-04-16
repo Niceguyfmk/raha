@@ -8,7 +8,6 @@ import OurWork from '@/components/OurWork';
 import OurServices from '@/components/OurServices';
 import Team from '@/components/Team';
 import FooterContact from '@/components/FooterContact';
-import FooterContent from '@/components/FooterContent';
 import { motion, AnimatePresence, Variants } from 'framer-motion'
 
 const fadeInUp: Variants = {
@@ -50,11 +49,6 @@ export default function Home() {
             </motion.h2>
             <div className="sticky top-0 h-[120vh] bg-[#161719]">
               <FooterContact />
-            </div>
-
-            {/* Section 2: Footer Content (Reveals or Scrolls normally) */}
-            <div className="relative z-20 shadow-[0_-20px_50px_rgba(0,0,0,0.5)]">
-              <FooterContent />
             </div>
           </section>
         </main>

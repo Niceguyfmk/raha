@@ -128,11 +128,11 @@ export default function FooterContact() {
                             viewport={{ once: true }}
                         >
                             {[
-                                'Regulatory & Labeling',
                                 'Marketplace Operations',
                                 'Distribution & Retail',
                                 'Performance Marketing',
                                 'GCC Market Entry',
+                                'Regulatory & Labeling',
                             ].map((item, i) => (
                                 <motion.li
                                     key={i}
@@ -156,11 +156,11 @@ export default function FooterContact() {
                                 <span className="text-[22px] font-medium">Digital</span>
                             </motion.div>
                             <motion.a
-                                href="mailto:zeeshan@rahapartners.com"
+                                href="mailto:info@rahapartners.com"
                                 className="text-[18px] text-orange-accent hover:underline"
                                 variants={fadeInUp}
                             >
-                                zeeshan@rahapartners.com
+                                info@rahapartners.com
                             </motion.a>
                         </motion.div>
 
@@ -170,7 +170,7 @@ export default function FooterContact() {
                                 <span className="text-[22px] font-medium">Office</span>
                             </motion.div>
                             <motion.p className="text-[18px] text-text-muted leading-relaxed" variants={fadeInUp}>
-                                1246 Lake Road, Jumeirah<br />
+                                2001 Grosvenor Business Tower, Barsha Heights<br />
                                 <strong className="text-text-dim">Dubai, UAE</strong>
                             </motion.p>
                         </motion.div>
@@ -303,7 +303,7 @@ export default function FooterContact() {
                     <div className="text-[#888891] text-sm text-center md:text-left">
                         <p className="mb-2">2025 © Raha Partners. All rights reserved.</p>
                         <p className="max-w-md text-[13px] leading-relaxed">
-                            <strong className="text-[#c0c0c0]">Raha Partners</strong>, registered in Dubai, specializes in GCC market entry, distribution, and marketplace operations for global consumer brands.
+                            <strong className="text-[#c0c0c0]">Raha Partners</strong>, Registered in United Arab Emirates, specializes in GCC market entry, distribution, and marketplace operations for global consumer brands.
                         </p>
                     </div>
 
