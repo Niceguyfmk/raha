@@ -3,7 +3,7 @@ import type { Variants } from 'framer-motion';
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaLinkedinIn, FaWhatsapp, FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import { FaLinkedinIn, FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 interface TeamMember {
@@ -13,7 +13,6 @@ interface TeamMember {
     bio: string;
     photo: string;
     linkedin: string;
-    whatsapp: string;
     /** Optional gradient background shown while photo loads / if no photo */
     gradient?: string;
 }
@@ -25,18 +24,16 @@ const teamMembers: TeamMember[] = [
         name: 'Mohammed Ayub',
         title: 'Investor & Advisor',
         bio: 'With a strong background in the GCC market, Ayub brings invaluable strategic guidance and investment expertise to Raha Partners. His experience helps shape our growth trajectory and market approach.',
-        photo: '/images/ayub-pp.png',
+        photo: '/images/ayub-pp.jpeg',
         linkedin: 'https://www.linkedin.com/in/mohammedayub/',
-        whatsapp: "https://wa.me/971585799283?text=Hi%20Raha%20Partners,%20I'm%20interested%20in%20learning%20more%20about%20your%20services.",
     },
     {
         id: 2,
         name: 'Talal Aziz',
         title: 'Head of Operations',
         bio: 'A results-driven operator with a specialized focus on scaling consumer brands across the GCC, European, and Asian markets. Over the last six years, Talal has built a deep expertise in Category Management, specifically in developing private label brands. His work involves managing the growth of these brands across both major marketplaces and D2C websites, ensuring efficient product positioning and sales performance. At Raha Partners, Talal is responsible for leading the day-to-day operations, ensuring the business remains focused on execution and operational efficiency.',
-        photo: '/images/talal-pp.png',
+        photo: '/images/talal-pp.jpg',
         linkedin: 'https://www.linkedin.com/in/talal-aziz-381608119/',
-        whatsapp: "https://wa.me/918789845398?text=Hi%20Raha%20Partners,%20I'm%20interested%20in%20learning%20more%20about%20your%20services.",
     },
     {
         id: 3,
@@ -45,7 +42,6 @@ const teamMembers: TeamMember[] = [
         bio: 'At Raha Partners, Faiz leads the technology and digital execution backbone of the business, overseeing website development across Shopify, React, Next.js, and WordPress, along with dashboards, automation systems, and SEO/GEO initiatives. His role also extends into design direction and cross-functional team coordination, ensuring projects move seamlessly from strategy to launch while maintaining scalability, efficiency, and strong digital performance.',
         photo: '/images/faiz-pp.png',
         linkedin: 'https://www.linkedin.com/in/fmk96/',
-        whatsapp: "https://wa.me/916302983548?text=Hi%20Raha%20Partners,%20I'm%20interested%20in%20learning%20more%20about%20your%20services.",
     },
     {
         id: 4,
@@ -54,7 +50,6 @@ const teamMembers: TeamMember[] = [
         bio: 'With over 10 years of diverse experience across various industries in India, Carol brings strong expertise in administrative management. She currently leads hiring operations while overseeing core administrative functions, ensuring smooth and efficient business operations.',
         photo: '/images/carol-pp.png',
         linkedin: 'https://www.linkedin.com/in/carolrodrigues21/',
-        whatsapp: "https://wa.me/919833562773?text=Hi%20Raha%20Partners,%20I'm%20interested%20in%20learning%20more%20about%20your%20services.",
     },
     {
         id: 5,
@@ -63,7 +58,6 @@ const teamMembers: TeamMember[] = [
         bio: 'With 6+ years experience in the European & UK market, Zeeshan is responsible for expanding RAHA Partners\' footprint in the international market.',
         photo: '/images/zeeshan.jpg',
         linkedin: 'https://www.linkedin.com/in/zeeshan-laique-ali/',
-        whatsapp: "https://wa.me/34612505467?text=Hi%20Raha%20Partners,%20I'm%20interested%20in%20learning%20more%20about%20your%20services.",
     }
 ];
 
@@ -233,19 +227,10 @@ export default function TeamSlider() {
                             href={member.linkedin}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-dot-color hover:text-orange-main transition-colors duration-200 p-2 rounded-lg hover:bg-white/5 w-fit"
+                            className="text-dot-color hover:text-orange-main transition-colors duration-200 p-3 rounded-lg hover:bg-white/5 w-fit"
                             aria-label="LinkedIn"
                         >
-                            <FaLinkedinIn size={18} />
-                        </a>
-                        <a
-                            href={member.whatsapp}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-dot-color hover:text-orange-main transition-colors duration-200 p-2 rounded-lg hover:bg-white/5 w-fit"
-                            aria-label="WhatsApp"
-                        >
-                            <FaWhatsapp size={18} />
+                            <FaLinkedinIn size={22} />
                         </a>
                     </motion.div>
                 </AnimatePresence>

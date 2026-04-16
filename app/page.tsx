@@ -51,11 +51,6 @@ export default function Home() {
             <div className="sticky top-0 h-[120vh] bg-[#161719]">
               <FooterContact />
             </div>
-
-            {/* Section 2: Footer Content (Reveals or Scrolls normally) */}
-            <div className="relative z-20 shadow-[0_-20px_50px_rgba(0,0,0,0.5)]">
-              <FooterContent />
-            </div>
           </section>
         </main>
       </div>
