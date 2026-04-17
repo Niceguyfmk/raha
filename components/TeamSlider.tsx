@@ -40,7 +40,7 @@ const teamMembers: TeamMember[] = [
         name: 'Faiz Mohammed Khan',
         title: 'Digital Solution Architect (Web & E-Commerce)',
         bio: 'At Raha Partners, Faiz leads the technology and digital execution backbone of the business, overseeing website development across Shopify, React, Next.js, and WordPress, along with dashboards, automation systems, and SEO/GEO initiatives. His role also extends into design direction and cross-functional team coordination, ensuring projects move seamlessly from strategy to launch while maintaining scalability, efficiency, and strong digital performance.',
-        photo: '/images/faiz-pp.png',
+        photo: '/images/faiz-pp.jpeg',
         linkedin: 'https://www.linkedin.com/in/fmk96/',
     },
     {
@@ -56,7 +56,7 @@ const teamMembers: TeamMember[] = [
         name: 'Zeeshan Ali',
         title: 'Head of International Business',
         bio: 'With 6+ years experience in the European & UK market, Zeeshan is responsible for expanding RAHA Partners\' footprint in the international market.',
-        photo: '/images/zeeshan.jpg',
+        photo: '/images/zeeshan-pp.jpeg',
         linkedin: 'https://www.linkedin.com/in/zeeshan-laique-ali/',
     }
 ];
@@ -157,7 +157,7 @@ export default function TeamSlider() {
             </div>
 
             {/* ── Center: Photo ─────────────────────────────────────────── */}
-            <div className="hidden lg:block relative rounded-xl overflow-hidden min-h-[450px] md:min-h-[600px] lg:h-full">
+            <div className="block min-[525px]:hidden lg:block relative rounded-xl overflow-hidden h-[400px] md:h-[600px] lg:h-full">
                 <AnimatePresence mode="wait" custom={direction}>
                     {member.photo ? (
                         <motion.img
