@@ -103,14 +103,19 @@ export default function OurWork() {
                             </div>
 
 
-                            <a href="#contact" className="flex items-start group/btn">
-                                <div className="h-[60px] w-[160px] lg:w-[60px] group-hover/btn:w-[160px] rounded-xl bg-[#FF5722] flex items-center transition-all duration-300 hover:bg-[#E64A19] cursor-pointer overflow-hidden">
+                            <a
+                                href="https://laurastar.ae/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-start group/btn"
+                            >
+                                <div className="h-[60px] w-[220px] lg:w-[60px] group-hover/btn:w-[220px] rounded-xl bg-[#FF5722] flex items-center transition-all duration-300 hover:bg-[#E64A19] cursor-pointer overflow-hidden">
                                     <div className="flex items-center gap-4 px-[20px] whitespace-nowrap">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="flex-shrink-0">
                                             <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#161719" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                         </svg>
                                         <span className="font-medium text-[#161719] opacity-100 lg:opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300">
-                                            Talk to us
+                                            Explore our partner
                                         </span>
                                     </div>
                                 </div>
@@ -150,14 +155,19 @@ export default function OurWork() {
                             </div>
 
 
-                            <a href="#contact" className="flex items-start group/btn">
-                                <div className="h-[60px] w-[160px] lg:w-[60px] group-hover/btn:w-[160px] rounded-xl bg-[#FF5722] flex items-center transition-all duration-300 hover:bg-[#E64A19] cursor-pointer overflow-hidden">
+                            <a
+                                href="https://ladaz.co/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-start group/btn"
+                            >
+                                <div className="h-[60px] w-[220px] lg:w-[60px] group-hover/btn:w-[220px] rounded-xl bg-[#FF5722] flex items-center transition-all duration-300 hover:bg-[#E64A19] cursor-pointer overflow-hidden">
                                     <div className="flex items-center gap-4 px-[20px] whitespace-nowrap">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="flex-shrink-0">
                                             <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#161719" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                         </svg>
                                         <span className="font-medium text-[#161719] opacity-100 lg:opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300">
-                                            Talk to us
+                                            Explore our partner
                                         </span>
                                     </div>
                                 </div>
@@ -176,15 +186,15 @@ export default function OurWork() {
                         {/* Image Background */}
                         <div className="absolute inset-0 z-0 overflow-hidden">
                             <img
-                                src="/images/basic_fab.jpeg"
-                                alt="Basic Fabrics"
+                                src="/images/platable.avif"
+                                alt="Platable"
                                 className="w-full h-full object-cover opacity-70 grayscale transition-transform duration-500 group-hover:scale-110"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
                         </div>
 
                         <div className="relative z-10 p-6 h-full flex flex-col justify-between">
-                            <h3 className="text-2xl font-medium text-white">Basic Fabrics</h3>
+                            <h3 className="text-2xl font-medium text-white">Platable</h3>
 
                             <div className="absolute top-6 right-6 grid grid-cols-3 gap-2 group-hover:rotate-90 transition-transform duration-300">
                                 {[...Array(9)].map((_, i) => (
@@ -196,14 +206,19 @@ export default function OurWork() {
                             </div>
 
 
-                            <a href="#contact" className="flex items-start group/btn">
-                                <div className="h-[60px] w-[160px] lg:w-[60px] group-hover/btn:w-[160px] rounded-xl bg-[#FF5722] flex items-center transition-all duration-300 hover:bg-[#E64A19] cursor-pointer overflow-hidden">
+                            <a
+                                href="https://stage.platablenow.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-start group/btn"
+                            >
+                                <div className="h-[60px] w-[220px] lg:w-[60px] group-hover/btn:w-[220px] rounded-xl bg-[#FF5722] flex items-center transition-all duration-300 hover:bg-[#E64A19] cursor-pointer overflow-hidden">
                                     <div className="flex items-center gap-4 px-[20px] whitespace-nowrap">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="flex-shrink-0">
                                             <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#161719" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                         </svg>
                                         <span className="font-medium text-[#161719] opacity-100 lg:opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300">
-                                            Talk to us
+                                            Explore our partner
                                         </span>
                                     </div>
                                 </div>
@@ -213,7 +228,7 @@ export default function OurWork() {
                 </div>
 
                 {/* Bottom Row: 3 equal cards, cta middle (Moved to Middle) */}
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 mb-">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-1">
 
                     {/* Market Expansion */}
                     <motion.div
@@ -246,14 +261,19 @@ export default function OurWork() {
                             </div>
 
 
-                            <a href="#contact" className="flex items-start group/btn">
-                                <div className="h-[60px] w-[160px] lg:w-[60px] group-hover/btn:w-[160px] rounded-xl bg-[#FF5722] flex items-center transition-all duration-300 hover:bg-[#E64A19] cursor-pointer overflow-hidden">
+                            <a
+                                href="https://www.gonoise.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-start group/btn"
+                            >
+                                <div className="h-[60px] w-[220px] lg:w-[60px] group-hover/btn:w-[220px] rounded-xl bg-[#FF5722] flex items-center transition-all duration-300 hover:bg-[#E64A19] cursor-pointer overflow-hidden">
                                     <div className="flex items-center gap-4 px-[20px] whitespace-nowrap">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="flex-shrink-0">
                                             <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#161719" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                         </svg>
                                         <span className="font-medium text-[#161719] opacity-100 lg:opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300">
-                                            Talk to us
+                                            Explore our partner
                                         </span>
                                     </div>
                                 </div>
@@ -272,15 +292,15 @@ export default function OurWork() {
                         {/* Image Background */}
                         <div className="absolute inset-0 z-0 overflow-hidden">
                             <img
-                                src="/images/signature.jpg"
-                                alt="Analytics"
+                                src="/images/techxr.png"
+                                alt="TechXR"
                                 className="w-full h-full object-cover opacity-70 grayscale transition-transform duration-500 group-hover:scale-110"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
                         </div>
 
                         <div className="relative z-10 p-6 h-full flex flex-col justify-between">
-                            <h3 className="text-2xl font-medium text-white">Signature Perfumes</h3>
+                            <h3 className="text-2xl font-medium text-white">TechXR</h3>
 
                             <div className="absolute top-6 right-6 grid grid-cols-3 gap-2 group-hover:rotate-90 transition-transform duration-300">
                                 {[...Array(9)].map((_, i) => (
@@ -292,14 +312,19 @@ export default function OurWork() {
                             </div>
 
 
-                            <a href="#contact" className="flex items-start group/btn">
-                                <div className="h-[60px] w-[160px] lg:w-[60px] group-hover/btn:w-[160px] rounded-xl bg-[#FF5722] flex items-center transition-all duration-300 hover:bg-[#E64A19] cursor-pointer overflow-hidden">
+                            <a
+                                href="https://techxr.co/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-start group/btn"
+                            >
+                                <div className="h-[60px] w-[220px] lg:w-[60px] group-hover/btn:w-[220px] rounded-xl bg-[#FF5722] flex items-center transition-all duration-300 hover:bg-[#E64A19] cursor-pointer overflow-hidden">
                                     <div className="flex items-center gap-4 px-[20px] whitespace-nowrap">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="flex-shrink-0">
                                             <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#161719" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                         </svg>
                                         <span className="font-medium text-[#161719] opacity-100 lg:opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300">
-                                            Talk to us
+                                            Explore our partner
                                         </span>
                                     </div>
                                 </div>
@@ -338,14 +363,19 @@ export default function OurWork() {
                             </div>
 
 
-                            <a href="#contact" className="flex items-start group/btn">
-                                <div className="h-[60px] w-[160px] lg:w-[60px] group-hover/btn:w-[160px] rounded-xl bg-[#FF5722] flex items-center transition-all duration-300 hover:bg-[#E64A19] cursor-pointer overflow-hidden">
+                            <a
+                                href="https://osfashioneyewear.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-start group/btn"
+                            >
+                                <div className="h-[60px] w-[220px] lg:w-[60px] group-hover/btn:w-[220px] rounded-xl bg-[#FF5722] flex items-center transition-all duration-300 hover:bg-[#E64A19] cursor-pointer overflow-hidden">
                                     <div className="flex items-center gap-4 px-[20px] whitespace-nowrap">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="flex-shrink-0">
                                             <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#161719" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                         </svg>
                                         <span className="font-medium text-[#161719] opacity-100 lg:opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300">
-                                            Talk to us
+                                            Explore our partner
                                         </span>
                                     </div>
                                 </div>
