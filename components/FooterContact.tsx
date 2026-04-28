@@ -52,8 +52,7 @@ export default function FooterContact() {
         e.preventDefault();
         setStatus('SUBMITTING');
 
-        // IMPORTANT: Replace 'xbldjrqy' with your actual Formspree ID once you create the form
-        const FORMSPREE_ID = 'mbdabgdo';
+        const FORMSPREE_ID = 'mwvadrev';
 
         try {
             const response = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
