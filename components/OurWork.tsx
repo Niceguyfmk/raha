@@ -230,56 +230,6 @@ export default function OurWork() {
                 {/* Bottom Row: 3 equal cards, cta middle (Moved to Middle) */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-1">
 
-                    {/* Market Expansion */}
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, delay: 0.2 }}
-                        viewport={{ once: true }}
-                        className="relative overflow-hidden rounded-lg bg-bg-card-alt h-[380px] group"
-                    >
-                        <div className="absolute inset-0 z-0 overflow-hidden">
-                            <img
-                                src="/images/noise.jpg"
-                                alt="Noise"
-                                className="w-full h-full object-cover opacity-70 grayscale transition-transform duration-500 group-hover:scale-110"
-                            />
-
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
-                        </div>
-
-                        <div className="relative z-10 p-6 h-full flex flex-col justify-between">
-                            <h3 className="text-2xl font-medium text-white">Noise</h3>
-
-                            <div className="absolute top-6 right-6 grid grid-cols-3 gap-2 group-hover:rotate-90 transition-transform duration-300">
-                                {[...Array(9)].map((_, i) => (
-                                    <div
-                                        key={i}
-                                        className="w-[4px] h-[4px] rounded-sm bg-[#E3DBD8]/70"
-                                    />
-                                ))}
-                            </div>
-
-
-                            <a
-                                href="https://www.gonoise.com/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex items-start group/btn"
-                            >
-                                <div className="h-[60px] w-[220px] lg:w-[60px] group-hover/btn:w-[220px] rounded-xl bg-[#FF5722] flex items-center transition-all duration-300 hover:bg-[#E64A19] cursor-pointer overflow-hidden">
-                                    <div className="flex items-center gap-4 px-[20px] whitespace-nowrap">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="flex-shrink-0">
-                                            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#161719" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                        </svg>
-                                        <span className="font-medium text-[#161719] opacity-100 lg:opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300">
-                                            Explore our partner
-                                        </span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </motion.div>
 
                     {/* Analytics Insights */}
                     <motion.div
