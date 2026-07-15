@@ -116,9 +116,6 @@ export default function Hero() {
                                             <h2 className="text-text-dim text-[28px] md:text-3xl font-medium tracking-[-1.12px]">
                                                 Talk to our team
                                             </h2>
-                                            <p className="mt-3 text-text-muted text-[17px] font-normal tracking-[-0.04em] leading-[1.3]">
-                                                Bespoke solutions for your business
-                                            </p>
                                         </div>
 
                                         {/* Divider */}
