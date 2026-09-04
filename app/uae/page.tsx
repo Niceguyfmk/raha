@@ -206,9 +206,9 @@ export default function UaeLandingPage() {
               <span className="logo">
                 <img src="/logos/platable.svg" alt="Platable" width={101} height={30} />
               </span>
-              <Needs title="Supply LADAZ logo file">
-                <span className="logo wide">LADAZ</span>
-              </Needs>
+              <span className="logo">
+                <img src="/logos/ladaz.png" alt="LADAZ" width={193} height={61} />
+              </span>
               <span className="logo">
                 <img src="/logos/os-fashion-eyewear.svg" alt="OS Fashion Eyewear" width={220} height={100} />
               </span>
