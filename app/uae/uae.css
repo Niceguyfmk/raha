@@ -680,7 +680,10 @@
 
 .uae .logos {
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
   gap: 24px;
   align-items: center;
   margin-top: 20px;
@@ -701,6 +704,12 @@
 
 .uae .logo:hover {
   opacity: 1;
+}
+
+.uae .logo img {
+  height: 28px;
+  width: auto;
+  filter: grayscale(1);
 }
 
 .uae .logo.wide {
@@ -1449,7 +1458,7 @@
   }
 
   .uae .logos {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .uae .logo.wide {

@@ -197,23 +197,17 @@ export default function UaeLandingPage() {
             </div>
             <p className="caption">Brands we have launched and operated in the UAE</p>
             <div className="logos" aria-label="Client brands">
-              <Needs title="Confirm permission and supply logo file">
-                <span className="logo">noise</span>
-              </Needs>
-              <Needs title="Confirm permission and supply logo file">
-                <span className="logo wide">Laurastar</span>
-              </Needs>
-              <Needs title="Confirm permission and supply logo file">
+              <span className="logo">
+                <img src="/logos/laurastar.svg" alt="Laurastar" width={215} height={47} />
+              </span>
+              <span className="logo">
+                <img src="/logos/platable.svg" alt="Platable" width={101} height={30} />
+              </span>
+              <Needs title="Supply LADAZ logo file">
                 <span className="logo wide">LADAZ</span>
               </Needs>
-              <Needs title="Confirm permission and supply logo file">
-                <span className="logo">Platable</span>
-              </Needs>
-              <Needs title="Confirm permission and supply logo file">
-                <span className="logo">TechXR</span>
-              </Needs>
-              <Needs title="Confirm permission and supply logo file">
-                <span className="logo wide">OS Eyewear</span>
+              <Needs title="Supply OS Fashion Eyewear logo file">
+                <span className="logo wide">OS Fashion Eyewear</span>
               </Needs>
             </div>
           </div>
