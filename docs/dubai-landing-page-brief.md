@@ -347,7 +347,7 @@ Eleven sections. Longer than the international benchmarks (5–9) because a UAE 
 | 6 | Selected work | Show breadth without fabricating results | 3 compact cards (Laurastar, LADAZ, TechXR) using the same ledger format, shortened | "All work" (future) | 3 columns | Horizontal snap-scroll | None |
 | 7 | How we work | Remove uncertainty about process and commercial model | Timeline of 3 phases with week ranges; below, 3 engagement-model cards side by side | Plan your UAE launch | Timeline horizontal; models 3 columns | Timeline vertical; models stacked | Progress line draws on scroll |
 | 8 | Why a Dubai operator + team | Trust in people and locality | 4 reason blocks; then 5 team cards with photo, name, role, LinkedIn | None | 4 reasons in a row; team 5-up | 2×2 reasons; team horizontal scroll | None |
-| 9 | Platforms and channels | Capability proof | Monochrome logo strip: Shopify, Amazon.ae, Noon, Carrefour, Meta, Google, TikTok + a line naming retailers | None | One row | Two rows | None |
+| 9 | Platforms and channels | Capability proof | Monochrome logo strip: Shopify, Amazon.ae, Noon, Carrefour, Meta, Google + a line naming retailers | None | One row | Two rows | None |
 | 10 | FAQ | Objections; SEO/GEO | Accordion, 7 questions, answers 40–60 words | None | Single column, 760px | Same | Height transition |
 | 11 | Contact | Convert | Left: 4-field form + promise. Right: embedded booking calendar. Below: WhatsApp, phone, email, office, licence/TRN | Send · Book a call · WhatsApp | 2 columns | Form first, then a "Book a call" button that expands the calendar | None |
 | 12 | Footer | Legal and links | Logo, address, licence, links to service pages, LinkedIn | None | 4 columns | Stacked | None |
@@ -424,8 +424,8 @@ A fast Shopify store built for UAE checkout habits (wallets, BNPL, COD where it 
 Link: Shopify development Dubai → · Amazon.ae & Noon operations →
 
 **03 · Grow demand — Acquisition that pays for itself.**
-Performance marketing across Google, Meta and TikTok, marketplace advertising, and the creators and reviews that move UAE shoppers.
-- Google Shopping, Meta and TikTok campaigns
+Performance marketing across Google and Meta, marketplace advertising, and the creators and reviews that move UAE shoppers.
+- Google Shopping and Meta campaigns
 - Amazon and Noon sponsored ads
 - Search and generative-search optimisation
 - Influencer, affiliate and review programmes
@@ -488,7 +488,7 @@ Cards (Client · Challenge · Role · Outcome):
 
 ### 9. Platforms and channels
 **Caption:** Platforms and channels we operate
-Shopify · Amazon.ae · Noon · Carrefour · Google · Meta · TikTok
+Shopify · Amazon.ae · Noon · Carrefour · Google · Meta
 **Line:** Retail partners include Carrefour and [others] **[NEEDS INPUT: list only retailers you have actually listed products with; the current site says "From Carrefour to Amazon"]**
 
 ### 10. FAQ

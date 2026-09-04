@@ -297,9 +297,9 @@ export default function UaeLandingPage() {
               <Reveal className="card lift" delay={120}>
                 <div className="num">03 · Grow demand</div>
                 <h3>Acquisition that pays for itself.</h3>
-                <p className="promise">Performance marketing across Google, Meta and TikTok, marketplace advertising, and the creators and reviews that move UAE shoppers.</p>
+                <p className="promise">Performance marketing across Google and Meta, marketplace advertising, and the creators and reviews that move UAE shoppers.</p>
                 <ul>
-                  <li>Google Shopping, Meta and TikTok campaigns</li>
+                  <li>Google Shopping and Meta campaigns</li>
                   <li>Amazon and Noon sponsored ads</li>
                   <li>Search and generative-search optimisation</li>
                   <li>Influencer, affiliate and review programmes</li>
@@ -522,7 +522,7 @@ export default function UaeLandingPage() {
           <div className="container">
             <p className="caption">Platforms and channels we operate</p>
             <div className="platform-row">
-              {['Shopify', 'amazon.ae', 'noon', 'Carrefour', 'Google', 'Meta', 'TikTok'].map((p) => (
+              {['Shopify', 'amazon.ae', 'noon', 'Carrefour', 'Google', 'Meta'].map((p) => (
                 <span key={p}>{p}</span>
               ))}
             </div>
