@@ -41,7 +41,7 @@ const FAQ = [
   },
   {
     q: 'Do we need a UAE entity to sell on Amazon.ae and Noon?',
-    a: 'Not always. Depending on category and volume, brands sell through a local partner, a consignment structure or their own entity. We recommend the structure after reviewing your category, margins and plans for retail.',
+    a: 'No. We act as your UAE distributor or consignment partner, importing and selling under our own licence, so you can be live on Amazon.ae and Noon without a local entity. We recommend which structure fits after reviewing your category, margins and plans for retail.',
   },
   {
     q: 'Amazon.ae or Noon first?',
@@ -268,14 +268,12 @@ export default function UaeLandingPage() {
               <Reveal className="card lift">
                 <div className="num">01 · Enter</div>
                 <h3>Get your product legally sellable in the UAE.</h3>
-                <p className="promise">Product registration, labelling, conformity and import paperwork, and the right commercial structure so you sell from day one, with or without a UAE entity.</p>
+                <p className="promise">Product registration, labelling, conformity and import paperwork, and a distributor or consignment structure so you sell from day one without setting up a UAE entity.</p>
                 <ul>
                   <li>Municipality and product registration</li>
                   <li>Arabic and English labelling and compliance</li>
                   <li>Import and customs coordination</li>
-                  <li>
-                    <Needs>Entity, distributor or consignment structure</Needs>
-                  </li>
+                  <li>Distributor or consignment structure, so you sell without setting up a UAE entity</li>
                 </ul>
                 <a className="link" href="#contact">
                   UAE market entry for consumer brands

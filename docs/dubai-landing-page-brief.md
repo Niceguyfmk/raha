@@ -412,7 +412,7 @@ Product registration, Arabic and English labelling, conformity and import paperw
 - Municipality and product registration
 - Labelling and compliance
 - Import and customs coordination
-- Entity, distributor or consignment structure **[NEEDS INPUT: confirm which structures you offer]**
+- Distributor or consignment structure, so you sell without setting up a UAE entity **[CONFIRMED 4 Sep 2026: Raha acts as distributor or consignment partner, not entity set-up]**
 Link: UAE market entry for consumer brands →
 
 **02 · Sell online — A storefront and marketplaces that convert.**
