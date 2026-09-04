@@ -198,6 +198,9 @@ export default function UaeLandingPage() {
             <p className="caption">Brands we have launched and operated in the UAE</p>
             <div className="logos" aria-label="Client brands">
               <span className="logo">
+                <img src="/logos/noise.svg" alt="Noise" width={192} height={58} />
+              </span>
+              <span className="logo">
                 <img src="/logos/laurastar.svg" alt="Laurastar" width={215} height={47} />
               </span>
               <span className="logo">
