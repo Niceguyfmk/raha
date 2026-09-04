@@ -54,7 +54,6 @@ const FAQ = [
   {
     q: 'Do you buy stock or work on a fee?',
     a: 'Both models exist. Most engagements are retained operations on a fee with performance-linked terms; for selected categories we take stock and margin as a distributor.',
-    needs: true,
   },
   {
     q: 'Can you take over an existing store and marketplace accounts?',
@@ -467,9 +466,7 @@ export default function UaeLandingPage() {
                 <div className="best">Best for brands with an in-house team that needs one piece done properly.</div>
               </Reveal>
               <Reveal className="card" delay={120}>
-                <h3>
-                  <Needs title="Confirm this model is offered">Distribution partnership</Needs>
-                </h3>
+                <h3>Distribution partnership</h3>
                 <p>For selected categories we take stock and margin and sell into retail and marketplaces ourselves.</p>
                 <div className="best">Best for proven products that want a local partner with skin in the game.</div>
               </Reveal>
